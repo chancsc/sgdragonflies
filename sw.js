@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v2';
+var CACHE_VERSION = 'sgdragonfly-shell-v3';
 
 var PRECACHE_URLS = [
   './',
@@ -312,6 +312,7 @@ var PRECACHE_URLS = [
   './scripts/libs/require.js',
   './scripts/libs/require.min.js',
   './scripts/main-built.js',
+  './scripts/templates.js',
   './styles/error.gif',
   './styles/icons.png',
   './styles/icons@2x.png',
