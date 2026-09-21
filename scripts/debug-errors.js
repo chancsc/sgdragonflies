@@ -1,6 +1,20 @@
 (function () {
   'use strict';
 
+  // The on-page banner is opt-in only, so ordinary users never see it.
+  // Enable it when you actually need to debug on a device without devtools:
+  //   - append ?debug=1 to the URL, or
+  //   - run localStorage.setItem('sgDebugErrors', '1') once (persists across visits)
+  var bannerEnabled =
+    /(?:[?&])debug=1(?:&|$)/.test(location.search) ||
+    (function () {
+      try {
+        return localStorage.getItem('sgDebugErrors') === '1';
+      } catch (e) {
+        return false;
+      }
+    })();
+
   var banner;
 
   function ensureBanner() {
@@ -32,6 +46,10 @@
   }
 
   function report(label, detail) {
+    console.error(label + ': ' + detail);
+    if (!bannerEnabled) {
+      return;
+    }
     ensureBanner();
     var log = document.getElementById('debug-error-log');
     var entry = document.createElement('div');
