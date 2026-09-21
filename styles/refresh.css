@@ -428,6 +428,13 @@
   line-height: 1.35;
 }
 
+.rf-about, .rf-terms {
+  padding: 0 20px 24px 20px;
+}
+.rf-info {
+  padding-bottom: 24px;
+}
+
 .rf-section { margin-top: 20px; }
 .rf-section-title {
   font-family: 'Fraunces', Georgia, serif;
@@ -476,3 +483,279 @@
   border-radius: 14px;
   overflow: hidden;
 }
+
+/* ================================================================
+   Splash screen (index.html, shown before the app boots)
+   ================================================================ */
+
+body.loading {
+  background: #F7F5EE;
+  margin: 0;
+}
+.rf-splash {
+  max-width: none !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Public Sans', -apple-system, sans-serif;
+}
+.rf-splash-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.rf-splash-logo {
+  width: 96px !important;
+  height: 96px;
+  margin: 0 !important;
+  object-fit: contain;
+}
+.rf-splash-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #20241F;
+}
+.rf-splash-sponsor {
+  width: 130px !important;
+  margin: 4px 0 0 0 !important;
+  opacity: 0.8;
+}
+.rf-splash .loader {
+  margin-top: 26px;
+}
+.rf-splash .loader img {
+  width: 32px !important;
+}
+
+/* ================================================================
+   Shared building blocks: nav list (Info / Species Info) and
+   generic content sections (About / Credits / Species Terms)
+   ================================================================ */
+
+.rf-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 20px 0 20px;
+}
+.rf-nav-row {
+  display: flex !important;
+  align-items: center;
+  gap: 14px;
+  background: var(--rf-surface) !important;
+  border: 1px solid var(--rf-border) !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-decoration: none;
+}
+.rf-nav-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.rf-nav-icon svg {
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rf-nav-icon-teal { background: var(--rf-dragonfly-tint); color: var(--rf-dragonfly); }
+.rf-nav-icon-teal svg { stroke: var(--rf-dragonfly); }
+.rf-nav-icon-copper { background: var(--rf-damselfly-tint); color: var(--rf-damselfly); }
+.rf-nav-icon-copper svg { stroke: var(--rf-damselfly); }
+.rf-nav-label {
+  flex: 1;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--rf-text);
+}
+.rf-nav-chevron {
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--rf-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rf-logo-card {
+  margin: 20px 20px 0 20px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  padding: 20px 0;
+}
+.rf-logo-card .app-logo {
+  margin: 0 !important;
+  height: 110px !important;
+}
+
+.rf-sponsor {
+  margin: 24px 20px 4px 20px;
+  text-align: center;
+}
+.rf-sponsor-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rf-muted);
+  margin-bottom: 8px;
+}
+.rf-sponsor .sponsor-logo {
+  margin: 0 !important;
+  height: 90px !important;
+}
+
+/* .rf-section / .rf-section-title already defined above (species page);
+   reused as-is for About / Credits page content blocks. */
+
+.rf-body-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--rf-text-secondary);
+  margin: 0;
+}
+.rf-body-text + .rf-body-text { margin-top: 10px; }
+.rf-body-text b, .rf-body-text strong { color: var(--rf-text); }
+
+.rf-booklist {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 18px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--rf-text-secondary);
+}
+.rf-booklist li { margin-bottom: 6px; }
+.rf-booklist li:last-child { margin-bottom: 0; }
+
+.rf-people-list {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.rf-people-list li {
+  font-size: 13.5px;
+  color: var(--rf-text);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rf-border);
+}
+.rf-people-list li:last-child { border-bottom: none; }
+.rf-people-list i { color: var(--rf-text-secondary); font-style: italic; }
+
+.rf-credit-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.rf-credit-link-row {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--rf-text-secondary);
+}
+.rf-credit-link-row b { color: var(--rf-text); font-weight: 600; }
+
+.rf-name-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.rf-name-tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--rf-text-secondary);
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.rf-link-btn {
+  display: inline-block;
+  color: var(--rf-dragonfly-deep) !important;
+  background: var(--rf-dragonfly-tint);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.rf-version-pill {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--rf-muted);
+}
+
+.rf-sponsor-strip {
+  margin-top: 12px;
+  height: 70px !important;
+  width: auto !important;
+  max-width: 260px;
+  display: block;
+}
+
+/* Species Anatomy */
+.rf-anatomy {
+  padding: 16px 20px 0 20px;
+}
+.rf-anatomy-card {
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.rf-anatomy-card img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Species Terms (glossary) */
+.rf-glossary {
+  margin: 16px 20px 0 20px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.rf-term {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rf-border);
+}
+.rf-term:last-child { border-bottom: none; }
+.rf-term-name {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rf-text);
+  margin-bottom: 3px;
+}
+.rf-term-def {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--rf-text-secondary);
+  margin: 0;
+}
+.rf-term-def b { color: var(--rf-text); }
