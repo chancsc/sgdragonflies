@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Dragonflies of Singapore</title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+        minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <meta name="description" content="Dragonflies of Singapore is a mobile web application that helps you to identify SG's dragonflies.">
+  <meta name="keywords" content="Damselfly,Dragonfly,Reference,Guide,Map,Chart">
+  <meta name="author" content="Karolis Kazlauskis; Soon Chye">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SG Dragonflies">
+  <meta name="application-name" content="Dragonflies of Singapore">
+  <meta name="format-detection" content="telephone=no">
+
+  <!--FB-->
+  <meta property="og:title" content="Dragonflies of Singapore">
+  <meta property="og:site_name" content="Dragonflies of Singapore">
+  <meta property="og:url" content="http://dragonfly.naturefriend.com">
+  <meta property="og:description" content="App for Dragonflies of Singapore. Support both Android and iOS platforms.">
+  <meta property="og:image" content="http://dragonfly.naturefriend.com/images/fblogo.png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="315">
+
+  <!-- ICONS -->
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+  <link rel="shortcut icon" sizes="192x192" href="images/Icon-192.png">
+  <link rel="apple-touch-icon-precomposed" href="images/AppIcon60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/Icon-72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/Icon-76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/Icon@2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/Icon-72@2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/Icon-76@2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/Icon-60@3x.png">
+  <link rel="apple-touch-startup-image" href="images/startup.png">
+
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="styles/main.min.css"/>
+</head>
+
+<body class="loading">
+  <div class="loading">
+    <img src="images/app_logo.png" />
+    <img src="images/sponsor_logo.png" style="width: 70%"/>
+    <br/>
+    <div class="loader">
+      <img src="images/ajax-loader.gif" />
+      <div class="error"><!-- Error while loading --></div>
+      <noscript>
+        <style type="text/css">
+          .loader img {display:none;}
+        </style>
+        <div class="error">
+          Oh no! Looks like you don't have javascript enabled.
+        </div>
+      </noscript>
+    </div>
+  </div>
+
+  <script src="scripts/libs/require.min.js" data-main="scripts/main-built"></script>
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function (err) {
+          console.error('Service worker registration failed:', err);
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
