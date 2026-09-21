@@ -43,6 +43,10 @@
   <!-- CSS -->
   <link type="text/css" rel="stylesheet" href="styles/main.min.css"/>
 
+  <!-- Modern refresh: fonts + styles for the differences / list / species pages -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link type="text/css" rel="stylesheet" href="styles/refresh.css"/>
+
   <!-- Temporary: shows uncaught JS errors as an on-page banner for debugging on devices without devtools -->
   <script src="scripts/debug-errors.js"></script>
 </head>
@@ -67,6 +71,7 @@
   </div>
 
   <script src="scripts/libs/require.min.js" data-main="scripts/main-built"></script>
+  <script src="scripts/refresh.js"></script>
 
   <script>
     if ('serviceWorker' in navigator && location.protocol !== 'file:') {
