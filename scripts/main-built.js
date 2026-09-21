@@ -4234,10 +4234,6 @@ define('views/list',[
 
         template: app.templates.list_item,
 
-        events: {
-            'click img': 'showGallery'
-        },
-
         /**
          * Renders the individual list item representing the species.
          *
@@ -4246,11 +4242,6 @@ define('views/list',[
         render: function () {
             this.$el.html(this.template(this.model.attributes));
             return this;
-        },
-
-        showGallery: function (e) {
-            (new Gallery(this.model)).show(0);
-            e.preventDefault();
         }
     });
 
