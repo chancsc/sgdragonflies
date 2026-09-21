@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v10';
+var CACHE_VERSION = 'sgdragonfly-shell-v11';
 
 var PRECACHE_URLS = [
   './',
@@ -313,13 +313,15 @@ var PRECACHE_URLS = [
   './scripts/libs/require.js',
   './scripts/libs/require.min.js',
   './scripts/main-built.js',
+  './scripts/refresh.js',
   './scripts/templates.js',
   './styles/error.gif',
   './styles/icons.png',
   './styles/icons@2x.png',
   './styles/images/ajax-loader.gif',
   './styles/loader.gif',
-  './styles/main.min.css'
+  './styles/main.min.css',
+  './styles/refresh.css'
 ];
 
 self.addEventListener('install', function (event) {
