@@ -510,8 +510,8 @@ body.loading {
   gap: 12px;
 }
 .rf-splash-logo {
-  width: 96px !important;
-  height: 96px;
+  width: 190px !important;
+  height: auto !important;
   margin: 0 !important;
   object-fit: contain;
 }
@@ -595,11 +595,23 @@ body.loading {
   background: var(--rf-surface);
   border: 1px solid var(--rf-border);
   border-radius: 16px;
-  padding: 20px 0;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
-.rf-logo-card .app-logo {
-  margin: 0 !important;
-  height: 110px !important;
+.rf-logo-icon {
+  width: 200px;
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+.rf-logo-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--rf-text);
 }
 
 .rf-sponsor {
