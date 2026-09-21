@@ -326,24 +326,31 @@
       "black": 1
     },
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Soon Chye"
+    ],
     "common_name": "Black Velvetwing",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Dysphaea_dimidiata.jpg"
+    ],
     "habitat": "Forest streams",
     "profile_pic_author": "Keith Wilson",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
-      "brown": 1,
+      "brown": "",
       "grey": "",
       "yellow": "",
       "green": "",
       "stripe": "",
       "orange": "",
       "white": "",
-      "red": ""
+      "red": "",
+      "black": 1
     },
     "taxon": "Dysphaea dimidiata",
     "id": 9,
