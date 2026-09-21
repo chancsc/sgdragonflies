@@ -1,0 +1,761 @@
+/* ============================================================
+   SG Dragonflies — Modern Refresh
+   Scoped to: Differences page (.rf-diff), Species list (.rf-list),
+   Species profile (.rf-species). Everything here is namespaced
+   under .rf / .rf-header so no other page is affected.
+   ============================================================ */
+
+.rf, .rf-header, .rf-gallery-pill, .rf-terms-link {
+  --rf-bg: #F7F5EE;
+  --rf-surface: #FFFFFF;
+  --rf-surface-2: #FBFAF5;
+  --rf-text: #20241F;
+  --rf-text-secondary: #5B6158;
+  --rf-border: #E3DFD2;
+  --rf-muted: #8A8F84;
+  --rf-dragonfly: #1F7A6C;
+  --rf-dragonfly-tint: #E4F1EC;
+  --rf-dragonfly-deep: #14453B;
+  --rf-damselfly: #B5622F;
+  --rf-damselfly-tint: #F7E9DD;
+  --rf-damselfly-deep: #7A3E1C;
+}
+
+.rf {
+  font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--rf-text);
+  background: var(--rf-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.rf-disp {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* ---------- Fixed header (Back / title / Favourite / Filter) ---------- */
+
+.rf-header.ui-header-fixed,
+.rf-header.ui-header-fixed.ui-bar-a {
+  background-color: var(--rf-surface) !important;
+  border-bottom: 1px solid var(--rf-border) !important;
+  border-top: 0 !important;
+}
+.rf-header .ui-title,
+.rf-header h1 {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-weight: 600 !important;
+  color: var(--rf-text) !important;
+  text-shadow: none !important;
+}
+.rf-header .ui-btn {
+  background: var(--rf-surface) !important;
+  border: 1px solid var(--rf-border) !important;
+  color: var(--rf-text) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* ================================================================
+   Differences page — segmented toggle (Both / Dragonfly / Damselfly)
+   ================================================================ */
+
+.rf-diff {
+  padding: 16px 20px 28px 20px;
+}
+
+.rf-note {
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.rf-note p {
+  margin: 0;
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--rf-text-secondary);
+  line-height: 1.4;
+}
+
+.rf-segmented {
+  display: flex;
+  gap: 4px;
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+.rf-seg-btn {
+  flex: 1;
+  border: none !important;
+  background: transparent !important;
+  color: var(--rf-text-secondary) !important;
+  font-family: 'Public Sans', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  cursor: pointer;
+}
+.rf-segmented .rf-seg-btn.is-active {
+  background: var(--rf-text) !important;
+  color: #FFFFFF !important;
+}
+
+.rf-diff-panel {
+  display: none;
+}
+.rf-diff-panel.is-active {
+  display: block;
+}
+
+.rf-diff-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.rf-diff-row:last-child { margin-bottom: 0; }
+.rf-diff-icon {
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--rf-muted);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rf-diff-label {
+  flex: 1;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--rf-text);
+}
+.rf-chip {
+  font-size: 11.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+.rf-chip-dragonfly {
+  color: var(--rf-dragonfly-deep);
+  background: var(--rf-dragonfly-tint);
+}
+.rf-chip-damselfly {
+  color: var(--rf-damselfly-deep);
+  background: var(--rf-damselfly-tint);
+}
+
+.rf-fact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.rf-fact-card:last-child { margin-bottom: 0; }
+.rf-fact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.rf-fact-icon svg {
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rf-fact-icon-dragonfly {
+  background: var(--rf-dragonfly-tint);
+  color: var(--rf-dragonfly);
+}
+.rf-fact-icon-dragonfly svg { stroke: var(--rf-dragonfly); }
+.rf-fact-icon-damselfly {
+  background: var(--rf-damselfly-tint);
+  color: var(--rf-damselfly);
+}
+.rf-fact-icon-damselfly svg { stroke: var(--rf-damselfly); }
+.rf-fact-title {
+  font-size: 12px;
+  color: var(--rf-text-secondary);
+  margin-bottom: 2px;
+}
+.rf-fact-value {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+.rf-fact-value-dragonfly { color: var(--rf-dragonfly-deep); }
+.rf-fact-value-damselfly { color: var(--rf-damselfly-deep); }
+
+/* ================================================================
+   Species list — Photo Grid
+   ================================================================ */
+
+.rf-list {
+  padding: 12px 16px 16px 16px !important;
+  background: var(--rf-bg);
+}
+.rf-list .listview-full,
+.rf-list ul.ui-listview {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 12px;
+  background: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+}
+.rf-list ul.ui-listview li,
+.rf-list ul.ui-listview li.ui-li-has-thumb,
+.rf-list ul.ui-listview li.ui-first-child,
+.rf-list ul.ui-listview li.ui-last-child {
+  display: block !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.rf-card {
+  display: block !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+.rf-card:after { display: none !important; content: none !important; }
+
+.rf-card-media {
+  display: block;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--rf-border);
+}
+.rf-card-media img {
+  width: 100% !important;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  margin: 0 !important;
+}
+
+.rf-fav-badge {
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  align-items: center;
+  justify-content: center;
+}
+.rf-fav-badge svg {
+  fill: #C9A227;
+  stroke: #C9A227;
+}
+.rf-card.favourite {
+  background-image: none !important;
+}
+.rf-card.favourite .rf-fav-badge {
+  display: flex;
+}
+
+.rf-card-body {
+  display: block;
+  padding: 8px 2px 0 2px;
+}
+.rf-name {
+  display: block !important;
+  font-family: 'Public Sans', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--rf-text) !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+.rf-sub {
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  color: var(--rf-text-secondary) !important;
+  margin: 2px 0 0 0 !important;
+  white-space: normal !important;
+}
+
+/* ================================================================
+   Species profile — Refined Classic
+   ================================================================ */
+
+.rf-species { padding: 0 0 24px 0; }
+
+.rf-gallery {
+  position: relative;
+}
+.rf-gallery .images { background: #3C3C3C; }
+.rf-gallery .progress {
+  background: transparent !important;
+  padding-left: 0 !important;
+  bottom: 12px !important;
+}
+.rf-gallery .progress .circle {
+  background: rgba(255,255,255,0.4) !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.rf-gallery .progress .circle.circle-full {
+  background: #FFFFFF !important;
+}
+
+.rf-gallery-pill {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: calc(100% - 40px);
+  margin: -22px auto 0 auto !important;
+  position: relative;
+  z-index: 2;
+  background: var(--rf-surface) !important;
+  border: 1px solid var(--rf-border) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  padding: 10px 0 !important;
+  font-family: 'Public Sans', sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  color: var(--rf-text) !important;
+}
+.rf-gallery-pill svg {
+  fill: none;
+  stroke: var(--rf-text);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rf-content {
+  padding: 18px 20px 0 20px;
+}
+
+.rf-name-block {
+  margin-bottom: 4px;
+  overflow: hidden; /* clear the legacy .common-name/.taxon floats below */
+}
+.rf-common-name {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+  color: var(--rf-text) !important;
+  text-shadow: none !important;
+}
+.rf-taxon {
+  float: none !important;
+  width: auto !important;
+  display: block !important;
+  margin: 2px 0 0 0 !important;
+  font-size: 13.5px !important;
+  font-style: italic !important;
+  color: var(--rf-text-secondary) !important;
+  text-shadow: none !important;
+}
+
+.rf-facts {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.rf-fact {
+  flex: 1;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.rf-fact-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--rf-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.rf-fact-label svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.rf-fact-text {
+  font-size: 13px;
+  color: var(--rf-text);
+  line-height: 1.35;
+}
+
+.rf-about, .rf-terms {
+  padding: 0 20px 24px 20px;
+}
+.rf-info {
+  padding-bottom: 24px;
+}
+
+.rf-section { margin-top: 20px; }
+.rf-section-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.rf-description {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--rf-text-secondary);
+  margin: 0;
+}
+.rf-confusion-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+.rf-confusion-text a {
+  display: inline-block;
+  color: var(--rf-dragonfly-deep);
+  background: var(--rf-dragonfly-tint);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin: 0 4px 4px 0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rf-terms-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 12px 0;
+  border: 1px solid var(--rf-border);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--rf-text-secondary);
+  text-decoration: none;
+}
+
+#species-map {
+  margin-top: 16px;
+  border: 1px solid var(--rf-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* ================================================================
+   Splash screen (index.html, shown before the app boots)
+   ================================================================ */
+
+body.loading {
+  background: #F7F5EE;
+  margin: 0;
+}
+.rf-splash {
+  max-width: none !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Public Sans', -apple-system, sans-serif;
+}
+.rf-splash-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.rf-splash-logo {
+  width: 96px !important;
+  height: 96px;
+  margin: 0 !important;
+  object-fit: contain;
+}
+.rf-splash-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #20241F;
+}
+.rf-splash-sponsor {
+  width: 130px !important;
+  margin: 4px 0 0 0 !important;
+  opacity: 0.8;
+}
+.rf-splash .loader {
+  margin-top: 26px;
+}
+.rf-splash .loader img {
+  width: 32px !important;
+}
+
+/* ================================================================
+   Shared building blocks: nav list (Info / Species Info) and
+   generic content sections (About / Credits / Species Terms)
+   ================================================================ */
+
+.rf-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 20px 0 20px;
+}
+.rf-nav-row {
+  display: flex !important;
+  align-items: center;
+  gap: 14px;
+  background: var(--rf-surface) !important;
+  border: 1px solid var(--rf-border) !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-decoration: none;
+}
+.rf-nav-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.rf-nav-icon svg {
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rf-nav-icon-teal { background: var(--rf-dragonfly-tint); color: var(--rf-dragonfly); }
+.rf-nav-icon-teal svg { stroke: var(--rf-dragonfly); }
+.rf-nav-icon-copper { background: var(--rf-damselfly-tint); color: var(--rf-damselfly); }
+.rf-nav-icon-copper svg { stroke: var(--rf-damselfly); }
+.rf-nav-label {
+  flex: 1;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--rf-text);
+}
+.rf-nav-chevron {
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--rf-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rf-logo-card {
+  margin: 20px 20px 0 20px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  padding: 20px 0;
+}
+.rf-logo-card .app-logo {
+  margin: 0 !important;
+  height: 110px !important;
+}
+
+.rf-sponsor {
+  margin: 24px 20px 4px 20px;
+  text-align: center;
+}
+.rf-sponsor-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rf-muted);
+  margin-bottom: 8px;
+}
+.rf-sponsor .sponsor-logo {
+  margin: 0 !important;
+  height: 90px !important;
+}
+
+/* .rf-section / .rf-section-title already defined above (species page);
+   reused as-is for About / Credits page content blocks. */
+
+.rf-body-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--rf-text-secondary);
+  margin: 0;
+}
+.rf-body-text + .rf-body-text { margin-top: 10px; }
+.rf-body-text b, .rf-body-text strong { color: var(--rf-text); }
+
+.rf-booklist {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 18px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--rf-text-secondary);
+}
+.rf-booklist li { margin-bottom: 6px; }
+.rf-booklist li:last-child { margin-bottom: 0; }
+
+.rf-people-list {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.rf-people-list li {
+  font-size: 13.5px;
+  color: var(--rf-text);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rf-border);
+}
+.rf-people-list li:last-child { border-bottom: none; }
+.rf-people-list i { color: var(--rf-text-secondary); font-style: italic; }
+
+.rf-credit-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.rf-credit-link-row {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--rf-text-secondary);
+}
+.rf-credit-link-row b { color: var(--rf-text); font-weight: 600; }
+
+.rf-name-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.rf-name-tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--rf-text-secondary);
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.rf-link-btn {
+  display: inline-block;
+  color: var(--rf-dragonfly-deep) !important;
+  background: var(--rf-dragonfly-tint);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.rf-version-pill {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--rf-surface-2);
+  border: 1px solid var(--rf-border);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--rf-muted);
+}
+
+.rf-sponsor-strip {
+  margin-top: 12px;
+  height: 70px !important;
+  width: auto !important;
+  max-width: 260px;
+  display: block;
+}
+
+/* Species Anatomy */
+.rf-anatomy {
+  padding: 16px 20px 0 20px;
+}
+.rf-anatomy-card {
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.rf-anatomy-card img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Species Terms (glossary) */
+.rf-glossary {
+  margin: 16px 20px 0 20px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.rf-term {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rf-border);
+}
+.rf-term:last-child { border-bottom: none; }
+.rf-term-name {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rf-text);
+  margin-bottom: 3px;
+}
+.rf-term-def {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--rf-text-secondary);
+  margin: 0;
+}
+.rf-term-def b { color: var(--rf-text); }
