@@ -372,14 +372,31 @@
     saveBtn.id = 'save-btn';
     saveBtn.textContent = 'Save';
     saveBtn.addEventListener('click', function () { save(rec); });
+    var cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.id = 'cancel-btn';
+    cancelBtn.textContent = 'Cancel';
+    cancelBtn.addEventListener('click', function () { cancelEdit(); });
     var deleteBtn = document.createElement('button');
     deleteBtn.type = 'button';
     deleteBtn.id = 'delete-btn';
     deleteBtn.textContent = 'Delete species';
     deleteBtn.addEventListener('click', function () { deleteSelected(); });
+    var saveMsg = document.createElement('span');
+    saveMsg.id = 'save-msg';
     actionRow.appendChild(saveBtn);
+    actionRow.appendChild(cancelBtn);
     actionRow.appendChild(deleteBtn);
+    actionRow.appendChild(saveMsg);
     formEl.appendChild(actionRow);
+  }
+
+  function showSaveMsg(text, isError) {
+    var el = document.getElementById('save-msg');
+    if (!el) return;
+    el.textContent = text;
+    el.style.color = isError ? 'var(--danger)' : 'var(--accent-dark)';
+    if (text) setTimeout(function () { if (el.textContent === text) el.textContent = ''; }, 3000);
   }
 
   function save(rec) {
@@ -398,8 +415,31 @@
       setStatus('Saved.');
       return loadSpecies().then(function () {
         selectIndex(isNew ? res.index : selectedIndex);
+        showSaveMsg('✓ Saved');
       });
-    }).catch(function (e) { alert('Save failed: ' + e.message); });
+    }).catch(function (e) {
+      showSaveMsg('Save failed: ' + e.message, true);
+      alert('Save failed: ' + e.message);
+    });
+  }
+
+  function cancelEdit() {
+    var idx = selectedIndex;
+    if (idx === null || idx === undefined) {
+      // Unsaved new-species draft - just discard it.
+      selectedIndex = null;
+      formEl.hidden = true;
+      emptyEl.hidden = false;
+      renderList();
+      return;
+    }
+    // Re-fetch from the server to discard any unsaved edits (the record
+    // in memory is mutated live as the user types, but nothing is written
+    // to disk until Save is clicked).
+    loadSpecies().then(function () {
+      selectIndex(idx);
+      setStatus('Changes discarded.');
+    });
   }
 
   function deleteSelected() {
