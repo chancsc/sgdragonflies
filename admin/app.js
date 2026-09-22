@@ -144,11 +144,32 @@
     });
   }
 
+  function usedPhotoNumbers(base) {
+    var pattern = new RegExp('^' + base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '_(\\d+)\\.', 'i');
+    var used = {};
+    species.forEach(function (rec) {
+      [rec.profile_pic].concat(rec.gallery || []).forEach(function (p) {
+        if (!p) return;
+        var m = p.split('/').pop().match(pattern);
+        if (m) used[parseInt(m[1], 10)] = true;
+      });
+    });
+    return used;
+  }
+
   function suggestFilename(taxon, author, original) {
     var ext = (original.split('.').pop() || 'jpg').toLowerCase();
     var base = (taxon || 'species').trim().replace(/\s+/g, '_');
     if (author) base += '_' + author.trim().replace(/\s+/g, '_');
-    return base.replace(/[^A-Za-z0-9._\-]/g, '') + '.' + ext;
+    base = base.replace(/[^A-Za-z0-9._\-]/g, '');
+
+    // Running number from 1, so two different photos for the same
+    // species/author never end up suggested with the same filename.
+    var used = usedPhotoNumbers(base);
+    var n = 1;
+    while (used[n]) n++;
+
+    return base + '_' + n + '.' + ext;
   }
 
   function photoUploadWidget(rec, currentPath, authorHint, onUploaded) {
