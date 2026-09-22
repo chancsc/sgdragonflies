@@ -3594,7 +3594,7 @@
     "type": "anisoptera"
   },
   {
-    "profile_pic": "images/unknown.png",
+    "profile_pic": "images/Neurothemis_disparilis_1.jpg",
     "description": "The species is very rare in Singapore. The species has distinct dark brown marking on the base on all wings, hind margin of hindwing has clear border.",
     "family": "Libellulidae",
     "map": "",
@@ -3602,14 +3602,23 @@
       "black": ""
     },
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "marcel-silvius",
+      "marcel-silvius"
+    ],
     "common_name": "Rare Parasol",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "Female",
+      ""
+    ],
+    "gallery": [
+      "images/Neurothemis_disparilis_2.jpg",
+      "images/Neurothemis_disparilis_3.jpeg"
+    ],
     "habitat": "Not known",
-    "profile_pic_author": "",
-    "profile_pic_sex": "",
+    "profile_pic_author": "marcel-silvius",
+    "profile_pic_sex": "Male",
     "colour": {
       "blue": "",
       "brown": 1,
@@ -3619,7 +3628,7 @@
       "stripe": "",
       "orange": "",
       "white": "",
-      "red": ""
+      "red": 1
     },
     "taxon": "Neurothemis disparilis",
     "id": 96,

@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v25';
+var CACHE_VERSION = 'sgdragonfly-shell-v26';
 
 var PRECACHE_URLS = [
   './',
@@ -210,6 +210,9 @@ var PRECACHE_URLS = [
   './images/Neurobasis_chinensis_Charles_Lam.jpg',
   './images/Neurobasis_chinensis_Jkadavoor_Jee.jpg',
   './images/Neurobasis_chinensis_Pavel_Kirillov.jpg',
+  './images/Neurothemis_disparilis_1.jpg',
+  './images/Neurothemis_disparilis_2.jpg',
+  './images/Neurothemis_disparilis_3.jpeg',
   './images/Neurothemis_fluctuans_csc.jpg',
   './images/Neurothemis_fluctuans_csc2.jpg',
   './images/Oligoaeschna_amata_csc.jpg',
