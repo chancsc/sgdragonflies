@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v22';
+var CACHE_VERSION = 'sgdragonfly-shell-v23';
 
 var PRECACHE_URLS = [
   './',
@@ -20,6 +20,7 @@ var PRECACHE_URLS = [
   './images/Acisoma_panorpoides_Drriss_&_Marrionn.jpg',
   './images/Acisoma_panorpoides_Jkadavoor_Jee1.jpg',
   './images/Acisoma_panorpoides_Jkadavoor_Jee2.jpg',
+  './images/Acrogomphus_malayanus_1.jpeg',
   './images/Aethriamanta_aethra_leonard_tan_m.jpg',
   './images/Aethriamanta_aethra_leonard_tan_m_young.jpg',
   './images/Aethriamanta_brevipennis_Nikhil_Prabhakar.jpg',
@@ -151,6 +152,11 @@ var PRECACHE_URLS = [
   './images/Ictinogomphus_decoratus_melaenops_gancw1.jpg',
   './images/Ictinogomphus_decoratus_melaenops_gancw2.jpg',
   './images/Idionyx_yolanda_leonard_tan.jpg',
+  './images/Indothemis_carnatica_1.jpg',
+  './images/Indothemis_carnatica_2.jpeg',
+  './images/Indothemis_carnatica_3.jpeg',
+  './images/Indothemis_carnatica_4.jpg',
+  './images/Indothemis_carnatica_Lumin_Ong_1.jpeg',
   './images/Indothemis_limbata_Anthony_Quek.jpg',
   './images/Indothemis_limbata_Leonard_Tan.jpg',
   './images/Ischnura_senegalensis_H.K.Tang.jpg',

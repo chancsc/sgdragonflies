@@ -5018,23 +5018,25 @@
     "gallery_sex": [],
     "gallery": [],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "weishou",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
       "brown": "",
       "grey": "",
-      "yellow": "",
+      "yellow": 1,
       "green": "",
       "stripe": "",
       "orange": "",
       "white": "",
-      "red": ""
+      "red": "",
+      "black": 1
     },
     "taxon": "Acrogomphus malayanus",
     "id": 134,
     "distribution": "",
-    "type": "anisoptera"
+    "type": "anisoptera",
+    "profile_pic": "images/Acrogomphus_malayanus_1.jpeg"
   },
   {
     "description": "",
@@ -5070,14 +5072,26 @@
     "family": "Libellulidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Lumin Ong",
+      "Lumin Ong",
+      "Budak"
+    ],
     "common_name": "White-tipped Demon",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "Female",
+      "Female",
+      ""
+    ],
+    "gallery": [
+      "images/Indothemis_carnatica_2.jpeg",
+      "images/Indothemis_carnatica_3.jpeg",
+      "images/Indothemis_carnatica_4.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
-    "profile_pic_sex": "",
+    "profile_pic_author": "kiyi",
+    "profile_pic_sex": "Male",
     "colour": {
       "blue": "",
       "brown": "",
@@ -5092,7 +5106,8 @@
     "taxon": "Indothemis carnatica",
     "id": 136,
     "distribution": "",
-    "type": "anisoptera"
+    "type": "anisoptera",
+    "profile_pic": "images/Indothemis_carnatica_1.jpg"
   },
   {
     "description": "",
