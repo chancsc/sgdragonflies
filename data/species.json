@@ -5114,16 +5114,22 @@
     "family": "Coenagrionidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Zicky"
+    ],
     "common_name": "Bornean Slim",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Aciagrion_borneense_2.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Budak",
     "profile_pic_sex": "",
     "colour": {
-      "blue": "",
+      "blue": 1,
       "brown": "",
       "grey": "",
       "yellow": "",
@@ -5136,27 +5142,34 @@
     "taxon": "Aciagrion borneense",
     "id": 137,
     "distribution": "",
-    "type": "zygoptera"
+    "type": "zygoptera",
+    "profile_pic": "images/Aciagrion_borneense_1.jpg"
   },
   {
     "description": "",
     "family": "Libellulidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Monique Cordeiro"
+    ],
     "common_name": "Yellow-tinted Elf",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Tetrathemis_flavescens_2.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Monique Cordeiro",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
       "brown": "",
       "grey": "",
-      "yellow": "",
-      "green": "",
+      "yellow": 1,
+      "green": 1,
       "stripe": "",
       "orange": "",
       "white": "",
@@ -5165,6 +5178,7 @@
     "taxon": "Tetrathemis flavescens",
     "id": 138,
     "distribution": "",
-    "type": "anisoptera"
+    "type": "anisoptera",
+    "profile_pic": "images/Tetrathemis_flavescens_1.jpg"
   }
 ]

@@ -11,12 +11,14 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v24';
+var CACHE_VERSION = 'sgdragonfly-shell-v25';
 
 var PRECACHE_URLS = [
   './',
   './LICENSE',
   './README.md',
+  './images/Aciagrion_borneense_1.jpg',
+  './images/Aciagrion_borneense_2.jpg',
   './images/Acisoma_panorpoides_Drriss_&_Marrionn.jpg',
   './images/Acisoma_panorpoides_Jkadavoor_Jee1.jpg',
   './images/Acisoma_panorpoides_Jkadavoor_Jee2.jpg',
@@ -290,6 +292,8 @@ var PRECACHE_URLS = [
   './images/Tetracanthagyna_plagiata_keith_wilson_f1.jpg',
   './images/Tetracanthagyna_plagiata_keith_wilson_f2.jpg',
   './images/Tetracanthagyna_plagiata_ronnie_ang_m.jpg',
+  './images/Tetrathemis_flavescens_1.jpg',
+  './images/Tetrathemis_flavescens_2.jpg',
   './images/Tetrathemis_irregularis_keith_wilson.jpg',
   './images/Tetrathemis_irregularis_keith_wilson_f.jpg',
   './images/Tholymis_tilIarga_Troup_Dresser_f.jpg',
