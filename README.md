@@ -1,7 +1,7 @@
 # Dragonflies of Singapore
 
 A mobile-first field guide for identifying dragonflies and damselflies recorded in
-Singapore — 136 species (51 damselflies, 85 dragonflies), each with photos, a
+Singapore — 138 species (52 damselflies, 86 dragonflies), each with photos, a
 description, habitat, distribution, and similar/confusable species.
 
 **Live app:** https://chancsc.github.io/sgdragonflies/
