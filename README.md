@@ -56,9 +56,10 @@ visual refresh in plain HTML/CSS/JS, deliberately **without** adding a framework
 
 - `manifest.json` — home-screen install metadata
 - `sw.js` — a hand-maintained Service Worker that precaches the entire app
-  shell plus all ~290 species photos for offline use. This replaces the
-  original HTML5 AppCache approach (`appcache.manifest`, kept only for
-  historical reference — no longer used by any browser)
+  shell plus the 260 species photos referenced in `data/species.json`, for
+  offline use. This replaces the original HTML5 AppCache approach
+  (`appcache.manifest`, kept only for historical reference — no longer used
+  by any browser)
 
 ### Content pipeline
 
@@ -109,7 +110,7 @@ data/
   species.json           Source of truth for all species content
   flight.json, probability.json   Inherited from the original build; currently unused/empty
 admin/                   Local-only content editor (see admin/README.md)
-images/                  ~290 species photos + app icons/logos
+images/                  260 species photos + app icons/logos (292 files total)
 appcache.html, appcache.manifest   Legacy, superseded by sw.js — kept for reference
 ```
 
