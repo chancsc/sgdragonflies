@@ -335,10 +335,10 @@
 }
 .rf-gallery-credit {
   position: absolute;
-  left: 12px;
-  right: 58%;
+  right: 12px;
   bottom: 12px;
   z-index: 3;
+  max-width: 65%;
   color: rgba(255,255,255,0.92);
   font-family: 'Public Sans', sans-serif;
   font-size: 11px;
