@@ -4,6 +4,8 @@ photos (images/). Zero external dependencies - Python 3 stdlib only.
 
 Usage:
     python3 admin/server.py [port] [--tunnel]
+    python3 admin/server.py stop
+    python3 admin/server.py restart [port] [--tunnel]
 
 Then open http://127.0.0.1:8800 in a browser. Binds to 127.0.0.1 only -
 not reachable from other machines on the network.
@@ -14,14 +16,22 @@ external access. Requires the `cloudflared` binary. The tunnel (and the
 URL) go away when the server is stopped - anyone with the URL in the
 meantime has full admin access (no login), so only share it with people
 you trust and only while you're actively using it.
+
+`stop` terminates the instance tracked in admin/server.pid (and its
+tunnel, if any). `restart` does that, then starts a fresh instance in
+the background, logging to admin/server.log - useful after pulling
+changes to server.py/app.js, or to recover one left running in the
+background.
 """
 import base64
 import json
 import mimetypes
+import os
 import re
 import signal
 import subprocess
 import sys
+import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote
@@ -30,9 +40,15 @@ ROOT = Path(__file__).resolve().parent.parent
 ADMIN_DIR = ROOT / "admin"
 IMAGES_DIR = ROOT / "images"
 SPECIES_JSON = ROOT / "data" / "species.json"
+SERVER_LOG = ADMIN_DIR / "server.log"
+PID_FILE = ADMIN_DIR / "server.pid"
 
-TUNNEL = "--tunnel" in sys.argv
-_port_args = [a for a in sys.argv[1:] if a != "--tunnel"]
+_argv = sys.argv[1:]
+COMMAND = _argv[0] if _argv and _argv[0] in ("stop", "restart") else None
+_rest = _argv[1:] if COMMAND else _argv
+
+TUNNEL = "--tunnel" in _rest
+_port_args = [a for a in _rest if a != "--tunnel"]
 PORT = int(_port_args[0]) if _port_args else 8800
 
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9._\-&@]+\.(jpg|jpeg|png|gif|svg|webp)$", re.I)
@@ -203,8 +219,110 @@ def start_tunnel(port):
     return proc
 
 
+def _read_pid_file():
+    """The PID in admin/server.pid, if it's still a live process. Cleans up
+    (and returns None for) a stale file left by a process that's gone."""
+    if not PID_FILE.exists():
+        return None
+    try:
+        pid = int(PID_FILE.read_text(encoding="utf-8").strip())
+    except (ValueError, OSError):
+        PID_FILE.unlink(missing_ok=True)
+        return None
+    try:
+        os.kill(pid, 0)
+    except (ProcessLookupError, PermissionError):
+        PID_FILE.unlink(missing_ok=True)
+        return None
+    return pid
+
+
+def _child_pids(pid, pattern):
+    try:
+        out = subprocess.run(
+            ["pgrep", "-P", str(pid), "-f", pattern], capture_output=True, text=True
+        )
+    except FileNotFoundError:
+        return []
+    return [int(p) for p in out.stdout.split() if p.isdigit()]
+
+
+def stop_running():
+    """Stop the instance tracked in admin/server.pid (and its tunnel)."""
+    pid = _read_pid_file()
+    if pid is None:
+        print("Admin server is not running.")
+        return
+
+    tunnel_pids = _child_pids(pid, "cloudflared")
+
+    print(f"Stopping admin server (pid {pid})...")
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+    else:
+        for _ in range(10):
+            time.sleep(0.5)
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                break
+        else:
+            print(f"  pid {pid} didn't stop in time, forcing...")
+            try:
+                os.kill(pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+
+    for tpid in tunnel_pids:
+        try:
+            os.kill(tpid, signal.SIGTERM)
+        except ProcessLookupError:
+            pass
+
+    PID_FILE.unlink(missing_ok=True)
+    print("Done.")
+
+
+def restart_running(extra_args):
+    """Stop any running instance, then start a fresh one in the background."""
+    stop_running()
+
+    print("Starting admin server...")
+    with open(SERVER_LOG, "wb") as log:
+        subprocess.Popen(
+            [sys.executable, str(Path(__file__).resolve())] + extra_args,
+            stdout=log,
+            stderr=subprocess.STDOUT,
+            stdin=subprocess.DEVNULL,
+            start_new_session=True,
+        )
+
+    for _ in range(10):
+        time.sleep(0.5)
+        pid = _read_pid_file()
+        if pid is not None:
+            print(f"Started (pid {pid}). Logs: {SERVER_LOG}")
+            tail = SERVER_LOG.read_text(encoding="utf-8", errors="replace").splitlines()[-5:]
+            print("\n".join(tail))
+            return
+
+    print(f"Failed to start - check {SERVER_LOG}", file=sys.stderr)
+    sys.exit(1)
+
+
 if __name__ == "__main__":
+    if COMMAND == "stop":
+        stop_running()
+        sys.exit(0)
+
+    if COMMAND == "restart":
+        restart_running(_rest)
+        sys.exit(0)
+
     server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+    PID_FILE.write_text(str(os.getpid()), encoding="utf-8")
     print(f"Admin server running at http://127.0.0.1:{PORT}  (Ctrl+C to stop)")
 
     tunnel_proc = start_tunnel(PORT) if TUNNEL else None
@@ -223,3 +341,4 @@ if __name__ == "__main__":
     finally:
         if tunnel_proc:
             tunnel_proc.terminate()
+        PID_FILE.unlink(missing_ok=True)
