@@ -15,6 +15,22 @@ reachable from the network). Pick a species on the left to edit it, or
 Changes save immediately to `data/species.json` — there's no separate
 "draft" state.
 
+### Temporary external access
+
+To let someone else reach the admin UI (e.g. for remote content editing),
+start it with `--tunnel`:
+
+```
+python3 admin/server.py --tunnel
+```
+
+This opens a Cloudflare quick tunnel (requires the `cloudflared` binary)
+and prints a random `https://<random>.trycloudflare.com` URL that forwards
+to your local server. The tunnel closes and the URL stops working as soon
+as you stop the server (Ctrl+C). There's no login on the admin server, so
+anyone with that URL while it's running has full edit access — only share
+it with people you trust, and only for as long as you need.
+
 ## Publish
 
 After you're done editing:

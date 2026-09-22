@@ -3,15 +3,24 @@
 photos (images/). Zero external dependencies - Python 3 stdlib only.
 
 Usage:
-    python3 admin/server.py [port]
+    python3 admin/server.py [port] [--tunnel]
 
 Then open http://127.0.0.1:8800 in a browser. Binds to 127.0.0.1 only -
 not reachable from other machines on the network.
+
+Pass --tunnel to also open a temporary Cloudflare quick tunnel, giving you
+a random *.trycloudflare.com URL that forwards to the local server for
+external access. Requires the `cloudflared` binary. The tunnel (and the
+URL) go away when the server is stopped - anyone with the URL in the
+meantime has full admin access (no login), so only share it with people
+you trust and only while you're actively using it.
 """
 import base64
 import json
 import mimetypes
 import re
+import signal
+import subprocess
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -22,7 +31,9 @@ ADMIN_DIR = ROOT / "admin"
 IMAGES_DIR = ROOT / "images"
 SPECIES_JSON = ROOT / "data" / "species.json"
 
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8800
+TUNNEL = "--tunnel" in sys.argv
+_port_args = [a for a in sys.argv[1:] if a != "--tunnel"]
+PORT = int(_port_args[0]) if _port_args else 8800
 
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9._\-&@]+\.(jpg|jpeg|png|gif|svg|webp)$", re.I)
 
@@ -146,10 +157,57 @@ class Handler(BaseHTTPRequestHandler):
         self._send_json({"ok": True})
 
 
+def start_tunnel(port):
+    """Launch a Cloudflare quick tunnel pointing at the local server and
+    print its public URL once cloudflared reports it. Returns the
+    subprocess so the caller can terminate it on shutdown."""
+    import re as _re
+    import threading
+
+    try:
+        proc = subprocess.Popen(
+            ["cloudflared", "tunnel", "--url", f"http://127.0.0.1:{port}", "--no-autoupdate"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+        )
+    except FileNotFoundError:
+        print("cloudflared not found - install it or drop --tunnel", file=sys.stderr)
+        return None
+
+    url_pattern = _re.compile(r"https://[a-z0-9-]+\.trycloudflare\.com")
+    found = threading.Event()
+
+    def watch():
+        for line in proc.stdout:
+            if not found.is_set():
+                m = url_pattern.search(line)
+                if m:
+                    print(f"Temporary external URL: {m.group(0)}  (anyone with this link has full admin access - share carefully, stops working when you Ctrl+C)")
+                    found.set()
+
+    threading.Thread(target=watch, daemon=True).start()
+    return proc
+
+
 if __name__ == "__main__":
     server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     print(f"Admin server running at http://127.0.0.1:{PORT}  (Ctrl+C to stop)")
+
+    tunnel_proc = start_tunnel(PORT) if TUNNEL else None
+    if TUNNEL and tunnel_proc:
+        print("Starting Cloudflare tunnel for temporary external access...")
+
+    def _handle_sigterm(signum, frame):
+        raise KeyboardInterrupt
+
+    signal.signal(signal.SIGTERM, _handle_sigterm)
+
     try:
         server.serve_forever()
     except KeyboardInterrupt:
         pass
+    finally:
+        if tunnel_proc:
+            tunnel_proc.terminate()
