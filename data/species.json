@@ -4402,11 +4402,11 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Rhyothemis pygmaea",
+    "taxon": "Rhyothemis fulgens",
     "id": 114,
     "distribution": "Sundaland, Sulawesi, Maluku and New Guinea",
     "type": "anisoptera",
-    "sort_order": 114
+    "sort_order": 111.5
   },
   {
     "profile_pic": "images/Rhyothemis_triangularis_Jerry_Hsu.jpg",
@@ -4520,7 +4520,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Tetrathemis irregularis",
+    "taxon": "Tetrathemis hyalina",
     "id": 117,
     "distribution": "Widespread in Sundaland, southern Indochina, Philipines, tropical Australia",
     "type": "anisoptera",
