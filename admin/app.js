@@ -64,10 +64,6 @@
       row.className = 'species-row' + (idx === selectedIndex ? ' selected' : '');
       row.dataset.index = idx;
 
-      var img = document.createElement('img');
-      img.src = rec.profile_pic ? '/' + rec.profile_pic : '';
-      img.onerror = function () { this.style.visibility = 'hidden'; };
-
       var names = document.createElement('div');
       names.className = 'names';
       var common = document.createElement('div');
@@ -79,7 +75,6 @@
       names.appendChild(common);
       names.appendChild(taxonDiv);
 
-      row.appendChild(img);
       row.appendChild(names);
 
       if (rec.general === 'TRUE' || rec.general === true) {
