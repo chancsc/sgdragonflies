@@ -11,6 +11,7 @@
   var emptyEl = document.getElementById('empty-state');
   var statusEl = document.getElementById('status-line');
   var addBtn = document.getElementById('add-btn');
+  var publishBtn = document.getElementById('publish-btn');
 
   function setStatus(text) {
     statusEl.textContent = text;
@@ -459,6 +460,35 @@
     selectedIndex = null;
     renderList();
     renderForm(blankRecord());
+  });
+
+  publishBtn.addEventListener('click', function () {
+    if (!confirm('This builds the site data and pushes all saved changes to the live site (GitHub Pages redeploys within about a minute). Continue?')) return;
+    var message = prompt('Commit message:', 'Update species content');
+    if (message === null) return;
+
+    publishBtn.disabled = true;
+    publishBtn.textContent = 'Publishing…';
+    setStatus('Publishing…');
+
+    api('POST', '/api/publish', { message: message }).then(function (res) {
+      if (!res.ok) {
+        alert('Publish failed:\n\n' + res.log);
+        setStatus('Publish failed.');
+      } else if (res.published === false) {
+        alert('Nothing to publish.\n\n' + res.log);
+        setStatus('Nothing to publish.');
+      } else {
+        alert('Published!\n\n' + res.log);
+        setStatus('Published.');
+      }
+    }).catch(function (e) {
+      alert('Publish failed:\n\n' + (e.message || e));
+      setStatus('Publish failed.');
+    }).then(function () {
+      publishBtn.disabled = false;
+      publishBtn.textContent = 'Publish';
+    });
   });
 
   searchEl.addEventListener('input', renderList);

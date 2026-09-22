@@ -217,12 +217,28 @@
     cursor: pointer;
   }
   #save-msg { align-self: center; font-size: 13px; color: var(--accent-dark); }
+  header .header-right { display: flex; align-items: center; gap: 14px; }
+  #publish-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  #publish-btn:hover { background: var(--accent-dark); }
+  #publish-btn:disabled { opacity: .6; cursor: default; }
 </style>
 </head>
 <body>
 <header>
   <h1>Dragonflies of Singapore — Content Admin</h1>
-  <div class="status" id="status-line"></div>
+  <div class="header-right">
+    <div class="status" id="status-line"></div>
+    <button id="publish-btn" title="Build, commit, and push all saved changes to the live site">Publish</button>
+  </div>
 </header>
 <div id="layout">
   <div id="list-panel">
