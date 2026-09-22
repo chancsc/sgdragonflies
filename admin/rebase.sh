@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Rebase your local branch on top of the latest origin/main.
 #
-# Usage:
-#   ./rebase.sh            # rebase current branch onto origin/main
-#   ./rebase.sh develop    # rebase onto origin/develop instead
+# Usage (from anywhere inside the repo):
+#   admin/rebase.sh            # rebase current branch onto origin/main
+#   admin/rebase.sh develop    # rebase onto origin/develop instead
 #
 # Uncommitted changes are stashed automatically before the rebase and
 # restored automatically after (git's --autostash), so it's safe to run
