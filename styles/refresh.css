@@ -323,6 +323,7 @@
   background: transparent !important;
   padding-left: 0 !important;
   bottom: 12px !important;
+  text-align: center;
 }
 .rf-gallery .progress .circle {
   background: rgba(255,255,255,0.4) !important;
@@ -342,6 +343,7 @@
   font-family: 'Public Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
+  text-align: right;
   text-shadow: 0 1px 3px rgba(0,0,0,0.7);
   white-space: nowrap;
   overflow: hidden;
