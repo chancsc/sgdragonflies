@@ -5,7 +5,7 @@
    under .rf / .rf-header so no other page is affected.
    ============================================================ */
 
-.rf, .rf-header, .rf-gallery-pill, .rf-terms-link {
+.rf, .rf-header, .rf-terms-link {
   --rf-bg: #F7F5EE;
   --rf-surface: #FFFFFF;
   --rf-surface-2: #FBFAF5;
@@ -336,9 +336,9 @@
 .rf-gallery-credit {
   position: absolute;
   left: 12px;
+  right: 58%;
   bottom: 12px;
   z-index: 3;
-  max-width: 65%;
   color: rgba(255,255,255,0.92);
   font-family: 'Public Sans', sans-serif;
   font-size: 11px;
@@ -349,34 +349,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   pointer-events: none;
-}
-
-.rf-gallery-pill {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: calc(100% - 40px);
-  margin: -22px auto 0 auto !important;
-  position: relative;
-  z-index: 2;
-  background: var(--rf-surface) !important;
-  border: 1px solid var(--rf-border) !important;
-  border-radius: 12px !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-  padding: 10px 0 !important;
-  font-family: 'Public Sans', sans-serif !important;
-  font-size: 12.5px !important;
-  font-weight: 600 !important;
-  color: var(--rf-text) !important;
-}
-.rf-gallery-pill svg {
-  fill: none;
-  stroke: var(--rf-text);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .rf-content {
