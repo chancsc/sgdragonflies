@@ -3,6 +3,20 @@
 Edits species content (name, description, photos, etc.) without touching any
 JS. This replaces the spreadsheet that used to feed the site.
 
+## Before you start
+
+Sync your branch with the latest `main` first, so you're editing on top of
+anyone else's already-merged changes instead of an outdated copy:
+
+```
+admin/rebase.sh
+```
+
+Uncommitted changes are stashed and restored automatically, so it's safe to
+run any time — do this before every editing session, not just the first one.
+Pass a branch name (`admin/rebase.sh develop`) to rebase onto something other
+than `main`.
+
 ## Edit content
 
 ```
@@ -14,6 +28,10 @@ reachable from the network). Pick a species on the left to edit it, or
 "+ Add" for a new one. Photo pickers upload straight into `images/`.
 Changes save immediately to `data/species.json` — there's no separate
 "draft" state.
+
+To stop the server, run `admin/stop.sh` (or just Ctrl+C in the terminal
+it's running in). If it was started with `--tunnel`, this also cleans up
+the Cloudflare tunnel process.
 
 ### Temporary external access
 
