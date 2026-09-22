@@ -3244,8 +3244,8 @@ define('models/species_list_sorts',[], function () {
                     if (a.attributes.general || b.attributes.general){
                         return a.attributes.general ? 1 : -1;
                     }
-                    a = parseInt(a.attributes.id);
-                    b = parseInt(b.attributes.id);
+                    a = parseFloat(a.attributes.sort_order != null ? a.attributes.sort_order : a.attributes.id);
+                    b = parseFloat(b.attributes.sort_order != null ? b.attributes.sort_order : b.attributes.id);
                     if (a === b) {
                         return 0;
                     }
