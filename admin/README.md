@@ -33,6 +33,12 @@ To stop the server, run `admin/stop.sh` (or just Ctrl+C in the terminal
 it's running in). If it was started with `--tunnel`, this also cleans up
 the Cloudflare tunnel process.
 
+To restart it (e.g. after pulling changes to `admin/server.py`/`admin/app.js`,
+or if it was left running in the background), run `admin/stop.sh --restart`.
+It stops any running instance, then starts a fresh one in the background,
+logging to `admin/server.log`. Extra arguments are forwarded to
+`server.py` — e.g. `admin/stop.sh --restart 8801 --tunnel`.
+
 ### Temporary external access
 
 To let someone else reach the admin UI (e.g. for remote content editing),
