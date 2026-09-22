@@ -1,7 +1,7 @@
 # Dragonflies of Singapore
 
 A mobile-first field guide for identifying dragonflies and damselflies recorded in
-Singapore — 127 species (47 damselflies, 80 dragonflies), each with photos, a
+Singapore — 136 species (51 damselflies, 85 dragonflies), each with photos, a
 description, habitat, distribution, and similar/confusable species.
 
 **Live app:** https://chancsc.github.io/sgdragonflies/
@@ -40,7 +40,7 @@ This app has two layers with very different vintages:
 - **[FastClick](https://github.com/ftlabs/fastclick)** — removes the ~300ms tap
   delay on older mobile browsers
 
-### The 2025 UI refresh (newer pages, framework-free)
+### The 2026 UI refresh (newer pages, framework-free)
 
 A handful of pages (species list, species detail, the dragonfly/damselfly
 differences page, splash screen, and the info/about/credits pages) were given a
@@ -104,7 +104,7 @@ scripts/
   libs/                  RequireJS loader
 styles/
   main.min.css           Original jQuery Mobile + legacy app styles
-  refresh.css            2025 UI refresh, scoped under .rf-*
+  refresh.css            2026 UI refresh, scoped under .rf-*
 data/
   species.json           Source of truth for all species content
   flight.json, probability.json   Inherited from the original build; currently unused/empty
@@ -149,7 +149,7 @@ app itself under **App Info → Acknowledgements** (`#credits`).
 ## Contributing
 
 Issues and pull requests are welcome — species corrections, new photos (via
-the admin tool), bug fixes, or further UI work in the same spirit as the 2025
+the admin tool), bug fixes, or further UI work in the same spirit as the 2026
 refresh (framework-free, scoped under `.rf-*`, and kept in sync between
 `templates.js`/`main-built.js` per the quirk above).
 
