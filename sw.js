@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v20';
+var CACHE_VERSION = 'sgdragonfly-shell-v21';
 
 var PRECACHE_URLS = [
   './',
@@ -105,6 +105,8 @@ var PRECACHE_URLS = [
   './images/Drepanosticta_quadrata_keith_wilson_m.jpg',
   './images/Dysphaea_dimidiata.jpg',
   './images/Dysphaea_dimidiata_Keith_Wilson.jpg',
+  './images/Echo_modesta_1.jpg',
+  './images/Echo_modesta_2.jpg',
   './images/Epophthalmia_vittigera_csc.jpg',
   './images/Epophthalmia_vittigera_csc2.jpg',
   './images/Euphaea_impar_GanCW.jpg',
@@ -284,6 +286,8 @@ var PRECACHE_URLS = [
   './images/Trithemis_pallidinervis_csc.jpg',
   './images/Tyriobapta_torrida_csc.jpg',
   './images/Tyriobapta_torrida_csc2.jpg',
+  './images/Urothemis_abbotti-2.jpg',
+  './images/Urothemis_abbotti.jpeg',
   './images/Urothemis_signata_csc.jpg',
   './images/Vestalis_amethystina_Keith_Wilson.jpg',
   './images/Vestalis_amoena_CW_Gan.jpg',
@@ -311,7 +315,6 @@ var PRECACHE_URLS = [
   './images/welcome_5.jpg',
   './index.html',
   './manifest.json',
-  './rebase.sh',
   './scripts/data.js',
   './scripts/debug-errors.js',
   './scripts/libs/require.js',

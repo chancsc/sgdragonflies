@@ -4633,7 +4633,7 @@
     "type": "anisoptera"
   },
   {
-    "profile_pic": "images/unknown.png",
+    "profile_pic": "images/Urothemis_abbotti.jpeg",
     "description": "A very rare species and is believed to be extinct in Singapore. The male has dark red abdomen with several black flecks on the dorsum and larger colour patch at the wing base. Female is brownish yellow with similar patches at wing base.",
     "family": "Libellulidae",
     "map": "",
@@ -4641,14 +4641,20 @@
       "black": ""
     },
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "darrylcki"
+    ],
     "common_name": "Rare Basker",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "Male"
+    ],
+    "gallery": [
+      "images/Urothemis_abbotti-2.jpg"
+    ],
     "habitat": "*Mangrove habitats",
-    "profile_pic_author": "",
-    "profile_pic_sex": "",
+    "profile_pic_author": "Zicky",
+    "profile_pic_sex": "Female",
     "colour": {
       "blue": "",
       "brown": 1,
@@ -4656,7 +4662,7 @@
       "yellow": 1,
       "green": "",
       "stripe": "",
-      "orange": "",
+      "orange": 1,
       "white": "",
       "red": 1
     },
@@ -4774,24 +4780,30 @@
     "type": "anisoptera"
   },
   {
-    "description": "",
+    "description": "N/A",
     "family": "Calopterygidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Benoît Guillon"
+    ],
     "common_name": "White-faced Clearwing",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
-    "habitat": "",
-    "profile_pic_author": "",
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Echo_modesta_2.jpg"
+    ],
+    "habitat": "N/A",
+    "profile_pic_author": "\"Benoit Guillon\"",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
       "brown": "",
       "grey": "",
       "yellow": "",
-      "green": "",
+      "green": 1,
       "stripe": "",
       "orange": "",
       "white": "",
@@ -4799,8 +4811,9 @@
     },
     "taxon": "Echo modesta",
     "id": 128,
-    "distribution": "",
-    "type": "zygoptera"
+    "distribution": "N/A",
+    "type": "zygoptera",
+    "profile_pic": "images/Echo_modesta_1.jpg"
   },
   {
     "description": "",
