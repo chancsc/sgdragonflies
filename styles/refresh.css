@@ -332,6 +332,22 @@
 .rf-gallery .progress .circle.circle-full {
   background: #FFFFFF !important;
 }
+.rf-gallery-credit {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 3;
+  max-width: 65%;
+  color: rgba(255,255,255,0.92);
+  font-family: 'Public Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
 
 .rf-gallery-pill {
   display: flex !important;
