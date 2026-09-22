@@ -276,6 +276,14 @@
     )));
     basics.appendChild(row2);
 
+    var row3 = document.createElement('div');
+    row3.className = 'two-col';
+    row3.appendChild(field(
+      'Sort order (position in Taxonomic view - decimals OK, e.g. 57.5 to slot between 57 and 58; leave blank to use the ID)',
+      textInput(rec.sort_order == null ? '' : String(rec.sort_order), function (v) { rec.sort_order = v; })
+    ));
+    basics.appendChild(row3);
+
     formEl.appendChild(basics);
 
     var textFieldsSet = document.createElement('fieldset');
@@ -407,6 +415,14 @@
     rec.gallery = rec.gallery.filter(function (_, i) { return keep[i]; });
     rec.gallery_authors = rec.gallery_authors.filter(function (_, i) { return keep[i]; });
     rec.gallery_sex = rec.gallery_sex.filter(function (_, i) { return keep[i]; });
+
+    // sort_order is typed as free text (to allow decimals); store it as a
+    // number, or drop it entirely so the Taxonomic sort falls back to id.
+    if (rec.sort_order === '' || rec.sort_order == null || isNaN(Number(rec.sort_order))) {
+      delete rec.sort_order;
+    } else {
+      rec.sort_order = Number(rec.sort_order);
+    }
 
     var request = isNew
       ? api('POST', '/api/species', rec)
