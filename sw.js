@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v21';
+var CACHE_VERSION = 'sgdragonfly-shell-v22';
 
 var PRECACHE_URLS = [
   './',
@@ -29,6 +29,8 @@ var PRECACHE_URLS = [
   './images/Agriocnemis_femina_Weiting_Liu.jpg',
   './images/Agriocnemis_femina_gancw.jpg',
   './images/Agriocnemis_femina_gbohne.jpg',
+  './images/Agriocnemis_minima_1.jpg',
+  './images/Agriocnemis_minima_2.jpg',
   './images/Agriocnemis_nana_H.K.Tang.jpg',
   './images/Agriocnemis_nana_Keith_Wilson.jpg',
   './images/Agriocnemis_pygmaea_Keith_Wilson.jpg',
@@ -43,6 +45,11 @@ var PRECACHE_URLS = [
   './images/Anax_guttatus_Michael_MK_Khor_f.jpg',
   './images/Anax_guttatus_Vishal_Bhave.jpg',
   './images/Anax_guttatus_Weiting_Liu.jpg',
+  './images/Anax_panybeus_1.jpg',
+  './images/Anax_panybeus_2.jpg',
+  './images/Anax_panybeus_3.jpg',
+  './images/Anax_panybeus_4.jpg',
+  './images/Anax_panybeus_Mettalady_Yeo_1.jpg',
   './images/Archibasis_melanocyana_Keith_Wilson.jpg',
   './images/Archibasis_rebeccae_Keith_Wilson.jpg',
   './images/Archibasis_viola_budak_1.jpg',
@@ -119,6 +126,9 @@ var PRECACHE_URLS = [
   './images/Gynacantha_dohrni_Keith_Wilson.jpg',
   './images/Gynacantha_subinterrupta_Keith_Wilson.jpg',
   './images/Heliaeschna_crassa_Tang_Hung_Bun.jpg',
+  './images/Heliaeschna_simplicia_1.jpg',
+  './images/Heliaeschna_simplicia_2.jpg',
+  './images/Heliaeschna_simplicia_3.jpg',
   './images/Heliaeschna_uninervulata_Leonard_tan.jpg',
   './images/Heliaeschna_uninervulata_Leonard_tan_m.jpg',
   './images/Heliaeschna_uninervulata_Tang_hung_bun.jpg',
@@ -178,6 +188,9 @@ var PRECACHE_URLS = [
   './images/Merogomphus_femoralis_Tang_hung_bun_f.jpg',
   './images/Microgomphus_chelifer_Keith_wilson1.jpg',
   './images/Microgomphus_chelifer_Keith_wilson2.jpg',
+  './images/Mortonagrion_aborense_1.jpg',
+  './images/Mortonagrion_aborense_2.jpg',
+  './images/Mortonagrion_aborense_3.jpg',
   './images/Mortonagrion_arthuri_anthony_quek_f.jpg',
   './images/Mortonagrion_arthuri_anthony_quek_m.jpg',
   './images/Mortonagrion_falcatum_C.Y.Choong.jpg',
@@ -293,6 +306,8 @@ var PRECACHE_URLS = [
   './images/Vestalis_amoena_CW_Gan.jpg',
   './images/Vestalis_amoena_Keith_Wilson.jpg',
   './images/Vestalis_amoena_Keith_Wilson_2.jpg',
+  './images/Vestalis_gracilis_1.jpg',
+  './images/Vestalis_gracilis_2.jpeg',
   './images/Zyxomma_obtusum_Ross_Tsai.jpg',
   './images/Zyxomma_obtusum_weiting_liu_f.jpg',
   './images/Zyxomma_obtusum_weiting_liu_m.jpg',

@@ -4796,7 +4796,7 @@
       "images/Echo_modesta_2.jpg"
     ],
     "habitat": "N/A",
-    "profile_pic_author": "\"Benoit Guillon\"",
+    "profile_pic_author": "darrylcki",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
@@ -4820,20 +4820,26 @@
     "family": "Calopterygidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Simon Hazenberg"
+    ],
     "common_name": "Plain Flashwing",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Vestalis_gracilis_2.jpeg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Cheongweei Gan",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
       "brown": "",
       "grey": "",
       "yellow": "",
-      "green": "",
+      "green": 1,
       "stripe": "",
       "orange": "",
       "white": "",
@@ -4842,49 +4848,66 @@
     "taxon": "Vestalis gracilis",
     "id": 129,
     "distribution": "",
-    "type": "zygoptera"
+    "type": "zygoptera",
+    "profile_pic": "images/Vestalis_gracilis_1.jpg"
   },
   {
     "description": "",
     "family": "Coenagrionidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "watsaisaeng"
+    ],
     "common_name": "Marsh Wisp",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      ""
+    ],
+    "gallery": [
+      "images/Agriocnemis_minima_2.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Palakon Kawsom",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
       "brown": "",
       "grey": "",
       "yellow": "",
-      "green": "",
+      "green": 1,
       "stripe": "",
-      "orange": "",
+      "orange": 1,
       "white": "",
-      "red": ""
+      "red": 1
     },
     "taxon": "Agriocnemis minima",
     "id": 130,
     "distribution": "",
-    "type": "zygoptera"
+    "type": "zygoptera",
+    "profile_pic": "images/Agriocnemis_minima_1.jpg"
   },
   {
     "description": "",
     "family": "Coenagrionidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Yu Jun",
+      "darrylcki"
+    ],
     "common_name": "Blue Midget",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "",
+      ""
+    ],
+    "gallery": [
+      "images/Mortonagrion_aborense_2.jpg",
+      "images/Mortonagrion_aborense_3.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "zicky",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
@@ -4900,27 +4923,40 @@
     "taxon": "Mortonagrion aborense",
     "id": 131,
     "distribution": "",
-    "type": "zygoptera"
+    "type": "zygoptera",
+    "profile_pic": "images/Mortonagrion_aborense_1.jpg"
   },
   {
     "description": "",
     "family": "Aeshnidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "zicky",
+      "Mettalady Yeo",
+      "Mettalady Yeo"
+    ],
     "common_name": "Arrow Emperor",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "",
+      "",
+      ""
+    ],
+    "gallery": [
+      "images/Anax_panybeus_2.jpg",
+      "images/Anax_panybeus_Mettalady_Yeo_1.jpg",
+      "images/Anax_panybeus_4.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Budak",
     "profile_pic_sex": "",
     "colour": {
-      "blue": "",
+      "blue": 1,
       "brown": "",
       "grey": "",
       "yellow": "",
-      "green": "",
+      "green": 1,
       "stripe": "",
       "orange": "",
       "white": "",
@@ -4929,20 +4965,30 @@
     "taxon": "Anax panybeus",
     "id": 132,
     "distribution": "",
-    "type": "anisoptera"
+    "type": "anisoptera",
+    "profile_pic": "images/Anax_panybeus_1.jpg"
   },
   {
     "description": "",
     "family": "Aeshnidae",
     "map": "",
     "general": "",
-    "gallery_authors": [],
+    "gallery_authors": [
+      "Jiayuan Lin",
+      "Jiayuan Lin"
+    ],
     "common_name": "Plain Nighthawker",
     "confusion_species": "",
-    "gallery_sex": [],
-    "gallery": [],
+    "gallery_sex": [
+      "",
+      ""
+    ],
+    "gallery": [
+      "images/Heliaeschna_simplicia_2.jpg",
+      "images/Heliaeschna_simplicia_3.jpg"
+    ],
     "habitat": "",
-    "profile_pic_author": "",
+    "profile_pic_author": "Jen Wei",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
@@ -4958,7 +5004,8 @@
     "taxon": "Heliaeschna simplicia",
     "id": 133,
     "distribution": "",
-    "type": "anisoptera"
+    "type": "anisoptera",
+    "profile_pic": "images/Heliaeschna_simplicia_1.jpg"
   },
   {
     "description": "",
