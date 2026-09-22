@@ -59,24 +59,28 @@ it with people you trust, and only for as long as you need.
 
 ## Publish
 
-After you're done editing:
+Click **Publish** in the top-right of the admin page. It runs `admin/build.py`
+(regenerates `scripts/data.js` and refreshes `sw.js`'s offline cache
+list/version), then commits and pushes everything — no terminal needed. You'll
+be asked to confirm and given a chance to edit the commit message first.
+
+If the push is rejected because someone else pushed in the meantime, it
+automatically rebases onto the latest remote and retries once. If that
+rebase itself conflicts, it aborts cleanly (your commit stays safe locally)
+and tells you to resolve it manually — e.g. ask Claude, or use a terminal.
+Either way, the full log from the build/commit/push is shown so you can see
+exactly what happened.
+
+Prefer the command line? The button does exactly this:
 
 ```
 python3 admin/build.py
-```
-
-This regenerates `scripts/data.js` (what the live site actually loads) from
-`data/species.json`, and refreshes `sw.js`'s offline cache list/version.
-Then commit and push as usual:
-
-```
 git add -A
 git commit -m "Update species content"
 git push
 ```
 
-(Or ask Claude to do the build + push for you.) GitHub Pages rebuilds
-automatically within about a minute of the push.
+GitHub Pages rebuilds automatically within about a minute of the push.
 
 ## Notes
 

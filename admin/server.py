@@ -24,6 +24,8 @@ changes to server.py/app.js, or to recover one left running in the
 background.
 """
 import base64
+import contextlib
+import io
 import json
 import mimetypes
 import os
@@ -42,6 +44,9 @@ IMAGES_DIR = ROOT / "images"
 SPECIES_JSON = ROOT / "data" / "species.json"
 SERVER_LOG = ADMIN_DIR / "server.log"
 PID_FILE = ADMIN_DIR / "server.pid"
+
+sys.path.insert(0, str(ADMIN_DIR))
+import build as build_mod  # noqa: E402
 
 _argv = sys.argv[1:]
 COMMAND = _argv[0] if _argv and _argv[0] in ("stop", "restart") else None
@@ -62,6 +67,59 @@ def save_species(species):
     SPECIES_JSON.write_text(
         json.dumps(species, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+
+def run_git(args):
+    return subprocess.run(
+        ["git"] + args, cwd=str(ROOT), capture_output=True, text=True
+    )
+
+
+def do_publish(commit_message):
+    """Run the build step, then commit and push. Returns a dict with `ok`
+    and a human-readable `log` of what happened, so the admin UI can show
+    it without the user needing a terminal."""
+    log = []
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        build_mod.build_data_js()
+        build_mod.build_precache_list()
+    log.append(buf.getvalue().strip())
+
+    status = run_git(["status", "--porcelain"])
+    if not status.stdout.strip():
+        log.append("Nothing to publish - working tree is already clean.")
+        return {"ok": True, "published": False, "log": "\n".join(log)}
+
+    run_git(["add", "-A"])
+    commit = run_git(["commit", "-m", commit_message or "Update species content"])
+    if commit.returncode != 0:
+        log.append((commit.stdout + commit.stderr).strip())
+        return {"ok": False, "log": "\n".join(log)}
+    log.append(commit.stdout.strip())
+
+    push = run_git(["push"])
+    if push.returncode != 0:
+        log.append("Push rejected - trying to rebase onto the latest remote...")
+        pull = run_git(["pull", "--rebase"])
+        if pull.returncode != 0:
+            run_git(["rebase", "--abort"])
+            log.append((pull.stdout + pull.stderr).strip())
+            log.append(
+                "Rebase failed and was aborted - your commit is still saved "
+                "locally, but needs to be resolved manually (e.g. ask Claude, "
+                "or use a terminal) before it can be pushed."
+            )
+            return {"ok": False, "log": "\n".join(log)}
+        push = run_git(["push"])
+        if push.returncode != 0:
+            log.append((push.stdout + push.stderr).strip())
+            return {"ok": False, "log": "\n".join(log)}
+
+    log.append((push.stdout + push.stderr).strip())
+    log.append("Published - GitHub Pages will redeploy within about a minute.")
+    return {"ok": True, "published": True, "log": "\n".join(log)}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -150,6 +208,16 @@ class Handler(BaseHTTPRequestHandler):
             IMAGES_DIR.mkdir(exist_ok=True)
             (IMAGES_DIR / filename).write_bytes(base64.b64decode(m.group(1)))
             self._send_json({"ok": True, "path": f"images/{filename}"})
+            return
+
+        if path == "/api/publish":
+            body = self._read_json_body()
+            try:
+                result = do_publish(body.get("message", ""))
+            except Exception as e:
+                self._send_json({"ok": False, "log": f"Publish failed: {e}"})
+                return
+            self._send_json(result)
             return
 
         self._send_json({"error": "not found"}, 404)
