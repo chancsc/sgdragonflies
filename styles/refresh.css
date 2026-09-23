@@ -319,6 +319,10 @@
   position: relative;
 }
 .rf-gallery .images { background: #3C3C3C; }
+.rf-gallery .images img {
+  height: 100%;
+  object-fit: contain;
+}
 .rf-gallery .progress {
   background: transparent !important;
   padding-left: 0 !important;
