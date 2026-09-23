@@ -2628,7 +2628,7 @@ this["app"]["templates"]["p_info"] = function(obj) {obj || (obj = {});var __t, _
 
 this["app"]["templates"]["p_list-org"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div data-role="header" id="list-header" data-position="fixed"\n     data-tap-toggle="false">\n    <div class=\'ui-btn-left\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <a href=\'#info\' class="ui-btn ui-icon-info ui-nodisc-icon\n        ui-alt-icon ui-btn-icon-notext">Info</a>\n        <a href="#user" id="user-page-button"\n           class="ui-btn ui-icon-user ui-nodisc-icon ui-alt-icon\n           ui-btn-icon-notext">User</a>\n    </div>\n\n    <h1 id="list-heading">\n        <img src="data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%227%2C0%200%2C7%202%2C7%202%2C14%205%2C14%205%2C9%209%2C9%209%2C14%2012%2C14%2012%2C7%2014%2C7%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E"/>\n    </h1>\n\n    <div class=\'ui-btn-right\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <button id="list-controls-button" class="header ui-btn ui-icon-filter ui-nodisc-icon\n        ui-btn-icon-notext">List Controls</button>\n\n        <a href="#record/multi" class="ui-btn ui-icon-multi-record ui-nodisc-icon\n         ui-alt-icon ui-btn-icon-notext">Multi Record</a>\n    </div>\n    <div id="list-controls-placeholder"></div>\n</div>\n<div data-role="content" id="list-placeholder"></div>\n<div data-role="footer" id="list-footer" data-position="fixed"\n     data-tap-toggle="false">\n        <button id="download-button" class="ui-btn ui-btn-b ui-corner-all">Download App</button>\n</div>';}return __p};
 
-this["app"]["templates"]["p_list"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div data-role="header" id="list-header" class="rf-header" data-position="fixed"\n     data-tap-toggle="false">\n    <div class=\'ui-btn-left\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <a href=\'#info\' class="ui-btn ui-icon-info ui-nodisc-icon\n        ui-alt-icon ui-btn-icon-notext">Info</a>\n        \n    </div>\n\n    <h1 id="list-heading">\n    \t<!--commmented and replaced by sc, org showing a home icon-->\n        <!--img src="data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%227%2C0%200%2C7%202%2C7%202%2C14%205%2C14%205%2C9%209%2C9%209%2C14%2012%2C14%2012%2C7%2014%2C7%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E"/-->\n        SG Dragonflies\n    </h1>\n\n    <div class=\'ui-btn-right\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <button id="list-controls-button" class="header ui-btn ui-icon-filter ui-nodisc-icon\n        ui-btn-icon-notext">List Controls</button>\n\n    </div>\n    <div id="list-controls-placeholder"></div>\n</div>\n<div data-role="content" id="list-placeholder" class="rf rf-list"></div>\n<div data-role="footer" id="list-footer" data-position="fixed"\n     data-tap-toggle="false">\n        <button id="download-button" class="ui-btn ui-btn-b ui-corner-all">Download App</button>\n</div>';}return __p};
+this["app"]["templates"]["p_list"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div data-role="header" id="list-header" class="rf-header" data-position="fixed"\n     data-tap-toggle="false">\n    <div class=\'ui-btn-left\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <a href=\'#info\' class="ui-btn ui-icon-info ui-nodisc-icon\n        ui-alt-icon ui-btn-icon-notext">Info</a>\n        \n    </div>\n\n    <h1 id="list-heading" class="rf-search-heading">\n    \t<!--commmented and replaced by sc, org showing a home icon-->\n        <!--img src="data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%227%2C0%200%2C7%202%2C7%202%2C14%205%2C14%205%2C9%209%2C9%209%2C14%2012%2C14%2012%2C7%2014%2C7%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E"/-->\n        <label class="rf-search" for="list-search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg><input type="search" id="list-search" data-role="none" placeholder="Search species" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Search species"></label>\n    </h1>\n\n    <div class=\'ui-btn-right\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <button id="list-controls-button" class="header ui-btn ui-icon-filter ui-nodisc-icon\n        ui-btn-icon-notext">List Controls</button>\n\n    </div>\n    <div id="list-controls-placeholder"></div>\n</div>\n<div data-role="content" class="rf rf-list"><div id="list-placeholder"></div><p id="list-search-empty" class="rf-search-empty" hidden>No species match your search.</p></div>\n<div data-role="footer" id="list-footer" data-position="fixed"\n     data-tap-toggle="false">\n        <button id="download-button" class="ui-btn ui-btn-b ui-corner-all">Download App</button>\n</div>';}return __p};
 
 this["app"]["templates"]["p_location"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div data-role="header" data-position="fixed" data-tap-toggle="false">\n    <div class=\'ui-btn-left\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <a href=\'#\' data-rel=\'back\' class="ui-btn ui-icon-delete ui-nodisc-icon\n        ui-alt-icon ui-btn-icon-left">Cancel</a>\n    </div>\n    <h1>Location</h1>\n    <div class=\'ui-btn-right\' data-role=\'controlgroup\' data-type=\'horizontal\'>\n        <button id="location-save" class="ui-btn ui-icon-plus ui-nodisc-icon\n        ui-alt-icon ui-btn-icon-right">Save</button>\n    </div>\n</div>\n<div data-role="content">\n    <div class="info-message" id="location-message" style="display:none"></div>\n    <div data-role="tabs" id="location-opts">\n        <div data-role="navbar">\n            <ul>\n                <li><a href="#gps" data-ajax="false" class="gps">GPS</a></li>\n                <li><a href="#map" data-ajax="false">Map</a></li>\n                <li><a href="#gref" data-ajax="false">Grid Ref</a></li>\n                <li><a href="#previous" data-ajax="false">Past</a></li>\n            </ul>\n        </div>\n        <div id="gps" class="ui-body-d ui-content">\n            <div id="location-gps-placeholder"></div>\n            <button id="gps-button"\n                    class="ui-btn ui-btn-inset ui-btn-narrow">Locate</button>\n        </div>\n        <div id="map" class="ui-body-d ui-content">\n            <div class="info-message" id="map-message">\n                <p>Please tap on the map to select your location. </p>\n            </div>\n            <div id="map-canvas"></div>\n        </div>\n        <div id="gref" class="ui-body-d ui-content">\n            <div class="info-message" id="gref-message">\n                <p>Please provide a GB Grid Reference.\n                    <br/> e.g. <i>"TQ 28170 77103"</i></p>\n            </div>\n            <input type="text" id="grid-ref" data-role="none" placeholder="Grid Reference"/>\n            <input type="text" id="location-name" data-role="none" placeholder="Location Name (optional)"/>\n            <button id="grid-ref-set"\n                    class="ui-btn ui-btn-inset ui-btn-narrow">Set</button>\n        </div>\n        <div id="previous" class="ui-body-d ui-content">\n            <div class="info-message" id="previous-location-message">\n                <p>Please tap on your previous location. </p>\n            </div>\n            <div id="user-locations"></div>\n        </div>\n</div>\n';}return __p};
 
@@ -4109,6 +4109,7 @@ define('views/list',[
                 });
 
                 that.$el.html(container); //appends to DOM only once
+                that.applySearch();
 
                 //attach listeners
 
@@ -4118,6 +4119,27 @@ define('views/list',[
             });
 
             return this;
+        },
+
+        /**
+         * Shows only the species whose common or scientific name contains
+         * every word of the query.
+         */
+        setSearch: function (query) {
+            this.searchWords = (query || '').toLowerCase().split(/\s+/).filter(Boolean);
+            this.applySearch();
+        },
+
+        applySearch: function () {
+            var words = this.searchWords || [];
+            var shown = 0;
+            this.$el.children('li').each(function () {
+                var text = this.textContent.toLowerCase();
+                var match = words.every(function (w) { return text.indexOf(w) > -1; });
+                this.classList.toggle('rf-hidden', !match);
+                if (match) shown++;
+            });
+            this.trigger('search', shown, words.length > 0);
         },
 
         update: function () {
@@ -4648,7 +4670,10 @@ define('views/p_list',[
             'click #list-controls-save-button': 'toggleListControls',
             'click #list-controls-button': 'toggleListControls',
             'change input[type=radio]': 'toggleListControls',
-            'click #download-button': 'tripDownload'
+            'click #download-button': 'tripDownload',
+            'input #list-search': 'search',
+            'search #list-search': 'search',
+            'keydown #list-search': 'searchKeydown'
         },
 
         initialize: function () {
@@ -4698,8 +4723,23 @@ define('views/p_list',[
 
         renderList: function () {
             this.listView = new ListView({collection: app.collections.species});
+            this.$searchEmpty = this.$el.find('#list-search-empty');
+            this.listenTo(this.listView, 'search', function (shown, searching) {
+                this.$searchEmpty.prop('hidden', !(searching && shown === 0));
+            });
             this.$list.html(this.listView.render().el);
             return this.listView;
+        },
+
+        search: function (e) {
+            this.listView.setSearch(e.target.value);
+        },
+
+        searchKeydown: function (e) {
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                e.target.blur(); // hides the on-screen keyboard
+            }
         },
 
         update: function () {
