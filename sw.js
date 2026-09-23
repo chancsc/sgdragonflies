@@ -11,11 +11,12 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v54';
+var CACHE_VERSION = 'sgdragonfly-shell-v55';
 
 var PRECACHE_URLS = [
   './',
   './LICENSE',
+  './RARITY_CHECK.md',
   './README.md',
   './images/Aciagrion_borneense_1.jpg',
   './images/Aciagrion_borneense_2.jpg',

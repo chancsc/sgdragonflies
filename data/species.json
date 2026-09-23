@@ -5426,7 +5426,7 @@
     "type": "zygoptera",
     "profile_pic": "images/Aciagrion_borneense_1.jpg",
     "sort_order": 14.5,
-    "distribution_rarity": ""
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "description": "",
@@ -5464,6 +5464,6 @@
     "type": "anisoptera",
     "profile_pic": "images/Tetrathemis_flavescens_1.jpg",
     "sort_order": 116.5,
-    "distribution_rarity": ""
+    "distribution_rarity": "Restricted & Rare"
   }
 ]
