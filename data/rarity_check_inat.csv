@@ -20,7 +20,7 @@ id,taxon,common_name,family,type,checklist_distribution_rarity,inat_sg_observati
 135,Burmagomphus arthuri,Arthur's Clubtail,Gomphidae,anisoptera,Restricted & Very Rare,0,0,1,0 records (possibly extinct/unrecorded on iNat)
 15,Aciagrion hisopa,Blue Slim,Coenagrionidae,zygoptera,Restricted & Very Rare,1,1,81,very few records (1-5)
 23,Argiocnemis rubescens rubeola,Variable Sprite,Coenagrionidae,zygoptera,Widespread but Uncommon,1,1,83,very few records (1-5)
-32,Pseudagrion microcephalum,Blue Sprite,Coenagrionidae,zygoptera,Widespread & Common,1,0,1977,very few records (1-5)
+32,Pseudagrion siamense,Blue Sprite,Coenagrionidae,zygoptera,Widespread & Common,1,0,1977,very few records (1-5) - counts fetched under former name Pseudagrion microcephalum; re-fetch
 36,Teinobasis cryptica,Cryptic Shadesprite,Coenagrionidae,zygoptera,Restricted & Very Rare,1,0,5,very few records (1-5)
 71,Macromia cydippe,Lesser Stream Cruiser,Corduliidae,anisoptera,Restricted & Rare,2,2,21,very few records (1-5)
 138,Tetrathemis flavescens,Yellow-tinted Elf,Libellulidae,anisoptera,,2,2,7,very few records (1-5)

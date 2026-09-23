@@ -13,6 +13,7 @@
       "NE": "Nationally Extinct"
     },
     "confidence_notes": [
+      "Blue Sprite is printed in the book as Pseudagrion microcephalum; updated here to Pseudagrion siamense (2026-09-23) to match the app.",
       "Common Name, Species (scientific name), Family and Suborder columns are transcribed with high confidence throughout - row order for these two columns is unambiguous in every photo, and per-family counts were cross-checked to add up to the book's own total of 136 (matching the handwritten '#137 / 138' annotation, which independently confirms the count).",
       "Distribution and Rarity / Conservation Status for the Suborder Zygoptera section (page 334, Family Coenagrionidae, entries 'Rebecca's Sprite' through 'Look-alike Sprite') were faint/low-contrast in the photo. Where a value could not be read with confidence it is set to null - check the original photo or the physical book to fill these in.",
       "Page 336 (Libellulidae from 'Common Amberwing' onward, Macromiidae, Synthemistidae) was photographed at an angle, so the Distribution/Status columns look offset from the name columns. Re-transcribed on 2026-09-23 by counting rows within each family block (48 Libellulidae rows on both sides); the result agrees with data/species.json descriptions (e.g. Rare Basker, Small Bronze Flutterer = Nationally Extinct; Scarlet Basker = Widespread & Common).",
@@ -66,7 +67,7 @@
     { "family": "Coenagrionidae", "common_name": "Hooked Midget", "species": "Mortonagrion falcatum", "distribution_and_rarity": "Restricted & Very Rare", "conservation_status": null },
     { "family": "Coenagrionidae", "common_name": "Dryad", "species": "Pericnemis stictica", "distribution_and_rarity": "Restricted & Rare", "conservation_status": null },
     { "family": "Coenagrionidae", "common_name": "Look-alike Sprite", "species": "Pseudagrion australasiae", "distribution_and_rarity": "Restricted & Uncommon", "conservation_status": null },
-    { "family": "Coenagrionidae", "common_name": "Blue Sprite", "species": "Pseudagrion microcephalum", "distribution_and_rarity": "Widespread & Common", "conservation_status": "LC" },
+    { "family": "Coenagrionidae", "common_name": "Blue Sprite", "species": "Pseudagrion siamense", "distribution_and_rarity": "Widespread & Common", "conservation_status": "LC" },
     { "family": "Coenagrionidae", "common_name": "Grey Sprite", "species": "Pseudagrion pruinosum", "distribution_and_rarity": "Restricted but Common", "conservation_status": "VU" },
     { "family": "Coenagrionidae", "common_name": "Orange-faced Sprite", "species": "Pseudagrion rubriceps", "distribution_and_rarity": "Widespread but Rare", "conservation_status": "NT" },
     { "family": "Coenagrionidae", "common_name": "Cryptic Shadesprite", "species": "Teinobasis cryptica", "distribution_and_rarity": "Restricted & Very Rare", "conservation_status": "CR" },

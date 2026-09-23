@@ -27,7 +27,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 19 | *Burmagomphus arthuri* | Arthur's Clubtail | anisoptera | 0 | 0 | 1 | Restricted & Very Rare |
 | 20 | *Aciagrion hisopa* | Blue Slim | zygoptera | 1 | 1 | 81 | Restricted & Very Rare |
 | 21 | *Argiocnemis rubescens rubeola* | Variable Sprite | zygoptera | 1 | 1 | 83 | Widespread but Uncommon |
-| 22 | *Pseudagrion microcephalum* | Blue Sprite | zygoptera | 1 | 0 | 1977 | Widespread & Common |
+| 22 | *Pseudagrion siamense* † | Blue Sprite | zygoptera | 1 | 0 | 1977 | Widespread & Common |
 | 23 | *Teinobasis cryptica* | Cryptic Shadesprite | zygoptera | 1 | 0 | 5 | Restricted & Very Rare |
 | 24 | *Macromia cydippe* | Lesser Stream Cruiser | anisoptera | 2 | 2 | 21 | Restricted & Rare |
 | 25 | *Tetrathemis flavescens* | Yellow-tinted Elf | anisoptera | 2 | 2 | 7 | - |
@@ -146,7 +146,8 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 138 | *Neurothemis fluctuans* | Common Parasol | anisoptera | 9387 | 9223 | 15216 | Widespread & Common |
 
 ## Caveats
-- iNaturalist observation counts reflect what people happen to photograph and upload, not true population size. Genuinely common species can be under-recorded if they're considered unremarkable (e.g. *Pseudagrion microcephalum*, checklist status "Widespread & Common" but only 1 SG record on iNat).
+- iNaturalist observation counts reflect what people happen to photograph and upload, not true population size. Genuinely common species can be under-recorded if they're considered unremarkable (e.g. Blue Sprite, checklist status "Widespread & Common" but only 1 SG record on iNat).
+- † Blue Sprite has since been renamed from *Pseudagrion microcephalum* to *Pseudagrion siamense*. Its counts above were fetched under the old name, which likely explains the single SG record — Singapore records are probably filed under *P. siamense* on iNat. Re-fetch before relying on this row.
 - Species with 0 SG observations may be genuinely absent/extinct locally, misidentified under a different/older scientific name, or simply never uploaded to iNat — worth spot-checking before concluding rarity.
 - `checklist_distribution_rarity` is the authoritative field already carried in `data/species.json` (from the 2021 national checklist); 2 species have no checklist entry yet.
 - No rarity threshold/bucket has been assigned in this file — use `inat_sg_observations` alongside `checklist_distribution_rarity` to decide cutoffs.
