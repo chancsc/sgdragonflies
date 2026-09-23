@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v39';
+var CACHE_VERSION = 'sgdragonfly-shell-v40';
 
 var PRECACHE_URLS = [
   './',
