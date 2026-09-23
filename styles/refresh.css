@@ -505,9 +505,11 @@ body.loading {
 }
 .rf-splash-logo {
   width: 190px !important;
-  height: auto !important;
+  height: 190px !important;
   margin: 0 !important;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 69, 59, 0.18);
 }
 .rf-splash-title {
   font-family: 'Fraunces', Georgia, serif;
@@ -600,6 +602,8 @@ body.loading {
   max-width: 70%;
   height: auto;
   display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 69, 59, 0.14);
 }
 .rf-logo-title {
   font-family: 'Fraunces', Georgia, serif;
