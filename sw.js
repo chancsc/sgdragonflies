@@ -11,7 +11,7 @@
  * not as static links, so a plain crawl of the HTML/CSS/JS misses them).
  */
 
-var CACHE_VERSION = 'sgdragonfly-shell-v55';
+var CACHE_VERSION = 'sgdragonfly-shell-v56';
 
 var PRECACHE_URLS = [
   './',
@@ -267,14 +267,14 @@ var PRECACHE_URLS = [
   './images/Prodasineura_notostigma_keith_wilson.jpg',
   './images/Pseudagrion_australasiae_H.K.Tang.jpg',
   './images/Pseudagrion_australasiae_david_cook.jpg',
-  './images/Pseudagrion_microcephalum_Graham_Winterflood.jpg',
-  './images/Pseudagrion_microcephalum_keith_wilson.jpg',
   './images/Pseudagrion_pruinosum_keith_wilson1.jpg',
   './images/Pseudagrion_pruinosum_keith_wilson2.jpg',
   './images/Pseudagrion_pruinosum_keith_wilson3.jpg',
   './images/Pseudagrion_rubriceps_gailhampshire1.jpg',
   './images/Pseudagrion_rubriceps_gailhampshire2.jpg',
   './images/Pseudagrion_rubriceps_gailhampshire3.jpg',
+  './images/Pseudagrion_siamense_Graham_Winterflood.jpg',
+  './images/Pseudagrion_siamense_keith_wilson.jpg',
   './images/Pseudothemis_jorina_eddy_lee.jpg',
   './images/Raphismia_bispina_Lena_Chow_f.jpg',
   './images/Raphismia_bispina_Leonard_Tan.jpg',
