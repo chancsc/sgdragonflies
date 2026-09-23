@@ -87,7 +87,7 @@
   },
   {
     "profile_pic": "images/Vestalis_amethystina_Keith_Wilson.jpg",
-    "description": "Common in the Central Catchment and Bukit Timah Nature Reserves, frequently encountered along the forest trails near to the clear forest stream. The species has shinning green body with long legs, both wings are transparent, with bluish purple reflection when photographed with flash. Both male & female look alike.",
+    "description": "Common in the Central Catchment and Bukit Timah Nature Reserves, frequently encountered along the forest trails near to the clear forest stream. The species has shining green body with long legs, both wings are transparent, with bluish purple reflection when photographed with flash. Both male & female look alike.",
     "family": "Calopterygidae",
     "map": "",
     "color": {
@@ -411,7 +411,7 @@
   },
   {
     "profile_pic": "images/Lestes_praemorsus_H._K._Tang.jpg",
-    "description": "Uncommon in Singapore, found usually near open swamps and disturbed habitats. Species in this family rest with their wings spread at some angle away from their body thus the common name Spreadwing. The male thorax is light  greyish blue with black spots, female is similar but duller marked.",
+    "description": "Uncommon in Singapore, found usually near open swamps and disturbed habitats. Species in this family rest with their wings spread at some angle away from their body thus the common name Spreadwing. The male thorax is light greyish blue with black spots, female is similar but duller marked.",
     "family": "Lestidae",
     "map": "",
     "color": {
@@ -454,7 +454,7 @@
   },
   {
     "profile_pic": "images/Orolestes_wallacei_Bernard_DUPONT.jpg",
-    "description": "This large spreadwing is believed to be extinct in Singapore. The back of thorax is dark shinning green. The abdomen is black with segmens 8-10 blue.",
+    "description": "This large spreadwing is believed to be extinct in Singapore. The back of thorax is dark shining green. The abdomen is black with segments 8-10 blue.",
     "family": "Lestidae",
     "map": "",
     "color": {
@@ -488,13 +488,13 @@
     },
     "taxon": "Orolestes wallacei",
     "id": 12,
-    "distribution": "Wide spread in Sundaland",
+    "distribution": "Widespread in Sundaland",
     "type": "zygoptera",
     "sort_order": 12
   },
   {
     "profile_pic": "images/Platylestes_heterostylus_Anthony_Quek.jpg",
-    "description": "A very rare damselfly in Singapore and was last sighted at MacRitche Reservoir. The thorax is light green with dark spots.",
+    "description": "A very rare damselfly in Singapore and was last sighted at MacRitchie Reservoir. The thorax is light green with dark spots.",
     "family": "Lestidae",
     "map": "",
     "color": {
@@ -568,7 +568,7 @@
   },
   {
     "profile_pic": "images/aciagrion_hisopa_anthony_quek.jpg",
-    "description": "A very rare damselfly in Singapore. Both sexes are similar, with sides of thorax blue and black stripes at the back. The last three segmens of abdomen are blue.",
+    "description": "A very rare damselfly in Singapore. Both sexes are similar, with sides of thorax blue and black stripes at the back. The last three segments of abdomen are blue.",
     "family": "Coenagrionidae",
     "map": "",
     "color": {
@@ -602,7 +602,7 @@
   },
   {
     "profile_pic": "images/Agriocnemis_femina_gancw.jpg",
-    "description": "The Variable Wisp is common in Singapore. Usually found in grassy areas beside ponds and swamps, also found in Central Catchment Nature Reserve. The young males are green and black with abdomen tips orange, order males is white on thorax and without orange tip. Young female is cherry red, whereas the mature female is olive green with dark marking.",
+    "description": "The Variable Wisp is common in Singapore. Usually found in grassy areas beside ponds and swamps, also found in Central Catchment Nature Reserve. The young males are green and black with abdomen tips orange, older males is white on thorax and without orange tip. Young female is cherry red, whereas the mature female is olive green with dark marking.",
     "family": "Coenagrionidae",
     "map": "",
     "color": {
@@ -658,7 +658,7 @@
     "gallery": [
       "images/Agriocnemis_nana_Keith_Wilson.jpg"
     ],
-    "habitat": "Small forests streams and grass marshes",
+    "habitat": "Small forest streams and grass marshes",
     "profile_pic_author": "H. K. Tang",
     "profile_pic_sex": "",
     "colour": {
@@ -865,7 +865,7 @@
   },
   {
     "profile_pic": "images/Argiocnemis_rubescens_Keith_Wilson.jpg",
-    "description": "Uncommon in Singapore. The damselfly has pointed wing tips. The species colour change occurs with maturity, immature of both sexes with abdomen segmens 1-5 orange to cherry red, but darkens with maturity and become mainly black and light blue.",
+    "description": "Uncommon in Singapore. The damselfly has pointed wing tips. The species colour change occurs with maturity, immature of both sexes with abdomen segments 1-5 orange to cherry red, but darkens with maturity and become mainly black and light blue.",
     "family": "Coenagrionidae",
     "map": "",
     "color": {
@@ -1094,7 +1094,7 @@
     },
     "taxon": "Mortonagrion falcatum",
     "id": 28,
-    "distribution": "Wide spread in Sundaland, south-east of Thailand and Myanmar",
+    "distribution": "Widespread in Sundaland, south-east of Thailand and Myanmar",
     "type": "zygoptera",
     "sort_order": 28
   },
@@ -1252,7 +1252,7 @@
   },
   {
     "profile_pic": "images/Pseudagrion_pruinosum_keith_wilson1.jpg",
-    "description": "The Grey Sprite is uncommon in Singapore and found only at several locations (Mandai, Nee Soon Swamp Forest & Tuas). The male has greyish blue prunescence on the thorax and brown eyes. The famale has brown and green thorax and green eyes.",
+    "description": "The Grey Sprite is uncommon in Singapore and found only at several locations (Mandai, Nee Soon Swamp Forest & Tuas). The male has greyish blue pruinescence on the thorax and brown eyes. The female has brown and green thorax and green eyes.",
     "family": "Coenagrionidae",
     "map": "",
     "color": {
@@ -1295,7 +1295,7 @@
   },
   {
     "profile_pic": "images/Pseudagrion_rubriceps_gailhampshire1.jpg",
-    "description": "This species is very rare in Singapore and found only at Toa Payoh Town Garden and Nee Soon Swamp Forest. The males have green on dorsum and blue on the sides of synthorax, abdomen segments 8 & 10 of are blue. The females have orange-yellow head and thorax, and olive-green eyes, abdomen segment 10 is blue.",
+    "description": "This species is very rare in Singapore and found only at Toa Payoh Town Garden and Nee Soon Swamp Forest. The males have green on dorsum and blue on the sides of synthorax, abdomen segments 8 & 10 are blue. The females have orange-yellow head and thorax, and olive-green eyes, abdomen segment 10 is blue.",
     "family": "Coenagrionidae",
     "map": "",
     "color": {
@@ -1529,7 +1529,7 @@
   },
   {
     "profile_pic": "images/Coeliccia_octogesima_H.K.Tang.jpg",
-    "description": "The Telephone Sylvan is moderately common in the Central Catchment. The male has unique blue markings on the dorsal side of thorax that resembled two traditional telephone handsets facing each other. The female is similar to the male but lack of the blue abdominal tip and the shape of the marking varied.",
+    "description": "The Telephus Sylvan is moderately common in the Central Catchment. The male has unique blue markings on the dorsal side of thorax that resembled two traditional telephone handsets facing each other. The female is similar to the male but lack of the blue abdominal tip and the shape of the marking varied.",
     "family": "Platycnemididae",
     "map": "",
     "color": {
@@ -1569,7 +1569,7 @@
   },
   {
     "profile_pic": "images/Copera_marginipes_keith_wilson.jpg",
-    "description": "A common species of damselfly in Singapore. The male has dark thorax with yellow markings. The legs are bright yellow. The last two abdominal segments are white in male and dark in female. The famele has paler coloration. The immatures are white.",
+    "description": "A common species of damselfly in Singapore. The male has dark thorax with yellow markings. The legs are bright yellow. The last two abdominal segments are white in male and dark in female. The female has paler coloration. The immatures are white.",
     "family": "Platycnemididae",
     "map": "",
     "color": {
@@ -1692,7 +1692,7 @@
   },
   {
     "profile_pic": "images/Prodasineura_collaris_H.K.Tang1.jpg",
-    "description": "Uncommon species and found only in Bukit Timah and Central Catchment Nature Reserves. The male has leaf-shape blue markings on dorsal side of thorax, the anal appendages are light blue. Female has shorter markings and lighter  color.",
+    "description": "Uncommon species and found only in Bukit Timah and Central Catchment Nature Reserves. The male has leaf-shape blue markings on dorsal side of thorax, the anal appendages are light blue. Female has shorter markings and lighter color.",
     "family": "Protoneuridae",
     "map": "",
     "color": {
@@ -1956,7 +1956,7 @@
     },
     "taxon": "Gynacantha bayadera",
     "id": 50,
-    "distribution": "Widespread in tropical Asia, from northen India to New Guinea",
+    "distribution": "Widespread in tropical Asia, from northern India to New Guinea",
     "type": "anisoptera",
     "sort_order": 50
   },
@@ -2106,7 +2106,7 @@
   },
   {
     "profile_pic": "images/Oligoaeschna_amata_csc.jpg",
-    "description": "The species has been observed several times over the years at the forested area at Upper Selatar Reservoir. Male has dark body with green markings. The appendages of female are spread at some angles to each other. ",
+    "description": "The species has been observed several times over the years at the forested area at Upper Seletar Reservoir. Male has dark body with green markings. The appendages of female are spread at some angles to each other. ",
     "family": "Aeshnidae",
     "map": "",
     "color": {
@@ -2140,7 +2140,7 @@
   },
   {
     "profile_pic": "images/Oligoaeschna_foliacea_keith_wilson1.jpg",
-    "description": "a rare species in Singapore. The male has dark body with green markings. The male appendages leaf shaped.",
+    "description": "A rare species in Singapore. The male has dark body with green markings. The male appendages leaf shaped.",
     "family": "Aeshnidae",
     "map": "",
     "color": {
@@ -2178,7 +2178,7 @@
   },
   {
     "profile_pic": "images/Tetracanthagyna_plagiata_ronnie_ang_m.jpg",
-    "description": "The Giant Hawker is the largest dragonfly in South East Asia. The species is rare in Singapore. The species has dark brownish eyes and thorax. The male has unique darker marking on the wings coastal area. The Female has obvoius dark bands on both the wings.",
+    "description": "The Giant Hawker is the largest dragonfly in South East Asia. The species is rare in Singapore. The species has dark brownish eyes and thorax. The male has unique darker marking on the wings costal area. The Female has obvious dark bands on both the wings.",
     "family": "Aeshnidae",
     "map": "",
     "color": {
@@ -2264,7 +2264,7 @@
   },
   {
     "profile_pic": "images/Burmagomphus_plagiatus_C.Y.Choong.jpg",
-    "description": "Suspect to be extinct in Singapore. The Lesser Splayed Clubtailhas apple green  markings on thorax and abdomen. The broad marking on the side of thorax is useful to identify the species.",
+    "description": "Suspect to be extinct in Singapore. The Lesser Splayed Clubtail has apple green markings on thorax and abdomen. The broad marking on the side of thorax is useful to identify the species.",
     "family": "Gomphidae",
     "map": "",
     "color": {
@@ -2416,7 +2416,7 @@
   },
   {
     "profile_pic": "images/Macrogomphus_quadratus_gancw.jpg",
-    "description": "The species is uncommon in Singapore. The Forktail has dark greenish eyes. The thorax has large light yellow squares, abodomen is dark with browish yellow bands.",
+    "description": "The species is uncommon in Singapore. The Forktail has dark greenish eyes. The thorax has large light yellow squares, abdomen is dark with brownish yellow bands.",
     "family": "Gomphidae",
     "map": "",
     "color": {
@@ -2490,7 +2490,7 @@
   },
   {
     "profile_pic": "images/Microgomphus_chelifer_Keith_wilson1.jpg",
-    "description": "The species is rare in Singapore. The TIny Sheartail has large yellow marking on the sides of thorax. Both sexes are similar.",
+    "description": "The species is rare in Singapore. The Tiny Sheartail has large yellow marking on the sides of thorax. Both sexes are similar.",
     "family": "Gomphidae",
     "map": "",
     "color": {
@@ -2656,7 +2656,7 @@
     "confusion_species": "",
     "gallery_sex": [],
     "gallery": [],
-    "habitat": "Small forests streams",
+    "habitat": "Small forest streams",
     "profile_pic_author": "Leonard Tan",
     "profile_pic_sex": "",
     "colour": {
@@ -2678,7 +2678,7 @@
   },
   {
     "profile_pic": "images/Macromia_cincta_leonard_tan2.jpg",
-    "description": "The species is rare in Singapore. The Stream Cruiser has metallic bluish-green eyes. The thorax is dark with white line accross the dorsum, and a white band on its side. Male and female similar.",
+    "description": "The species is rare in Singapore. The Stream Cruiser has metallic bluish-green eyes. The thorax is dark with white line across the dorsum, and a white band on its side. Male and female similar.",
     "family": "Corduliidae",
     "map": "",
     "color": {
@@ -2798,7 +2798,7 @@
   },
   {
     "profile_pic": "images/Aethriamanta_aethra_leonard_tan_m.jpg",
-    "description": "The species is common in Singapore. The mature dragonfly has dark blue pruinescence on thorax and abdomen, the last 4 - 5 abdomen segments are dark. Immature dragonfly have browish and black colours on thorax and abdomen.",
+    "description": "The species is common in Singapore. The mature dragonfly has dark blue pruinescence on thorax and abdomen, the last 4 - 5 abdomen segments are dark. Immature dragonfly have brownish and black colours on thorax and abdomen.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -2838,7 +2838,7 @@
   },
   {
     "profile_pic": "images/Aethriamanta_brevipennis_Vijay_Anand_Ismavel.jpg",
-    "description": "The Scarlet Adjudant is rare in Singapore. A small size dragonfly. The male has bright red abdomen, female is brownish.",
+    "description": "The Scarlet Adjutant is rare in Singapore. A small size dragonfly. The male has bright red abdomen, female is brownish.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3009,7 +3009,7 @@
     "gallery": [
       "images/Brachydiplax_chalybea_Jkadavoor_Jee2.jpg"
     ],
-    "habitat": "Distrubed habitat, ponds, drains and urban gardens",
+    "habitat": "Disturbed habitat, ponds, drains and urban gardens",
     "profile_pic_author": "Jkadavoor (Jee)",
     "profile_pic_sex": "Male",
     "colour": {
@@ -3114,7 +3114,7 @@
   },
   {
     "profile_pic": "images/Brachythemis_contaminata_Jerry_Oldenettel.jpg",
-    "description": "This dragonfly is common in Singapore. The male has dark orange thorax and orange abdomen. The wings of the male aretinted with brown amber, wing tips are clear. Female has lighter brown body. ",
+    "description": "This dragonfly is common in Singapore. The male has dark orange thorax and orange abdomen. The wings of the male are tinted with brown amber, wing tips are clear. Female has lighter brown body. ",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3157,7 +3157,7 @@
   },
   {
     "profile_pic": "images/Camacinia_gigantea_Michael_MK_Khor.jpg",
-    "description": "The species is rare in Singapore. The Sultan is the largest dragonfly in the Libelludidae family. The male is entirely deep red except the distal one-third of wings. The female is amber in colour, with the basal of the wing in paler color.",
+    "description": "The species is rare in Singapore. The Sultan is the largest dragonfly in the Libellulidae family. The male is entirely deep red except the distal one-third of wings. The female is amber in colour, with the basal of the wing in paler color.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3269,7 +3269,7 @@
   },
   {
     "profile_pic": "images/Cratilla_metallica_csc.jpg",
-    "description": "This dargonfly is quite common in Singapore. The Dark-tipped Forest-skimmer has dark wing tips that give its common name. The male has deep blue thorax, abdomen is dark with segment 3 - 4 light blue. Females are similar but without the blue on abdomen segment.",
+    "description": "This dragonfly is quite common in Singapore. The Dark-tipped Forest Skimmer has dark wing tips that give its common name. The male has deep blue thorax, abdomen is dark with segment 3 - 4 light blue. Females are similar but without the blue on abdomen segment.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3323,7 +3323,7 @@
     "gallery": [
       "images/Crocothemis_servilia_csc2.jpg"
     ],
-    "habitat": "Distrubed habitat, ponds, and urban gardens",
+    "habitat": "Disturbed habitat, ponds, and urban gardens",
     "profile_pic_author": "Soon Chye",
     "profile_pic_sex": "Male",
     "colour": {
@@ -3383,7 +3383,7 @@
   },
   {
     "profile_pic": "images/Diplacodes_trivialis_Pavel_Kirillov.jpg",
-    "description": "The Blue Percher is common in Singapore. The male has blue eyes and powderly blue body, last three segments of abdomen black, anal appendages are white. Female has brown eyes, body is greenish yellow with black markings. Immature male is like the female.",
+    "description": "The Blue Percher is common in Singapore. The male has blue eyes and powdery blue body, last three segments of abdomen black, anal appendages are white. Female has brown eyes, body is greenish yellow with black markings. Immature male is like the female.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3426,7 +3426,7 @@
   },
   {
     "profile_pic": "images/Hydrobasileus_croceus_csc.jpg",
-    "description": "A common dragonfly species in Singapore. The Sultan has distinctive irregular brown marking at the hindwing. The male has is entirely amber-brown with dark marking near at abdomen segment 4 - 10. Female is similar to male but without the dark markings at abdomen. ",
+    "description": "A common dragonfly species in Singapore. The Sultan has distinctive irregular brown marking at the hindwing. The male is entirely amber-brown with dark marking near at abdomen segment 4 - 10. Female is similar to male but without the dark markings at abdomen. ",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3576,7 +3576,7 @@
   },
   {
     "profile_pic": "images/Macrodiplax_cora_CCCA.jpg",
-    "description": "A relatively commmon species in Singapore. The male is entirely red, darker on eyes an thorax, there is a tick dash line on the back of abdomen. Female is similar but orange-brown in colour. Immature resembling the female.",
+    "description": "A relatively common species in Singapore. The male is entirely red, darker on eyes and thorax, there is a thick dash line on the back of abdomen. Female is similar but orange-brown in colour. Immature resembling the female.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3733,7 +3733,7 @@
   },
   {
     "profile_pic": "images/Neurothemis_fluctuans_csc.jpg",
-    "description": "Common Parasol is the commonest dragonfly in Singapore. The male is entirely deep-red, the wings are deep-red except the tip, colouration part is variable. Female is amber-brown with daker lines along the abdomen, wings are clear.",
+    "description": "Common Parasol is the commonest dragonfly in Singapore. The male is entirely deep-red, the wings are deep-red except the tip, colouration part is variable. Female is amber-brown with darker lines along the abdomen, wings are clear.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -3970,7 +3970,7 @@
   },
   {
     "profile_pic": "images/Orthetrum_luzonicum_csc.jpg",
-    "description": "This is a common dragonfly species in Singapore. The male has blue abdomen, with last 2 segments of abdomen dark. Thorax is dark with yellow bands. Mature dragonfly developes pruinescence and the body turned blue. Female is light brown. Immatuer male is similar to female.",
+    "description": "This is a common dragonfly species in Singapore. The male has blue abdomen, with last 2 segments of abdomen dark. Thorax is dark with yellow bands. Mature dragonfly develops pruinescence and the body turned blue. Female is light brown. Immature male is similar to female.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4010,7 +4010,7 @@
   },
   {
     "profile_pic": "images/Orthetrum_sabina_csc1.jpg",
-    "description": "A very common species in Singapore. The dragonfly has greyish green eyes. Thorax is green with black markings, abdomen is black with white markings. Anal appendages are white. Famale and male are similar.",
+    "description": "A very common species in Singapore. The dragonfly has greyish green eyes. Thorax is green with black markings, abdomen is black with white markings. Anal appendages are white. Female and male are similar.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4028,7 +4028,7 @@
     "gallery": [
       "images/Orthetrum_sabina_csc2.jpg"
     ],
-    "habitat": "Distrubed habitats, ponds, drains, and nature reserves",
+    "habitat": "Disturbed habitats, ponds, drains, and nature reserves",
     "profile_pic_author": "Soon Chye",
     "profile_pic_sex": "Male",
     "colour": {
@@ -4156,7 +4156,7 @@
   },
   {
     "profile_pic": "images/Potamarcha_congener_csc.jpg",
-    "description": "A common species in Singapore. The male thorax and first four abdomen segments greyish blue, the rest of abdomen segment is brown with dark markings, last two segments black. Female thorax has yellow and black stripes, abdoment markings is similar to male.",
+    "description": "A common species in Singapore. The male thorax and first four abdomen segments greyish blue, the rest of abdomen segment is brown with dark markings, last two segments black. Female thorax has yellow and black stripes, abdomen markings is similar to male.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4230,7 +4230,7 @@
   },
   {
     "profile_pic": "images/Raphismia_bispina_Leonard_Tan.jpg",
-    "description": "Uncommon in Singapore. The male has powderly blue body, abdomen is slate blue and last four segments black. Female has black thorax with yellow markings, abdomen black with yellow streaks on abdomen.",
+    "description": "Uncommon in Singapore. The male has powdery blue body, abdomen is slate blue and last four segments black. Female has black thorax with yellow markings, abdomen black with yellow streaks on abdomen.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4264,7 +4264,7 @@
     },
     "taxon": "Raphismia bispina",
     "id": 110,
-    "distribution": "Costal habitats in Sundaland, Philippines, New Guinea and north-eastern of Australia",
+    "distribution": "Coastal habitats in Sundaland, Philippines, New Guinea and north-eastern of Australia",
     "type": "anisoptera",
     "sort_order": 110
   },
@@ -4304,7 +4304,7 @@
   },
   {
     "profile_pic": "images/Rhyothemis_obsolescens_Jonathan_Hiew_inet.jpg",
-    "description": "Uncommon in Singapore. The dragonfly has black body. The wings are iridescent bronze with ireggular light and dark markings. Male and female are similar.",
+    "description": "Uncommon in Singapore. The dragonfly has black body. The wings are iridescent bronze with irregular light and dark markings. Male and female are similar.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4448,7 +4448,7 @@
   },
   {
     "profile_pic": "images/Risiophlebia_dohrni_Anthony_Quek.jpg",
-    "description": "A rare dragonly species in Singapore. The dragonfly has dark body with yellow stripes. Abdomen curved when view from the side. Male and female are similar.",
+    "description": "A rare dragonfly species in Singapore. The dragonfly has dark body with yellow stripes. Abdomen curved when view from the side. Male and female are similar.",
     "family": "Libellulidae",
     "map": "",
     "color": {
@@ -4522,7 +4522,7 @@
     },
     "taxon": "Tetrathemis hyalina",
     "id": 117,
-    "distribution": "Widespread in Sundaland, southern Indochina, Philipines, tropical Australia",
+    "distribution": "Widespread in Sundaland, southern Indochina, Philippines, tropical Australia",
     "type": "anisoptera",
     "sort_order": 117
   },
@@ -4704,7 +4704,7 @@
     "confusion_species": "",
     "gallery_sex": [],
     "gallery": [],
-    "habitat": "Open and grassy areas near coaster habitats",
+    "habitat": "Open and grassy areas near coastal habitats",
     "profile_pic_author": "Soon Chye",
     "profile_pic_sex": "",
     "colour": {
@@ -4720,7 +4720,7 @@
     },
     "taxon": "Trithemis pallidinervis",
     "id": 122,
-    "distribution": "Throughout tropical mainland Asia, Taiwan and northen Philippines",
+    "distribution": "Throughout tropical mainland Asia, Taiwan and northern Philippines",
     "type": "anisoptera",
     "sort_order": 122
   },
