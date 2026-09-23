@@ -138,6 +138,8 @@ git add -A && git commit -m "Update species content" && git push
 
 Species text and taxonomy draw on:
 
+- Ngiam, R. & Ng, M., *A Photographic Field Guide to the Dragonflies &
+  Damselflies of Singapore*
 - Tang, H.B., Wang, L.K. & Hämäläinen, M., *A Photographic Guide to the
   Dragonflies of Singapore* (2010), Raffles Museum of Biodiversity Research
 - Orr, A.G., *Dragonflies of Peninsular Malaysia and Singapore* (2005)
