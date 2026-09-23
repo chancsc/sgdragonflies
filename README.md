@@ -4,7 +4,9 @@ A mobile-first field guide for identifying dragonflies and damselflies recorded 
 Singapore — 138 species (52 damselflies, 86 dragonflies), each with photos, a
 description, habitat, distribution, and similar/confusable species.
 
-**Live app:** https://chancsc.github.io/sgdragonflies/
+**Staging:** https://chancsc.github.io/sgdragonflies/
+
+**Live:** https://taxonomic-tools.github.io/sgdragonflies/
 
 This is a static, installable web app (PWA) — no account, no backend, works offline
 once loaded.
@@ -77,8 +79,13 @@ visual refresh in plain HTML/CSS/JS, deliberately **without** adding a framework
 ### Deployment
 
 A static site on **GitHub Pages**, served directly from this repo's default
-branch. No build step, no CI — pushing to `main` deploys within about a
-minute.
+branch. No build step, no CI — pushing to `main` deploys to **staging**
+(https://chancsc.github.io/sgdragonflies/) within about a minute.
+
+The **live** version (https://taxonomic-tools.github.io/sgdragonflies/) is
+hosted from
+[taxonomic-tools/sgdragonflies](https://github.com/taxonomic-tools/sgdragonflies)
+and is updated separately from this repo.
 
 ### A quirk worth knowing if you touch templates
 
