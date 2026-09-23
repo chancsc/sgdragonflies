@@ -40,7 +40,8 @@
     "id": 1,
     "distribution": "Found in Thailand, Peninsular Malaysia and Sumatra (Indonesia)",
     "type": "zygoptera",
-    "sort_order": 1
+    "sort_order": 1,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Neurobasis_chinensis_Jkadavoor_Jee.jpg",
@@ -83,7 +84,8 @@
     "id": 2,
     "distribution": "Widely distributed in South East Asia",
     "type": "zygoptera",
-    "sort_order": 2
+    "sort_order": 2,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Vestalis_amethystina_Keith_Wilson.jpg",
@@ -117,7 +119,8 @@
     "id": 3,
     "distribution": "Sumatra, Peninsular Malaysia and Thailand (southern and western)",
     "type": "zygoptera",
-    "sort_order": 3
+    "sort_order": 3,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Vestalis_amoena_CW_Gan.jpg",
@@ -160,7 +163,8 @@
     "id": 4,
     "distribution": "Widely distributed in Sundaland",
     "type": "zygoptera",
-    "sort_order": 4
+    "sort_order": 4,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Libellago_aurantiaca_Keith_Wilson.jpg",
@@ -194,7 +198,8 @@
     "id": 5,
     "distribution": "Found throughout Sundaland and south-western Thailand",
     "type": "zygoptera",
-    "sort_order": 5
+    "sort_order": 5,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Libellago_hyalina_eddy_lee_m1.jpg",
@@ -237,7 +242,8 @@
     "id": 6,
     "distribution": "Widely distributed in Sundaland, Thailand and southern Indochina",
     "type": "zygoptera",
-    "sort_order": 6
+    "sort_order": 6,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Libellago_lineata_Weiting_Liu.jpg",
@@ -280,7 +286,8 @@
     "id": 7,
     "distribution": "Widely distributed, from northern India, southern China, Sundaland and Borneo",
     "type": "zygoptera",
-    "sort_order": 7
+    "sort_order": 7,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Libellago_stigmatizans_Keith_Wilson_1.jpg",
@@ -323,7 +330,8 @@
     "id": 8,
     "distribution": "Found in southern Thailand, Peninsular Malaysia and Sumatra (Indonesia)",
     "type": "zygoptera",
-    "sort_order": 8
+    "sort_order": 8,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Dysphaea_dimidiata_Keith_Wilson.jpg",
@@ -364,7 +372,8 @@
     "id": 9,
     "distribution": "Found throughout Sundaland and Thailand",
     "type": "zygoptera",
-    "sort_order": 9
+    "sort_order": 9,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Euphaea_impar_GanCW.jpg",
@@ -407,7 +416,8 @@
     "id": 10,
     "distribution": "Found throughout Sundaland",
     "type": "zygoptera",
-    "sort_order": 10
+    "sort_order": 10,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Lestes_praemorsus_H._K._Tang.jpg",
@@ -450,7 +460,8 @@
     "id": 11,
     "distribution": "Tropical Asia, New Guinea",
     "type": "zygoptera",
-    "sort_order": 11
+    "sort_order": 11,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Orolestes_wallacei_Bernard_DUPONT.jpg",
@@ -490,7 +501,8 @@
     "id": 12,
     "distribution": "Widespread in Sundaland",
     "type": "zygoptera",
-    "sort_order": 12
+    "sort_order": 12,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Platylestes_heterostylus_Anthony_Quek.jpg",
@@ -524,7 +536,8 @@
     "id": 13,
     "distribution": "Confined to Sundaland",
     "type": "zygoptera",
-    "sort_order": 13
+    "sort_order": 13,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Podolestes_orientalis_H._K._Tang_1.jpg",
@@ -564,7 +577,8 @@
     "id": 14,
     "distribution": "Widely distributed in Sundaland",
     "type": "zygoptera",
-    "sort_order": 14
+    "sort_order": 14,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/aciagrion_hisopa_anthony_quek.jpg",
@@ -598,7 +612,8 @@
     "id": 15,
     "distribution": "Suspected to be restricted to Peninsular Malaysia and Singapore",
     "type": "zygoptera",
-    "sort_order": 15
+    "sort_order": 15,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Agriocnemis_femina_gancw.jpg",
@@ -638,7 +653,8 @@
     "id": 16,
     "distribution": "Widely distributed in tropical Asia from Sri Lanka, West Bengal to Japan, New Guinea and Australia",
     "type": "zygoptera",
-    "sort_order": 16
+    "sort_order": 16,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Agriocnemis_nana_H.K.Tang.jpg",
@@ -676,7 +692,8 @@
     "id": 17,
     "distribution": "Peninsular Malaysia, Thailand, Myanmar, southern Vietnam",
     "type": "zygoptera",
-    "sort_order": 17
+    "sort_order": 17,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Agriocnemis_pygmaea_Keith_Wilson.jpg",
@@ -710,7 +727,8 @@
     "id": 18,
     "distribution": "Ranges from Afghanistan to South-east Asia and Australia",
     "type": "zygoptera",
-    "sort_order": 18
+    "sort_order": 18,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "profile_pic": "images/Amphicnemis_gracilis_budak_male.jpg",
@@ -753,7 +771,8 @@
     "id": 19,
     "distribution": "Peninsular Thailand, Peninsular Malaysia and Sumatra",
     "type": "zygoptera",
-    "sort_order": 19
+    "sort_order": 19,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Archibasis_melanocyana_Keith_Wilson.jpg",
@@ -787,7 +806,8 @@
     "id": 20,
     "distribution": "Found throughout Sundaland",
     "type": "zygoptera",
-    "sort_order": 20
+    "sort_order": 20,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Archibasis_rebeccae_Keith_Wilson.jpg",
@@ -821,7 +841,8 @@
     "id": 21,
     "distribution": "Peninsular Malaysia and Singapore",
     "type": "zygoptera",
-    "sort_order": 21
+    "sort_order": 21,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Archibasis_viola_budak_1.jpg",
@@ -861,7 +882,8 @@
     "id": 22,
     "distribution": "Found throughout Sundaland, southernmost Myanmar, Palawan and Sulawesi",
     "type": "zygoptera",
-    "sort_order": 22
+    "sort_order": 22,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Argiocnemis_rubescens_Keith_Wilson.jpg",
@@ -901,7 +923,8 @@
     "id": 23,
     "distribution": "Found from India to Australia and New Guinea",
     "type": "zygoptera",
-    "sort_order": 23
+    "sort_order": 23,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Ceriagrion_cerinorubellum_gancw.jpg",
@@ -941,7 +964,8 @@
     "id": 24,
     "distribution": "Widely distributed in South East Asia and South Asia",
     "type": "zygoptera",
-    "sort_order": 24
+    "sort_order": 24,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Ceriagrion_chaoi_Anthony_Quek.jpg",
@@ -975,7 +999,8 @@
     "id": 25,
     "distribution": "Myanmar, Thailand and Peninsular Malaysia",
     "type": "zygoptera",
-    "sort_order": 25
+    "sort_order": 25,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Ischnura_senegalensis_keith_wilson.jpg",
@@ -1016,7 +1041,8 @@
     "id": 26,
     "distribution": "From Africa to New Guinea",
     "type": "zygoptera",
-    "sort_order": 26
+    "sort_order": 26,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Mortonagrion_arthuri_anthony_quek_m.jpg",
@@ -1054,7 +1080,8 @@
     "id": 27,
     "distribution": "Southern Myanmar, Southern Thailand, Peninsular Malaysia",
     "type": "zygoptera",
-    "sort_order": 27
+    "sort_order": 27,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Mortonagrion_falcatum_tang_hung_bun.jpg",
@@ -1096,7 +1123,8 @@
     "id": 28,
     "distribution": "Widespread in Sundaland, south-eastern Thailand and Myanmar",
     "type": "zygoptera",
-    "sort_order": 28
+    "sort_order": 28,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Onychargia_atrocyana_wu_bird.jpg",
@@ -1134,7 +1162,8 @@
     "id": 29,
     "distribution": "Widely distributed in South and South-east Asia",
     "type": "zygoptera",
-    "sort_order": 29
+    "sort_order": 29,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Pericnemis_stictica_Lemon_m.jpg",
@@ -1176,7 +1205,8 @@
     "id": 30,
     "distribution": "Found throughout Sundaland",
     "type": "zygoptera",
-    "sort_order": 30
+    "sort_order": 30,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Pseudagrion_australasiae_H.K.Tang.jpg",
@@ -1210,7 +1240,8 @@
     "id": 31,
     "distribution": "Widely distributed in South and South-east Asia",
     "type": "zygoptera",
-    "sort_order": 31
+    "sort_order": 31,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Pseudagrion_microcephalum_keith_wilson.jpg",
@@ -1248,7 +1279,8 @@
     "id": 32,
     "distribution": "Widely distributed from India to Australia and Solomon Islands",
     "type": "zygoptera",
-    "sort_order": 32
+    "sort_order": 32,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Pseudagrion_pruinosum_keith_wilson1.jpg",
@@ -1291,7 +1323,8 @@
     "id": 33,
     "distribution": "Widespread in South-east Asia",
     "type": "zygoptera",
-    "sort_order": 33
+    "sort_order": 33,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Pseudagrion_rubriceps_gailhampshire1.jpg",
@@ -1334,7 +1367,8 @@
     "id": 34,
     "distribution": "Widely distributed in South and South-east Asia",
     "type": "zygoptera",
-    "sort_order": 34
+    "sort_order": 34,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "profile_pic": "images/Teinobasis_ruficollis_m_ronnie_ang.jpg",
@@ -1376,7 +1410,8 @@
     "id": 35,
     "distribution": "Peninsular Malaysia and Sumatra",
     "type": "zygoptera",
-    "sort_order": 35
+    "sort_order": 35,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "profile_pic": "images/Teinobasis_cryptica_C.Y.Choong.jpg",
@@ -1410,7 +1445,8 @@
     "id": 36,
     "distribution": "Not known",
     "type": "zygoptera",
-    "sort_order": 36
+    "sort_order": 36,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Amphicnemis_Bebar_C.Y.Choong.jpg",
@@ -1444,7 +1480,8 @@
     "id": 37,
     "distribution": "Recorded in Malaysia and Singapore",
     "type": "zygoptera",
-    "sort_order": 37
+    "sort_order": 37,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Coeliccia_albicauda_keith_wilson1.jpg",
@@ -1487,7 +1524,8 @@
     "id": 38,
     "distribution": "Peninsular Malaysia, Thailand and Myanmar",
     "type": "zygoptera",
-    "sort_order": 38
+    "sort_order": 38,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Coeliccia_didyma_Luvjoy_Choker.jpg",
@@ -1525,11 +1563,12 @@
     "id": 39,
     "distribution": "Peninsular Malaysia, Thailand, Myanmar and northern India",
     "type": "zygoptera",
-    "sort_order": 39
+    "sort_order": 39,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Coeliccia_octogesima_H.K.Tang.jpg",
-    "description": "The Telephus Sylvan is moderately common in the Central Catchment. The male has unique blue markings on the dorsal side of the thorax that resemble two traditional telephone handsets facing each other. The female is similar to the male but lacks the blue abdominal tip, and the shape of the marking varies.",
+    "description": "The Telephone Sylvan is moderately common in the Central Catchment. The male has unique blue markings on the dorsal side of the thorax that resemble two traditional telephone handsets facing each other. The female is similar to the male but lacks the blue abdominal tip, and the shape of the marking varies.",
     "family": "Platycnemididae",
     "map": "",
     "color": {
@@ -1540,7 +1579,7 @@
       "Keith Wilson",
       "Keith Wilson"
     ],
-    "common_name": "Telephus Sylvan",
+    "common_name": "Telephone Sylvan",
     "confusion_species": "20, 21, 22, 23(mature adult), 27(m, blue form), 28(m), 39, 44, 46, 47",
     "gallery_sex": [],
     "gallery": [
@@ -1565,7 +1604,8 @@
     "id": 40,
     "distribution": "Peninsular Malaysia",
     "type": "zygoptera",
-    "sort_order": 40
+    "sort_order": 40,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Copera_marginipes_keith_wilson.jpg",
@@ -1605,7 +1645,8 @@
     "id": 41,
     "distribution": "Widespread in tropical Asia",
     "type": "zygoptera",
-    "sort_order": 41
+    "sort_order": 41,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Copera_vittata_keith_wilson2.jpg",
@@ -1645,7 +1686,8 @@
     "id": 42,
     "distribution": "Widely distributed in South and South-east Asia",
     "type": "zygoptera",
-    "sort_order": 42
+    "sort_order": 42,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Drepanosticta_quadrata_keith_wilson_m.jpg",
@@ -1688,7 +1730,8 @@
     "id": 43,
     "distribution": "Known only from Singapore and Johor (Malaysia)",
     "type": "zygoptera",
-    "sort_order": 43
+    "sort_order": 43,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "profile_pic": "images/Prodasineura_collaris_H.K.Tang1.jpg",
@@ -1730,7 +1773,8 @@
     "id": 44,
     "distribution": "Ranges throughout Sundaland, including southern Thailand and southern Myanmar",
     "type": "zygoptera",
-    "sort_order": 44
+    "sort_order": 44,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Prodasineura_humeralis_keith_wilson1.jpg",
@@ -1773,7 +1817,8 @@
     "id": 45,
     "distribution": "Likely to be widespread in tropical Asia",
     "type": "zygoptera",
-    "sort_order": 45
+    "sort_order": 45,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Prodasineura_interrupta_budak.jpg",
@@ -1807,7 +1852,8 @@
     "id": 46,
     "distribution": "Found throughout Sundaland",
     "type": "zygoptera",
-    "sort_order": 46
+    "sort_order": 46,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Prodasineura_notostigma_keith_wilson.jpg",
@@ -1841,7 +1887,8 @@
     "id": 47,
     "distribution": "Sundaland",
     "type": "zygoptera",
-    "sort_order": 47
+    "sort_order": 47,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Anax_guttatus_Weiting_Liu.jpg",
@@ -1884,7 +1931,8 @@
     "id": 48,
     "distribution": "South and South-east Asia, Australia and Pacific Islands",
     "type": "anisoptera",
-    "sort_order": 48
+    "sort_order": 48,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Gynacantha_basiguttata_chun_xing_wong.jpg",
@@ -1918,7 +1966,8 @@
     "id": 49,
     "distribution": "Widespread in SEA (South East Asia)",
     "type": "anisoptera",
-    "sort_order": 49
+    "sort_order": 49,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Gynacantha_bayadera_Weiting_Liu.jpg",
@@ -1958,7 +2007,8 @@
     "id": 50,
     "distribution": "Widespread in tropical Asia, from northern India to New Guinea",
     "type": "anisoptera",
-    "sort_order": 50
+    "sort_order": 50,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "profile_pic": "images/Gynacantha_dohrni_Keith_Wilson.jpg",
@@ -1992,7 +2042,8 @@
     "id": 51,
     "distribution": "Widespread in Sundaland, Philippines",
     "type": "anisoptera",
-    "sort_order": 51
+    "sort_order": 51,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Gynacantha_subinterrupta_Keith_Wilson.jpg",
@@ -2026,7 +2077,8 @@
     "id": 52,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 52
+    "sort_order": 52,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Heliaeschna_crassa_Tang_Hung_Bun.jpg",
@@ -2060,7 +2112,8 @@
     "id": 53,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 53
+    "sort_order": 53,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Heliaeschna_uninervulata_Tang_hung_bun.jpg",
@@ -2102,7 +2155,8 @@
     "id": 54,
     "distribution": "Widespread in Sundaland, Palawan, Myanmar and Indochina",
     "type": "anisoptera",
-    "sort_order": 54
+    "sort_order": 54,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "profile_pic": "images/Oligoaeschna_amata_csc.jpg",
@@ -2136,7 +2190,8 @@
     "id": 55,
     "distribution": "Peninsular Malaysia and Borneo",
     "type": "anisoptera",
-    "sort_order": 55
+    "sort_order": 55,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Oligoaeschna_foliacea_keith_wilson1.jpg",
@@ -2174,7 +2229,8 @@
     "id": 56,
     "distribution": "Peninsular Malaysia and Borneo",
     "type": "anisoptera",
-    "sort_order": 56
+    "sort_order": 56,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Tetracanthagyna_plagiata_ronnie_ang_m.jpg",
@@ -2217,7 +2273,8 @@
     "id": 57,
     "distribution": "Widespread in Sundaland",
     "type": "anisoptera",
-    "sort_order": 57
+    "sort_order": 57,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Burmagomphus_divaricatus_Apisit_Wilaijit.jpg",
@@ -2260,7 +2317,8 @@
     "id": 58,
     "distribution": "Peninsular Malaysia, Thailand, Laos & Yunnan",
     "type": "anisoptera",
-    "sort_order": 58
+    "sort_order": 58,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Burmagomphus_plagiatus_C.Y.Choong.jpg",
@@ -2294,7 +2352,8 @@
     "id": 59,
     "distribution": "Peninsular Malaysia, Thailand, Laos, and Yunnan",
     "type": "anisoptera",
-    "sort_order": 59
+    "sort_order": 59,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Heliogomphus_kelantanensis_Leonard_Tan.jpg",
@@ -2332,7 +2391,8 @@
     "id": 60,
     "distribution": "Restricted to Peninsular Malaysia and Singapore",
     "type": "anisoptera",
-    "sort_order": 60
+    "sort_order": 60,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Ictinogomphus_decoratus_melaenops_gancw1.jpg",
@@ -2372,7 +2432,8 @@
     "id": 61,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
-    "sort_order": 61
+    "sort_order": 61,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Leptogomphus_risi_Leonard_Tan1.jpg",
@@ -2412,7 +2473,8 @@
     "id": 62,
     "distribution": "Peninsular Malaysia and southern Thailand",
     "type": "anisoptera",
-    "sort_order": 62
+    "sort_order": 62,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Macrogomphus_quadratus_gancw.jpg",
@@ -2446,7 +2508,8 @@
     "id": 63,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 63
+    "sort_order": 63,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Merogomphus_femoralis_Tang_hung_bun.jpg",
@@ -2486,7 +2549,8 @@
     "id": 64,
     "distribution": "Restricted to Peninsular Malaysia and Singapore",
     "type": "anisoptera",
-    "sort_order": 64
+    "sort_order": 64,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Microgomphus_chelifer_Keith_wilson1.jpg",
@@ -2524,7 +2588,8 @@
     "id": 65,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
-    "sort_order": 65
+    "sort_order": 65,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Paragomphus_capricornis_keith_wilson1.jpg",
@@ -2564,7 +2629,8 @@
     "id": 66,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
-    "sort_order": 66
+    "sort_order": 66,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Epophthalmia_vittigera_csc.jpg",
@@ -2602,7 +2668,8 @@
     "id": 67,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
-    "sort_order": 67
+    "sort_order": 67,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Hemicordulia_tenera_dennis_farrell.jpg",
@@ -2640,7 +2707,8 @@
     "id": 68,
     "distribution": "Found throughout Sundaland and Thailand",
     "type": "anisoptera",
-    "sort_order": 68
+    "sort_order": 68,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Idionyx_yolanda_leonard_tan.jpg",
@@ -2674,7 +2742,8 @@
     "id": 69,
     "distribution": "Widespread in Sundaland",
     "type": "anisoptera",
-    "sort_order": 69
+    "sort_order": 69,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Macromia_cincta_leonard_tan2.jpg",
@@ -2714,7 +2783,8 @@
     "id": 70,
     "distribution": "Widespread in Sundaland, Palawan and Tawi Tawi",
     "type": "anisoptera",
-    "sort_order": 70
+    "sort_order": 70,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Macromia_cydippe_leonard_tan1_m.jpg",
@@ -2754,7 +2824,8 @@
     "id": 71,
     "distribution": "Widespread in Sundaland, Central Thailand",
     "type": "anisoptera",
-    "sort_order": 71
+    "sort_order": 71,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Acisoma_panorpoides_Drriss_&_Marrionn.jpg",
@@ -2794,7 +2865,8 @@
     "id": 72,
     "distribution": "Widespread in tropical Asia and Africa",
     "type": "anisoptera",
-    "sort_order": 72
+    "sort_order": 72,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Aethriamanta_aethra_leonard_tan_m.jpg",
@@ -2834,7 +2906,8 @@
     "id": 73,
     "distribution": "Found throughout Sundaland and Thailand",
     "type": "anisoptera",
-    "sort_order": 73
+    "sort_order": 73,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Aethriamanta_brevipennis_Vijay_Anand_Ismavel.jpg",
@@ -2872,7 +2945,8 @@
     "id": 74,
     "distribution": "Widespread in South and South East Asia",
     "type": "anisoptera",
-    "sort_order": 74
+    "sort_order": 74,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Aethriamanta_gracilis_ronnie_ang_m.jpg",
@@ -2910,7 +2984,8 @@
     "id": 75,
     "distribution": "Widespread in Sundaland, Thailand, Sulu and Maluku Islands",
     "type": "anisoptera",
-    "sort_order": 75
+    "sort_order": 75,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Agrionoptera_insignis_csc.jpg",
@@ -2944,7 +3019,8 @@
     "id": 76,
     "distribution": "Widespread in tropical Asia and Australasia",
     "type": "anisoptera",
-    "sort_order": 76
+    "sort_order": 76,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Agrionoptera_sexlineata_H.K.Tang.jpg",
@@ -2987,7 +3063,8 @@
     "id": 77,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 77
+    "sort_order": 77,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Brachydiplax_chalybea_Jkadavoor_Jee1.jpg",
@@ -3027,7 +3104,8 @@
     "id": 78,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 78
+    "sort_order": 78,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Brachydiplax_farinosa_Vijay_Anand_Ismavel1.jpg",
@@ -3070,7 +3148,8 @@
     "id": 79,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 79
+    "sort_order": 79,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Brachygonia_oculata_cy_choong_m.jpg",
@@ -3110,7 +3189,8 @@
     "id": 80,
     "distribution": "Widespread in Sundaland, Cambodia and Vietnam",
     "type": "anisoptera",
-    "sort_order": 80
+    "sort_order": 80,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Brachythemis_contaminata_Jerry_Oldenettel.jpg",
@@ -3153,7 +3233,8 @@
     "id": 81,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 81
+    "sort_order": 81,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Camacinia_gigantea_Michael_MK_Khor.jpg",
@@ -3191,7 +3272,8 @@
     "id": 82,
     "distribution": "Range from northern India through South East Asia to New Guinea",
     "type": "anisoptera",
-    "sort_order": 82
+    "sort_order": 82,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Chalybeothemis_fluviatilis_Leonard_Tan.jpg",
@@ -3225,7 +3307,8 @@
     "id": 83,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 83
+    "sort_order": 83,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Cratilla_lineata_Jkadavoor_Jee_m.jpg",
@@ -3265,7 +3348,8 @@
     "id": 84,
     "distribution": "Widely distributed in South and South East Asia",
     "type": "anisoptera",
-    "sort_order": 84
+    "sort_order": 84,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Cratilla_metallica_csc.jpg",
@@ -3303,7 +3387,8 @@
     "id": 85,
     "distribution": "Widespread in South East Asia",
     "type": "anisoptera",
-    "sort_order": 85
+    "sort_order": 85,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Crocothemis_servilia_csc1.jpg",
@@ -3341,7 +3426,8 @@
     "id": 86,
     "distribution": "From Middle East throughout tropical and subtropical Asia to New Guinea",
     "type": "anisoptera",
-    "sort_order": 86
+    "sort_order": 86,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Diplacodes_nebulosa_csc.jpg",
@@ -3379,7 +3465,8 @@
     "id": 87,
     "distribution": "Widespread in tropical Asia, Australia",
     "type": "anisoptera",
-    "sort_order": 87
+    "sort_order": 87,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Diplacodes_trivialis_Pavel_Kirillov.jpg",
@@ -3422,7 +3509,8 @@
     "id": 88,
     "distribution": "Widely distributed in tropical, subtropical Asia and Australasia",
     "type": "anisoptera",
-    "sort_order": 88
+    "sort_order": 88,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Hydrobasileus_croceus_csc.jpg",
@@ -3460,7 +3548,8 @@
     "id": 89,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 89
+    "sort_order": 89,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Indothemis_limbata_Anthony_Quek.jpg",
@@ -3498,7 +3587,8 @@
     "id": 90,
     "distribution": "Thailand, Myanmar, Peninsular Malaysia",
     "type": "anisoptera",
-    "sort_order": 90
+    "sort_order": 90,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "profile_pic": "images/Lathrecista_asiatica_csc.jpg",
@@ -3532,7 +3622,8 @@
     "id": 91,
     "distribution": "Widespread in tropical Asia and Australasia",
     "type": "anisoptera",
-    "sort_order": 91
+    "sort_order": 91,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Lyriothemis_cleis_keith_wilson_m.jpg",
@@ -3572,7 +3663,8 @@
     "id": 92,
     "distribution": "Widespread in Sundaland, Philippines and Sulawesi",
     "type": "anisoptera",
-    "sort_order": 92
+    "sort_order": 92,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Macrodiplax_cora_CCCA.jpg",
@@ -3612,7 +3704,8 @@
     "id": 93,
     "distribution": "Tropical and subtropical Africa, Asia, Australia and Pacific Islands",
     "type": "anisoptera",
-    "sort_order": 93
+    "sort_order": 93,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Nannophya_pygmaea_csc1.jpg",
@@ -3652,7 +3745,8 @@
     "id": 94,
     "distribution": "Tropical Asia from north-eastern India to New Guinea and Japan",
     "type": "anisoptera",
-    "sort_order": 94
+    "sort_order": 94,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Nesoxenia_lineata_keith_wilson.jpg",
@@ -3686,7 +3780,8 @@
     "id": 95,
     "distribution": "From India to Sundaland and Philippines",
     "type": "anisoptera",
-    "sort_order": 95
+    "sort_order": 95,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Neurothemis_disparilis_1.jpg",
@@ -3729,7 +3824,8 @@
     "id": 96,
     "distribution": "Peninsular Malaysia and Borneo",
     "type": "anisoptera",
-    "sort_order": 96
+    "sort_order": 96,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Neurothemis_fluctuans_csc.jpg",
@@ -3769,7 +3865,8 @@
     "id": 97,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 97
+    "sort_order": 97,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Onychothemis_testacea_Weiting_Liu.jpg",
@@ -3809,7 +3906,8 @@
     "id": 98,
     "distribution": "South and South East Asia",
     "type": "anisoptera",
-    "sort_order": 98
+    "sort_order": 98,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Orchithemis_pruinans_Leonard_Tan.jpg",
@@ -3849,7 +3947,8 @@
     "id": 99,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 99
+    "sort_order": 99,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Orchithemis_pulcherrima_csc1.jpg",
@@ -3892,7 +3991,8 @@
     "id": 100,
     "distribution": "Widespread in Sundaland, southern Indochina, Philippines",
     "type": "anisoptera",
-    "sort_order": 100
+    "sort_order": 100,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Orthetrum_chrysis_csc.jpg",
@@ -3926,7 +4026,8 @@
     "id": 101,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 101
+    "sort_order": 101,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Orthetrum_glaucum_keith_wilson.jpg",
@@ -3966,7 +4067,8 @@
     "id": 102,
     "distribution": "Widespread in tropical Asia, New Guinea",
     "type": "anisoptera",
-    "sort_order": 102
+    "sort_order": 102,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Orthetrum_luzonicum_csc.jpg",
@@ -4006,7 +4108,8 @@
     "id": 103,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 103
+    "sort_order": 103,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Orthetrum_sabina_csc1.jpg",
@@ -4046,7 +4149,8 @@
     "id": 104,
     "distribution": "From Mediterranean to southern and eastern Asia, Australia",
     "type": "anisoptera",
-    "sort_order": 104
+    "sort_order": 104,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Orthetrum_testaceum_csc.jpg",
@@ -4080,7 +4184,8 @@
     "id": 105,
     "distribution": "Widespread in South East Asia",
     "type": "anisoptera",
-    "sort_order": 105
+    "sort_order": 105,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Pantala_flavescens_csc.jpg",
@@ -4114,7 +4219,8 @@
     "id": 106,
     "distribution": "The most widespread dragonfly on Earth.",
     "type": "anisoptera",
-    "sort_order": 106
+    "sort_order": 106,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Pornothemis_starrei_Leonard_Tan.jpg",
@@ -4152,7 +4258,8 @@
     "id": 107,
     "distribution": "East Sumatra, south Borneo and Brunei",
     "type": "anisoptera",
-    "sort_order": 107
+    "sort_order": 107,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Potamarcha_congener_csc.jpg",
@@ -4192,7 +4299,8 @@
     "id": 108,
     "distribution": "Widely distributed in tropical Asia and Australia",
     "type": "anisoptera",
-    "sort_order": 108
+    "sort_order": 108,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Pseudothemis_jorina_eddy_lee.jpg",
@@ -4226,7 +4334,8 @@
     "id": 109,
     "distribution": "Laos, Thailand, Peninsular Malaysia and Borneo",
     "type": "anisoptera",
-    "sort_order": 109
+    "sort_order": 109,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Raphismia_bispina_Leonard_Tan.jpg",
@@ -4266,7 +4375,8 @@
     "id": 110,
     "distribution": "Coastal habitats in Sundaland, the Philippines, New Guinea and north-eastern Australia",
     "type": "anisoptera",
-    "sort_order": 110
+    "sort_order": 110,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Rhodothemis_rufa_csc.jpg",
@@ -4300,7 +4410,8 @@
     "id": 111,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 111
+    "sort_order": 111,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Rhyothemis_obsolescens_Jonathan_Hiew_inet.jpg",
@@ -4334,7 +4445,8 @@
     "id": 112,
     "distribution": "Range from north-eastern India, Myanmar, Thailand to Sundaland",
     "type": "anisoptera",
-    "sort_order": 112
+    "sort_order": 112,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Rhyothemis_Phyllis_csc.jpg",
@@ -4368,7 +4480,8 @@
     "id": 113,
     "distribution": "Widespread in South East Asia, New Guinea and Australia",
     "type": "anisoptera",
-    "sort_order": 113
+    "sort_order": 113,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Rhyothemis_pygmaea_C.Y.Choong2.jpg",
@@ -4406,7 +4519,8 @@
     "id": 114,
     "distribution": "Sundaland, Sulawesi, Maluku and New Guinea",
     "type": "anisoptera",
-    "sort_order": 111.5
+    "sort_order": 111.5,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Rhyothemis_triangularis_Jerry_Hsu.jpg",
@@ -4444,7 +4558,8 @@
     "id": 115,
     "distribution": "Widespread in South and South East Asia",
     "type": "anisoptera",
-    "sort_order": 115
+    "sort_order": 115,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Risiophlebia_dohrni_Anthony_Quek.jpg",
@@ -4484,7 +4599,8 @@
     "id": 116,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 116
+    "sort_order": 116,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "profile_pic": "images/Tetrathemis_irregularis_keith_wilson.jpg",
@@ -4524,7 +4640,8 @@
     "id": 117,
     "distribution": "Widespread in Sundaland, southern Indochina, Philippines, tropical Australia",
     "type": "anisoptera",
-    "sort_order": 117
+    "sort_order": 117,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "profile_pic": "images/Tholymis_tilIarga_vijay_anand_ismavel.jpg",
@@ -4564,7 +4681,8 @@
     "id": 118,
     "distribution": "Subtropical Africa, Asia, Australia and Micronesia",
     "type": "anisoptera",
-    "sort_order": 118
+    "sort_order": 118,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Tramea_transmarina_euryale_wu_bird.jpg",
@@ -4602,7 +4720,8 @@
     "id": 119,
     "distribution": "Widely distributed in tropical Asia and Australasia",
     "type": "anisoptera",
-    "sort_order": 119
+    "sort_order": 119,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Trithemis_aurora_David_Cook.jpg",
@@ -4645,7 +4764,8 @@
     "id": 120,
     "distribution": "Widespread in tropical Asia",
     "type": "anisoptera",
-    "sort_order": 120
+    "sort_order": 120,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Trithemis_festiva_Jkadavoor_Jee.jpg",
@@ -4688,7 +4808,8 @@
     "id": 121,
     "distribution": "From Turkey through tropical Asia, to Maluku Islands",
     "type": "anisoptera",
-    "sort_order": 121
+    "sort_order": 121,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Trithemis_pallidinervis_csc.jpg",
@@ -4722,7 +4843,8 @@
     "id": 122,
     "distribution": "Throughout tropical mainland Asia, Taiwan and northern Philippines",
     "type": "anisoptera",
-    "sort_order": 122
+    "sort_order": 122,
+    "distribution_rarity": "Widespread but Uncommon"
   },
   {
     "profile_pic": "images/Tyriobapta_torrida_csc.jpg",
@@ -4762,7 +4884,8 @@
     "id": 123,
     "distribution": "Confined to Sundaland",
     "type": "anisoptera",
-    "sort_order": 123
+    "sort_order": 123,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Urothemis_abbotti.jpeg",
@@ -4802,7 +4925,8 @@
     "id": 124,
     "distribution": "Thailand and Peninsular Malaysia",
     "type": "anisoptera",
-    "sort_order": 124
+    "sort_order": 124,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "profile_pic": "images/Urothemis_signata_csc.jpg",
@@ -4836,7 +4960,8 @@
     "id": 125,
     "distribution": "Widespread in South and South East Asia, Australia",
     "type": "anisoptera",
-    "sort_order": 125
+    "sort_order": 125,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Zyxomma_petiolatum_csc.jpg",
@@ -4870,7 +4995,8 @@
     "id": 126,
     "distribution": "Tropical Asia, New Guinea and Australia",
     "type": "anisoptera",
-    "sort_order": 126
+    "sort_order": 126,
+    "distribution_rarity": "Widespread & Common"
   },
   {
     "profile_pic": "images/Zyxomma_obtusum_weiting_liu_m.jpg",
@@ -4913,7 +5039,8 @@
     "id": 127,
     "distribution": "",
     "type": "anisoptera",
-    "sort_order": 127
+    "sort_order": 127,
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "description": "N/A",
@@ -4950,7 +5077,8 @@
     "distribution": "N/A",
     "type": "zygoptera",
     "profile_pic": "images/Echo_modesta_1.jpg",
-    "sort_order": 1.5
+    "sort_order": 1.5,
+    "distribution_rarity": "Nationally Extinct"
   },
   {
     "description": "",
@@ -4987,7 +5115,8 @@
     "distribution": "",
     "type": "zygoptera",
     "profile_pic": "images/Vestalis_gracilis_1.jpg",
-    "sort_order": 4.5
+    "sort_order": 4.5,
+    "distribution_rarity": "Restricted but Common"
   },
   {
     "description": "",
@@ -5024,7 +5153,8 @@
     "distribution": "",
     "type": "zygoptera",
     "profile_pic": "images/Agriocnemis_minima_1.jpg",
-    "sort_order": 16.5
+    "sort_order": 16.5,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "description": "",
@@ -5064,7 +5194,8 @@
     "distribution": "",
     "type": "zygoptera",
     "profile_pic": "images/Mortonagrion_aborense_1.jpg",
-    "sort_order": 26.5
+    "sort_order": 26.5,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "description": "",
@@ -5107,7 +5238,8 @@
     "distribution": "",
     "type": "anisoptera",
     "profile_pic": "images/Anax_panybeus_1.jpg",
-    "sort_order": 48.5
+    "sort_order": 48.5,
+    "distribution_rarity": "Widespread but Rare"
   },
   {
     "description": "",
@@ -5147,7 +5279,8 @@
     "distribution": "",
     "type": "anisoptera",
     "profile_pic": "images/Heliaeschna_simplicia_1.jpg",
-    "sort_order": 53.5
+    "sort_order": 53.5,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "description": "",
@@ -5179,7 +5312,8 @@
     "distribution": "",
     "type": "anisoptera",
     "profile_pic": "images/Acrogomphus_malayanus_1.jpeg",
-    "sort_order": 57.5
+    "sort_order": 57.5,
+    "distribution_rarity": "Restricted & Rare"
   },
   {
     "description": "",
@@ -5209,7 +5343,8 @@
     "id": 135,
     "distribution": "",
     "type": "anisoptera",
-    "sort_order": 57.75
+    "sort_order": 57.75,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "description": "",
@@ -5252,7 +5387,8 @@
     "distribution": "",
     "type": "anisoptera",
     "profile_pic": "images/Indothemis_carnatica_1.jpg",
-    "sort_order": 89.5
+    "sort_order": 89.5,
+    "distribution_rarity": "Restricted & Very Rare"
   },
   {
     "description": "",
@@ -5289,7 +5425,8 @@
     "distribution": "",
     "type": "zygoptera",
     "profile_pic": "images/Aciagrion_borneense_1.jpg",
-    "sort_order": 14.5
+    "sort_order": 14.5,
+    "distribution_rarity": ""
   },
   {
     "description": "",
@@ -5326,6 +5463,7 @@
     "distribution": "",
     "type": "anisoptera",
     "profile_pic": "images/Tetrathemis_flavescens_1.jpg",
-    "sort_order": 116.5
+    "sort_order": 116.5,
+    "distribution_rarity": ""
   }
 ]

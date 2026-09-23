@@ -40,7 +40,7 @@
   function blankRecord() {
     var rec = {};
     ['profile_pic', 'description', 'habitat', 'map', 'common_name', 'confusion_species',
-     'profile_pic_author', 'profile_pic_sex', 'family', 'taxon', 'distribution', 'type'
+     'profile_pic_author', 'profile_pic_sex', 'family', 'taxon', 'distribution', 'distribution_rarity', 'type'
     ].forEach(function (k) { rec[k] = ''; });
     rec.general = '';
     rec.gallery = [];
@@ -293,6 +293,7 @@
     textFieldsSet.appendChild(field('Description', textArea(rec.description, function (v) { rec.description = v; })));
     textFieldsSet.appendChild(field('Habitat', textArea(rec.habitat, function (v) { rec.habitat = v; })));
     textFieldsSet.appendChild(field('Distribution', textArea(rec.distribution, function (v) { rec.distribution = v; })));
+    textFieldsSet.appendChild(field('Distribution and rarity (e.g. Restricted & Rare)', textInput(rec.distribution_rarity, function (v) { rec.distribution_rarity = v; })));
     textFieldsSet.appendChild(field('Confusion species (notes on similar-looking species)', textInput(rec.confusion_species, function (v) { rec.confusion_species = v; })));
     formEl.appendChild(textFieldsSet);
 
