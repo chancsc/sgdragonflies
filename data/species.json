@@ -919,7 +919,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Argiocnemis rubescens rubeola",
+    "taxon": "Argiocnemis rubescens",
     "id": 23,
     "distribution": "Found from India to Australia and New Guinea",
     "type": "zygoptera",
@@ -1244,7 +1244,7 @@
     "distribution_rarity": "Restricted & Uncommon"
   },
   {
-    "profile_pic": "images/Pseudagrion_microcephalum_keith_wilson.jpg",
+    "profile_pic": "images/Pseudagrion_siamense_keith_wilson.jpg",
     "description": "The Blue Sprite is common in Singapore and found in many types of habitats. The males are light blue on the thorax, head and eyes. The abdomen is blue and black. The females are greenish brown in colour, with markings similar to the males'.",
     "family": "Coenagrionidae",
     "map": "",
@@ -1259,7 +1259,7 @@
     "confusion_species": 31,
     "gallery_sex": [],
     "gallery": [
-      "images/Pseudagrion_microcephalum_Graham_Winterflood.jpg"
+      "images/Pseudagrion_siamense_Graham_Winterflood.jpg"
     ],
     "habitat": "Disturbed habitat, ponds, drains, urban gardens and forest edges",
     "profile_pic_author": "Keith Wilson",
@@ -1275,7 +1275,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Pseudagrion microcephalum",
+    "taxon": "Pseudagrion siamense",
     "id": 32,
     "distribution": "Widely distributed from India to Australia and Solomon Islands",
     "type": "zygoptera",
@@ -2428,7 +2428,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Ictinogomphus decoratus melaenops",
+    "taxon": "Ictinogomphus decoratus",
     "id": 61,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
@@ -4716,7 +4716,7 @@
       "white": "",
       "red": 1
     },
-    "taxon": "Tramea transmarina euryale",
+    "taxon": "Tramea transmarina",
     "id": 119,
     "distribution": "Widely distributed in tropical Asia and Australasia",
     "type": "anisoptera",
@@ -4956,7 +4956,7 @@
       "white": "",
       "red": 1
     },
-    "taxon": "Urothemis signata insignata",
+    "taxon": "Urothemis signata",
     "id": 125,
     "distribution": "Widespread in South and South East Asia, Australia",
     "type": "anisoptera",
@@ -5426,7 +5426,7 @@
     "type": "zygoptera",
     "profile_pic": "images/Aciagrion_borneense_1.jpg",
     "sort_order": 14.5,
-    "distribution_rarity": ""
+    "distribution_rarity": "Restricted & Uncommon"
   },
   {
     "description": "",
@@ -5464,6 +5464,6 @@
     "type": "anisoptera",
     "profile_pic": "images/Tetrathemis_flavescens_1.jpg",
     "sort_order": 116.5,
-    "distribution_rarity": ""
+    "distribution_rarity": "Restricted & Rare"
   }
 ]
