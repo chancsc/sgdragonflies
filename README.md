@@ -141,6 +141,8 @@ Species text and taxonomy draw on:
 - Tang, H.B., Wang, L.K. & Hämäläinen, M., *A Photographic Guide to the
   Dragonflies of Singapore* (2010), Raffles Museum of Biodiversity Research
 - Orr, A.G., *Dragonflies of Peninsular Malaysia and Singapore* (2005)
+- Ngiam, R. & Ng, M., *A Photographic Field Guide to the Dragonflies &
+  Damselflies of Singapore*
 - Cross-checked against Ngiam, R.W.J. & Davison, G.W.H., *A Checklist of
   Dragonflies in Singapore Parks* (2011), Nature in Singapore, 4: 349–353
 
