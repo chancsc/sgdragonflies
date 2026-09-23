@@ -26,7 +26,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 18 | *Agriocnemis minima* | Marsh Wisp | zygoptera | 0 | 0 | 416 | Restricted & Very Rare |
 | 19 | *Burmagomphus arthuri* | Arthur's Clubtail | anisoptera | 0 | 0 | 1 | Restricted & Very Rare |
 | 20 | *Aciagrion hisopa* | Blue Slim | zygoptera | 1 | 1 | 81 | Restricted & Very Rare |
-| 21 | *Argiocnemis rubescens rubeola* | Variable Sprite | zygoptera | 1 | 1 | 83 | Widespread but Uncommon |
+| 21 | *Argiocnemis rubescens* ‡ | Variable Sprite | zygoptera | 1 | 1 | 83 | Widespread but Uncommon |
 | 22 | *Pseudagrion siamense* † | Blue Sprite | zygoptera | 1 | 0 | 1977 | Widespread & Common |
 | 23 | *Teinobasis cryptica* | Cryptic Shadesprite | zygoptera | 1 | 0 | 5 | Restricted & Very Rare |
 | 24 | *Macromia cydippe* | Lesser Stream Cruiser | anisoptera | 2 | 2 | 21 | Restricted & Rare |
@@ -43,7 +43,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 35 | *Heliaeschna uninervulata* | Lesser Nighthawker | anisoptera | 10 | 10 | 55 | Widespread but Rare |
 | 36 | *Prodasineura interrupta* | Interrupted Threadtail | zygoptera | 11 | 9 | 15 | Restricted & Uncommon |
 | 37 | *Heliaeschna simplicia* | Plain Nighthawker | anisoptera | 11 | 10 | 24 | Restricted & Very Rare |
-| 38 | *Ictinogomphus decoratus melaenops* | Common Flangetail | anisoptera | 12 | 11 | 98 | Widespread & Common |
+| 38 | *Ictinogomphus decoratus* ‡ | Common Flangetail | anisoptera | 12 | 11 | 98 | Widespread & Common |
 | 39 | *Hemicordulia tenera* | Emerald | anisoptera | 12 | 10 | 59 | Restricted & Rare |
 | 40 | *Tetrathemis hyalina* | Elf | anisoptera | 12 | 12 | 310 | Restricted & Very Rare |
 | 41 | *Onychothemis testacea* | Riverhawk | anisoptera | 13 | 13 | 534 | Restricted & Very Rare |
@@ -54,7 +54,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 46 | *Microgomphus chelifer* | Tiny Sheartail | anisoptera | 18 | 15 | 58 | Restricted & Rare |
 | 47 | *Brachygonia oculata* | Pixie | anisoptera | 18 | 18 | 557 | Restricted & Uncommon |
 | 48 | *Aciagrion borneense* | Bornean Slim | zygoptera | 18 | 18 | 168 | - |
-| 49 | *Tramea transmarina euryale* | Saddlebag Glider | anisoptera | 26 | 26 | 245 | Widespread & Common |
+| 49 | *Tramea transmarina* ‡ | Saddlebag Glider | anisoptera | 26 | 26 | 245 | Widespread & Common |
 | 50 | *Anax panybeus* | Arrow Emperor | anisoptera | 35 | 27 | 572 | Widespread but Rare |
 | 51 | *Indothemis carnatica* | White-tipped Demon | anisoptera | 43 | 43 | 1224 | Restricted & Very Rare |
 | 52 | *Macrogomphus quadratus* | Forktail | anisoptera | 48 | 48 | 81 | Restricted & Uncommon |
@@ -68,7 +68,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 | 60 | *Epophthalmia vittigera* | Pond Cruiser | anisoptera | 60 | 52 | 136 | Widespread & Common |
 | 61 | *Copera vittata* | Variable Featherlegs | zygoptera | 63 | 61 | 1597 | Restricted & Rare |
 | 62 | *Libellago aurantiaca* | Fiery Gem | zygoptera | 75 | 75 | 184 | Restricted but Common |
-| 63 | *Urothemis signata insignata* | Scarlet Basker | anisoptera | 76 | 75 | 105 | Widespread & Common |
+| 63 | *Urothemis signata* ‡ | Scarlet Basker | anisoptera | 76 | 75 | 105 | Widespread & Common |
 | 64 | *Macromia cincta* | Stream Cruiser | anisoptera | 77 | 72 | 95 | Restricted & Rare |
 | 65 | *Agriocnemis pygmaea* | Wandering Wisp | zygoptera | 87 | 71 | 9031 | Widespread but Rare |
 | 66 | *Orchithemis pruinans* | Blue Sentinel | anisoptera | 89 | 82 | 128 | Restricted & Rare |
@@ -148,6 +148,7 @@ Columns: `inat_sg_observations` = all iNat observations (any quality grade) tagg
 ## Caveats
 - iNaturalist observation counts reflect what people happen to photograph and upload, not true population size. Genuinely common species can be under-recorded if they're considered unremarkable (e.g. Blue Sprite, checklist status "Widespread & Common" but only 1 SG record on iNat).
 - † Blue Sprite has since been renamed from *Pseudagrion microcephalum* to *Pseudagrion siamense*. Its counts above were fetched under the old name, which likely explains the single SG record — Singapore records are probably filed under *P. siamense* on iNat. Re-fetch before relying on this row.
+- ‡ Variable Sprite, Common Flangetail, Saddlebag Glider and Scarlet Basker are now listed without their subspecies names, to match the app. Their counts were fetched under the subspecies names (e.g. *Tramea transmarina euryale*), so they may be lower than species-level counts.
 - Species with 0 SG observations may be genuinely absent/extinct locally, misidentified under a different/older scientific name, or simply never uploaded to iNat — worth spot-checking before concluding rarity.
 - `checklist_distribution_rarity` is the authoritative field already carried in `data/species.json` (from the 2021 national checklist); 2 species have no checklist entry yet.
 - No rarity threshold/bucket has been assigned in this file — use `inat_sg_observations` alongside `checklist_distribution_rarity` to decide cutoffs.
