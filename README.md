@@ -6,7 +6,7 @@ description, habitat, distribution, and similar/confusable species.
 
 **Staging:** https://chancsc.github.io/sgdragonflies/
 
-**Live:** https://github.com/taxonomic-tools/sgdragonflies
+**Live:** https://taxonomic-tools.github.io/sgdragonflies/
 
 This is a static, installable web app (PWA) — no account, no backend, works offline
 once loaded.
@@ -82,7 +82,8 @@ A static site on **GitHub Pages**, served directly from this repo's default
 branch. No build step, no CI — pushing to `main` deploys to **staging**
 (https://chancsc.github.io/sgdragonflies/) within about a minute.
 
-The **live** version is hosted from
+The **live** version (https://taxonomic-tools.github.io/sgdragonflies/) is
+hosted from
 [taxonomic-tools/sgdragonflies](https://github.com/taxonomic-tools/sgdragonflies)
 and is updated separately from this repo.
 
