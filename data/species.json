@@ -919,7 +919,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Argiocnemis rubescens rubeola",
+    "taxon": "Argiocnemis rubescens",
     "id": 23,
     "distribution": "Found from India to Australia and New Guinea",
     "type": "zygoptera",
@@ -2428,7 +2428,7 @@
       "white": "",
       "red": ""
     },
-    "taxon": "Ictinogomphus decoratus melaenops",
+    "taxon": "Ictinogomphus decoratus",
     "id": 61,
     "distribution": "Widely distributed in South East Asia",
     "type": "anisoptera",
@@ -4716,7 +4716,7 @@
       "white": "",
       "red": 1
     },
-    "taxon": "Tramea transmarina euryale",
+    "taxon": "Tramea transmarina",
     "id": 119,
     "distribution": "Widely distributed in tropical Asia and Australasia",
     "type": "anisoptera",
@@ -4956,7 +4956,7 @@
       "white": "",
       "red": 1
     },
-    "taxon": "Urothemis signata insignata",
+    "taxon": "Urothemis signata",
     "id": 125,
     "distribution": "Widespread in South and South East Asia, Australia",
     "type": "anisoptera",
