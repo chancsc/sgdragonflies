@@ -387,6 +387,7 @@
 
 .rf-facts {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 16px;
 }
@@ -397,6 +398,7 @@
   border-radius: 14px;
   padding: 12px 14px;
 }
+.rf-fact-wide { flex-basis: 100%; }
 .rf-fact-label {
   display: flex;
   align-items: center;
