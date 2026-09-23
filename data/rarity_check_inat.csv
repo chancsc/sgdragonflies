@@ -19,8 +19,8 @@ id,taxon,common_name,family,type,checklist_distribution_rarity,inat_sg_observati
 130,Agriocnemis minima,Marsh Wisp,Coenagrionidae,zygoptera,Restricted & Very Rare,0,0,416,0 records (possibly extinct/unrecorded on iNat)
 135,Burmagomphus arthuri,Arthur's Clubtail,Gomphidae,anisoptera,Restricted & Very Rare,0,0,1,0 records (possibly extinct/unrecorded on iNat)
 15,Aciagrion hisopa,Blue Slim,Coenagrionidae,zygoptera,Restricted & Very Rare,1,1,81,very few records (1-5)
-23,Argiocnemis rubescens rubeola,Variable Sprite,Coenagrionidae,zygoptera,Widespread but Uncommon,1,1,83,very few records (1-5)
-32,Pseudagrion microcephalum,Blue Sprite,Coenagrionidae,zygoptera,Widespread & Common,1,0,1977,very few records (1-5)
+23,Argiocnemis rubescens,Variable Sprite,Coenagrionidae,zygoptera,Widespread but Uncommon,1,1,83,very few records (1-5) - counts fetched under subspecies name Argiocnemis rubescens rubeola
+32,Pseudagrion siamense,Blue Sprite,Coenagrionidae,zygoptera,Widespread & Common,1,0,1977,very few records (1-5) - counts fetched under former name Pseudagrion microcephalum; re-fetch
 36,Teinobasis cryptica,Cryptic Shadesprite,Coenagrionidae,zygoptera,Restricted & Very Rare,1,0,5,very few records (1-5)
 71,Macromia cydippe,Lesser Stream Cruiser,Corduliidae,anisoptera,Restricted & Rare,2,2,21,very few records (1-5)
 138,Tetrathemis flavescens,Yellow-tinted Elf,Libellulidae,anisoptera,,2,2,7,very few records (1-5)
@@ -36,7 +36,7 @@ id,taxon,common_name,family,type,checklist_distribution_rarity,inat_sg_observati
 54,Heliaeschna uninervulata,Lesser Nighthawker,Aeshnidae,anisoptera,Widespread but Rare,10,10,55,few records (6-20)
 46,Prodasineura interrupta,Interrupted Threadtail,Protoneuridae,zygoptera,Restricted & Uncommon,11,9,15,few records (6-20)
 133,Heliaeschna simplicia,Plain Nighthawker,Aeshnidae,anisoptera,Restricted & Very Rare,11,10,24,few records (6-20)
-61,Ictinogomphus decoratus melaenops,Common Flangetail,Gomphidae,anisoptera,Widespread & Common,12,11,98,few records (6-20)
+61,Ictinogomphus decoratus,Common Flangetail,Gomphidae,anisoptera,Widespread & Common,12,11,98,few records (6-20) - counts fetched under subspecies name Ictinogomphus decoratus melaenops
 68,Hemicordulia tenera,Emerald,Corduliidae,anisoptera,Restricted & Rare,12,10,59,few records (6-20)
 117,Tetrathemis hyalina,Elf,Libellulidae,anisoptera,Restricted & Very Rare,12,12,310,few records (6-20)
 98,Onychothemis testacea,Riverhawk,Libellulidae,anisoptera,Restricted & Very Rare,13,13,534,few records (6-20)
@@ -47,7 +47,7 @@ id,taxon,common_name,family,type,checklist_distribution_rarity,inat_sg_observati
 65,Microgomphus chelifer,Tiny Sheartail,Gomphidae,anisoptera,Restricted & Rare,18,15,58,few records (6-20)
 80,Brachygonia oculata,Pixie,Libellulidae,anisoptera,Restricted & Uncommon,18,18,557,few records (6-20)
 137,Aciagrion borneense,Bornean Slim,Coenagrionidae,zygoptera,,18,18,168,few records (6-20)
-119,Tramea transmarina euryale,Saddlebag Glider,Libellulidae,anisoptera,Widespread & Common,26,26,245,moderate records (21-50)
+119,Tramea transmarina,Saddlebag Glider,Libellulidae,anisoptera,Widespread & Common,26,26,245,moderate records (21-50) - counts fetched under subspecies name Tramea transmarina euryale
 132,Anax panybeus,Arrow Emperor,Aeshnidae,anisoptera,Widespread but Rare,35,27,572,moderate records (21-50)
 136,Indothemis carnatica,White-tipped Demon,Libellulidae,anisoptera,Restricted & Very Rare,43,43,1224,moderate records (21-50)
 63,Macrogomphus quadratus,Forktail,Gomphidae,anisoptera,Restricted & Uncommon,48,48,81,moderate records (21-50)
@@ -61,7 +61,7 @@ id,taxon,common_name,family,type,checklist_distribution_rarity,inat_sg_observati
 67,Epophthalmia vittigera,Pond Cruiser,Corduliidae,anisoptera,Widespread & Common,60,52,136,many records (51-150)
 42,Copera vittata,Variable Featherlegs,Platycnemididae,zygoptera,Restricted & Rare,63,61,1597,many records (51-150)
 5,Libellago aurantiaca,Fiery Gem,Chlorocyphidae,zygoptera,Restricted but Common,75,75,184,many records (51-150)
-125,Urothemis signata insignata,Scarlet Basker,Libellulidae,anisoptera,Widespread & Common,76,75,105,many records (51-150)
+125,Urothemis signata,Scarlet Basker,Libellulidae,anisoptera,Widespread & Common,76,75,105,many records (51-150) - counts fetched under subspecies name Urothemis signata insignata
 70,Macromia cincta,Stream Cruiser,Corduliidae,anisoptera,Restricted & Rare,77,72,95,many records (51-150)
 18,Agriocnemis pygmaea,Wandering Wisp,Coenagrionidae,zygoptera,Widespread but Rare,87,71,9031,many records (51-150)
 99,Orchithemis pruinans,Blue Sentinel,Libellulidae,anisoptera,Restricted & Rare,89,82,128,many records (51-150)
