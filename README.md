@@ -42,6 +42,13 @@ This app has two layers with very different vintages:
 - **[FastClick](https://github.com/ftlabs/fastclick)** — removes the ~300ms tap
   delay on older mobile browsers
 
+The original template also shipped a sighting-recording feature (the
+[morel](https://github.com/NERC-CEH/morel) recording library, IndexedDBShim,
+a date picker, GPS/grid-reference converters, and login/register/record pages),
+a d3 flight-period chart and an AppCache-based "download" step. None of it was
+reachable in this app, and it was removed in 2026, roughly halving
+`main-built.js`.
+
 ### The 2026 UI refresh (newer pages, framework-free)
 
 A handful of pages (species list, species detail, the dragonfly/damselfly
@@ -59,9 +66,8 @@ visual refresh in plain HTML/CSS/JS, deliberately **without** adding a framework
 - `manifest.json` — home-screen install metadata
 - `sw.js` — a hand-maintained Service Worker that precaches the entire app
   shell plus the 260 species photos referenced in `data/species.json`, for
-  offline use. This replaces the original HTML5 AppCache approach
-  (`appcache.manifest`, kept only for historical reference — no longer used
-  by any browser)
+  offline use. This replaces the original HTML5 AppCache approach, which no
+  browser supports any more
 
 ### Content pipeline
 
@@ -109,16 +115,14 @@ scripts/
   data.js                GENERATED from data/species.json — do not hand-edit (see admin/build.py)
   refresh.js             Small vanilla-JS behaviour for the refreshed pages
   debug-errors.js         Opt-in on-page error banner (add ?debug=1 to the URL to see it)
-  libs/                  RequireJS loader
+  libs/                  RequireJS loader (require.min.js)
 styles/
   main.min.css           Original jQuery Mobile + legacy app styles
   refresh.css            2026 UI refresh, scoped under .rf-*
 data/
   species.json           Source of truth for all species content
-  flight.json, probability.json   Inherited from the original build; currently unused/empty
 admin/                   Local-only content editor (see admin/README.md)
 images/                  260 species photos + app icons/logos (292 files total)
-appcache.html, appcache.manifest   Legacy, superseded by sw.js — kept for reference
 ```
 
 ## Running locally

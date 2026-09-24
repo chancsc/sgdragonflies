@@ -14,16 +14,12 @@ SW_JS = ROOT / "sw.js"
 
 
 def build_data_js():
-    flight = json.loads((DATA_DIR / "flight.json").read_text(encoding="utf-8"))
-    probability = json.loads((DATA_DIR / "probability.json").read_text(encoding="utf-8"))
     species = json.loads((DATA_DIR / "species.json").read_text(encoding="utf-8"))
 
     # JSON is valid JS object/array literal syntax, so this is a plain string
     # assembly - no special serialization needed for the browser to load it.
     js = (
         "app=window.app||{},app.data=app.data||{},"
-        "app.data.flight=" + json.dumps(flight, ensure_ascii=False) + ","
-        "app.data.probability=" + json.dumps(probability, ensure_ascii=False) + ","
         "app.data.species=" + json.dumps(species, ensure_ascii=False) + ";\n"
     )
     DATA_JS.write_text(js, encoding="utf-8")
@@ -31,7 +27,7 @@ def build_data_js():
 
 
 def build_precache_list():
-    exclude_names = {"sw.js", "appcache.html", "appcache.manifest"}
+    exclude_names = {"sw.js"}
     files = []
     for p in ROOT.rglob("*"):
         if not p.is_file():
