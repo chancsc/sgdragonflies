@@ -26,9 +26,30 @@ def build_data_js():
     print(f"wrote {DATA_JS.relative_to(ROOT)} ({len(species)} species, {len(js)} bytes)")
 
 
+def replace_url_block(sw_text, name, urls):
+    entries = ",\n".join(f"  '{u}'" for u in urls)
+    new_block = f"var {name} = [\n" + entries + "\n];"
+    sw_text, n = re.subn(
+        rf"var {name} = \[\n.*?\n\];", lambda _m: new_block, sw_text, flags=re.S
+    )
+    if n != 1:
+        raise SystemExit(f"could not find {name} block in sw.js")
+    return sw_text
+
+
 def build_precache_list():
+    """Split files into the small app shell (precached on install and refreshed
+    on every release) and the species photos (kept in their own long-lived cache
+    and filled in gradually, so a release doesn't re-download ~35 MB)."""
+    species = json.loads((DATA_DIR / "species.json").read_text(encoding="utf-8"))
+    photo_paths = set()
+    for rec in species:
+        for path in [rec.get("profile_pic")] + list(rec.get("gallery") or []):
+            if path:
+                photo_paths.add(path)
+
     exclude_names = {"sw.js"}
-    files = []
+    shell, photos = [], []
     for p in ROOT.rglob("*"):
         if not p.is_file():
             continue
@@ -40,20 +61,15 @@ def build_precache_list():
             continue
         if p.name in exclude_names:
             continue
-        files.append("./" + rel.as_posix())
+        (photos if rel.as_posix() in photo_paths else shell).append("./" + rel.as_posix())
 
-    files.sort()
-    files.insert(0, "./")
-
-    entries = ",\n".join(f"  '{f}'" for f in files)
-    new_block = "var PRECACHE_URLS = [\n" + entries + "\n];"
+    shell.sort()
+    shell.insert(0, "./")
+    photos.sort()
 
     sw_text = SW_JS.read_text(encoding="utf-8")
-    sw_text, n = re.subn(
-        r"var PRECACHE_URLS = \[\n.*?\n\];", new_block, sw_text, flags=re.S
-    )
-    if n != 1:
-        raise SystemExit("could not find PRECACHE_URLS block in sw.js")
+    sw_text = replace_url_block(sw_text, "PRECACHE_URLS", shell)
+    sw_text = replace_url_block(sw_text, "PHOTO_URLS", photos)
 
     m = re.search(r"sgdragonfly-shell-v(\d+)", sw_text)
     if not m:
@@ -62,7 +78,7 @@ def build_precache_list():
     sw_text = sw_text.replace(m.group(0), f"sgdragonfly-shell-v{next_version}")
 
     SW_JS.write_text(sw_text, encoding="utf-8")
-    print(f"wrote {SW_JS.relative_to(ROOT)} ({len(files)} precached files, cache v{next_version})")
+    print(f"wrote {SW_JS.relative_to(ROOT)} ({len(shell)} shell files, {len(photos)} photos, cache v{next_version})")
 
 
 if __name__ == "__main__":
