@@ -84,6 +84,18 @@
         navigator.serviceWorker.register('sw.js').catch(function (err) {
           console.error('Service worker registration failed:', err);
         });
+
+        // Once the app has settled, let the worker download the remaining species
+        // photos in the background so the whole guide works offline. Skipped when
+        // the browser asks to save data.
+        var saveData = navigator.connection && navigator.connection.saveData;
+        if (!saveData) {
+          setTimeout(function () {
+            navigator.serviceWorker.ready.then(function (reg) {
+              if (reg.active) reg.active.postMessage('warm-photos');
+            });
+          }, 15000);
+        }
       });
     }
   </script>
