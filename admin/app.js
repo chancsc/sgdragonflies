@@ -2,6 +2,12 @@
   'use strict';
 
   var COLOUR_KEYS = ['black', 'blue', 'brown', 'grey', 'yellow', 'green', 'orange', 'red', 'stripe', 'white'];
+  // Families as in the 2021 national checklist (must match the Family filter in scripts/main-built.js)
+  var FAMILIES = [
+    'Argiolestidae', 'Calopterygidae', 'Chlorocyphidae', 'Coenagrionidae', 'Devadattidae',
+    'Euphaeidae', 'Lestidae', 'Platycnemididae', 'Platystictidae',
+    'Aeshnidae', 'Corduliidae', 'Gomphidae', 'Libellulidae', 'Macromiidae', 'Synthemistidae'
+  ];
 
   var species = [];
   var selectedIndex = null; // index into the *filtered* view is not used; we track real array index
@@ -269,7 +275,10 @@
 
     var row2 = document.createElement('div');
     row2.className = 'three-col';
-    row2.appendChild(field('Family', textInput(rec.family, function (v) { rec.family = v; })));
+    // keep an unexpected existing value selectable so it isn't silently lost
+    var familyOptions = [''].concat(FAMILIES);
+    if (rec.family && FAMILIES.indexOf(rec.family) < 0) familyOptions.push(rec.family);
+    row2.appendChild(field('Family', selectInput(rec.family, familyOptions, function (v) { rec.family = v; })));
     row2.appendChild(field('Type', selectInput(rec.type, ['', 'anisoptera', 'zygoptera'], function (v) { rec.type = v; })));
     row2.appendChild(field('Info page only (no full profile)', selectInput(
       rec.general === true ? 'TRUE' : (rec.general || ''), ['', 'TRUE'], function (v) { rec.general = v; }
