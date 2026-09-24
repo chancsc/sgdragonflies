@@ -364,8 +364,7 @@ define('helpers/log',[], function () {
         DEBUG: 4,
 
         CONF: {
-            STATUS: 4,
-            GA_ERROR: false //google analytics error logging
+            STATUS: 4
         },
 
         core: function (message, level) {
@@ -422,22 +421,6 @@ define('helpers/log',[], function () {
                 '<center><b>Oh no, Error! </b></center><br/>' + error.message +
                 ' [' +  error.line + ', '  + error.column + '] ' +
                 error.obj);
-
-            if (app.CONF.GA.STATUS && log.CONF.GA_ERROR){
-                require(['ga'], function (ga) {
-                    //check if the error did not occur before the analytics is loaded
-                    if (ga) {
-                        ga('send', 'exception', {
-                            'exDescription':
-                            error.message + ' ' +
-                            error.url + ' ' +
-                            error.line + ' ' +
-                            error.column + ' ' +
-                            error.obj
-                        });
-                    }
-                });
-            }
         },
 
         /**
@@ -487,11 +470,6 @@ define('conf',['helpers/log'], function () {
         OFFLINE: {
             STATUS: true
         },
-        GA: {
-            //Google Analytics settings
-            STATUS: true,
-            ID: 'UA-71539239-1' //csc - dragonfly of SG
-        },
         LIST: {
             DEFAULT_SORT: 'taxonomic' //csc - overwritted by the setting in the scripts/models/user.js
         }
@@ -499,8 +477,7 @@ define('conf',['helpers/log'], function () {
 
     //logging
     log.CONF = {
-        STATE: log.INFO,
-        GA_ERROR: true //log error using google analytics
+        STATE: log.INFO
     };
 });
 /******************************************************************************
@@ -2458,9 +2435,6 @@ define('routers/router',[
          */
         initialize: function () {
             _log('app.Router: initialize.', log.DEBUG);
-
-            //track every route change as a page view in google analytics
-            this.bind('route', this.trackPageview);
         },
 
         /**
@@ -2579,32 +2553,12 @@ define('routers/router',[
             //update the URL hash
             $(":mobile-pagecontainer").pagecontainer("change", '#' + page.id,
                 {changeHash: false});
-        },
-
-        /**
-         * Google analytics to track the page navigation.
-         */
-        trackPageview: function () {
-            //Google Analytics
-            if (app.CONF.GA.STATUS) {
-                require(['ga'], function(ga) {
-                    var url = Backbone.history.getFragment();
-
-                    // Add a slash if neccesary
-                    if (!/^\//.test(url)) url = '/' + url;
-
-                    // Record page view
-                    ga('send', {
-                        'hitType': 'pageview',
-                        'page': url
-                    });
-                });
-            }
         }
     });
 
     return Router;
 });
+
 /******************************************************************************
  * App model. Persistent.
  *****************************************************************************/
@@ -2714,12 +2668,6 @@ define('helpers/update',[], function () {
 
             //set new version
             app.models.app.save('appVer', app.VERSION);
-
-            if (app.CONF.GA.STATUS) {
-                require(['ga'], function(ga) {
-                    ga('send', 'event', 'app', 'updateSuccess');
-                });
-            }
         }
     };
 
@@ -2811,20 +2759,6 @@ define('app',[
                 app.browser = browser;
                 app.message = message;
 
-                //init Google Analytics
-                //http://veithen.github.io/2015/02/14/requirejs-google-analytics.html
-                if (app.CONF.GA.STATUS){
-                    window.GoogleAnalyticsObject = "__ga__";
-                    window.__ga__ = {
-                        q: [["create", app.CONF.GA.ID, "auto"]],
-                        l: Date.now()
-                    };
-                    require(['ga'], function(ga) {
-                        ga('set', 'appName', app.NAME);
-                        ga('set', 'appVersion', app.VERSION);
-                    });
-                }
-
                 //init data
                 app.models = {};
                 app.models.user = new UserModel();
@@ -2843,28 +2777,6 @@ define('app',[
                 //turn off the loading splash screen
                 $('div.loading').css('display', 'none');
                 $('body').removeClass('loading');
-
-                //add more variables to Google Analytics
-                if (app.CONF.GA.STATUS) {
-                    require(['ga'], function(ga) {
-                        var userFilters = app.models.user.get('filters');
-                        var favourites = userFilters.favouritesGroup && userFilters.favouritesGroup.length,
-                            type = userFilters.typeGroup && userFilters.typeGroup.length,
-                            location = userFilters.probabilityGroup && userFilters.probabilityGroup.length,
-                            color = userFilters.colorGroup && userFilters.colorGroup.length,
-                            family = userFilters.familyGroup && userFilters.familyGroup.length;
-
-                        ga('set', {
-                            'dimension4': app.models.user.get('sort'),
-
-                            'metric1': favourites,
-                            'metric2': type,
-                            'metric3': location,
-                            'metric4': color,
-                            'metric5': family
-                        });
-                    });
-                }
             }
         };
         return App;
@@ -2886,14 +2798,12 @@ define('app',[
             'backbone': 'libs/backbone.min',
             'backbone.localStorage': 'libs/backbone.localStorage-min',
             'tripjs': 'libs/trip.min',
-            'touchswipe': 'libs/jquery.touchSwipe.min',
-            'ga': '//www.google-analytics.com/analytics'
+            'touchswipe': 'libs/jquery.touchSwipe.min'
         },
         shim: {
             'jquery.mobile': {deps: ['jquery.mobile-config']},
             'backbone': {deps: ['jquery', 'underscore'], "exports": "Backbone"},
-            'photoswipe': {deps: ['jquery', 'klass'], exports : 'Code.PhotoSwipe'},
-            'ga': {exports: "__ga__"}
+            'photoswipe': {deps: ['jquery', 'klass'], exports : 'Code.PhotoSwipe'}
         },
         waitSeconds: 20
     });
