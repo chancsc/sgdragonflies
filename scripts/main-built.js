@@ -736,6 +736,24 @@ define('models/species_list_sorts',[], function () {
  * Species list filters.
  *****************************************************************************/
 define('models/species_list_filters',[], function () {
+    function familyFilters(families) {
+        var result = {};
+        families.forEach(function (family) {
+            result[family[0]] = {
+                label: family[1],
+                run: function (list, filteredList, onSuccess) {
+                    for (var j = 0; j < list.length; j++) {
+                        if (list[j].attributes.family === family[1]) {
+                            filteredList.push(list[j]);
+                        }
+                    }
+                    onSuccess(filteredList);
+                }
+            };
+        });
+        return result;
+    }
+
     /**
      * A collection of filters used to manage lists.
      * id - filter identifier
@@ -773,171 +791,30 @@ define('models/species_list_filters',[], function () {
             }
         },
         
-        // CSC - added family filter
         familyGroup: {
             type: 'checkbox',
             label: 'Family',
-
-            filters: {
-                rat: {
-                    label: 'Amphipterygidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Amphipterygidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                cow: {
-                    label: 'Calopterygidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Calopterygidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                tiger: {
-                    label: 'Chlorocyphidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Chlorocyphidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                rabbit: {
-                    label: 'Euphaeidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Euphaeidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                dragon: {
-                    label: 'Lestidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Lestidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                snake: {
-                    label: 'Megapodagrionidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Megapodagrionidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                horse: {
-                    label: 'Coenagrionidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Coenagrionidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                goat: {
-                    label: 'Platycnemididae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Platycnemididae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                monkey: {
-                    label: 'Platystictidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Platystictidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                chicken: {
-                    label: 'Protoneuridae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Protoneuridae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                dog: {
-                    label: 'Aeshnidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Aeshnidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                pig: {
-                    label: 'Gomphidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Gomphidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                butterfly: {
-                    label: 'Corduliidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Corduliidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                },
-                bee: {
-                    label: 'Libellulidae',
-                    run: function (list, filteredList, onSuccess) {
-                        for (var j = 0; j < list.length; j++) {
-                            if (list[j].attributes.family === 'Libellulidae') {
-                                filteredList.push(list[j]);
-                            }
-                        }
-                        onSuccess(filteredList);
-                    }
-                }
-                
-            }
+            // Families as in the 2021 national checklist. Existing IDs are kept
+            // so filters users already saved keep working.
+            filters: familyFilters([
+                ['argiolestidae', 'Argiolestidae'],
+                ['cow', 'Calopterygidae'],
+                ['tiger', 'Chlorocyphidae'],
+                ['horse', 'Coenagrionidae'],
+                ['devadattidae', 'Devadattidae'],
+                ['rabbit', 'Euphaeidae'],
+                ['dragon', 'Lestidae'],
+                ['goat', 'Platycnemididae'],
+                ['monkey', 'Platystictidae'],
+                ['dog', 'Aeshnidae'],
+                ['butterfly', 'Corduliidae'],
+                ['pig', 'Gomphidae'],
+                ['bee', 'Libellulidae'],
+                ['macromiidae', 'Macromiidae'],
+                ['synthemistidae', 'Synthemistidae']
+            ])
         },
-        
-        
+
         colorGroup: {
             type: 'checkbox',
             label: 'Colour',
@@ -1424,6 +1301,12 @@ define('views/list',[
          */
         prepareList: function (callback) {
             var filtersToApply = _.cloneDeep(app.models.user.get('filters'));
+            //ignore saved filters that no longer exist (e.g. renamed families)
+            _.each(_.keys(filtersToApply), function (groupID) {
+                filtersToApply[groupID] = _.filter(filtersToApply[groupID], function (filterID) {
+                    return filters[groupID] && filters[groupID].filters[filterID];
+                });
+            });
             var sort = app.models.user.get('sort');
             var list = this.collection.models.slice(); //shallow copy of array
             this.prepareListCore(list, sort, filtersToApply, callback);

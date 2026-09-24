@@ -2,7 +2,7 @@
   {
     "profile_pic": "images/Devadatta_argyoides_CW_Gan_2.jpg",
     "description": "Uncommon in Singapore, found only in Bukit Timah Nature Reserve and Central Catchment. Both sexes have dull brown colouration, with the female paler in colour and having a thicker abdomen.",
-    "family": "Amphipterygidae",
+    "family": "Devadattidae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -515,7 +515,7 @@
   {
     "profile_pic": "images/Podolestes_orientalis_H._K._Tang_1.jpg",
     "description": "Uncommon in Singapore, found only in Central Catchment Nature Reserve. Both sexes are similar, with blue eyes and blue stripes on the thorax. Species in this family hold their wings flat when at rest.",
-    "family": "Megapodagrionidae",
+    "family": "Argiolestidae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -1072,7 +1072,7 @@
   {
     "profile_pic": "images/Onychargia_atrocyana_wu_bird.jpg",
     "description": "Uncommon in Singapore. The species has a short abdomen. Immature males have a dark blue dorsum of the thorax and a thick yellowish stripe on the side. In mature males, the thorax is without stripes. The female has a dark thorax with a thin yellowish stripe on the dorsum.",
-    "family": "Coenagrionidae",
+    "family": "Platycnemididae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -1649,7 +1649,7 @@
   {
     "profile_pic": "images/Prodasineura_collaris_H.K.Tang1.jpg",
     "description": "An uncommon species, found only in Bukit Timah and Central Catchment Nature Reserves. The male has leaf-shaped blue markings on the dorsal side of the thorax, and the anal appendages are light blue. The female has shorter markings and is lighter in colour.",
-    "family": "Protoneuridae",
+    "family": "Platycnemididae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -1690,7 +1690,7 @@
   {
     "profile_pic": "images/Prodasineura_humeralis_keith_wilson1.jpg",
     "description": "A widespread and common species in Singapore. The male has orange-brown stripes on the thorax; the female has similar but paler stripes.",
-    "family": "Protoneuridae",
+    "family": "Platycnemididae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -1732,7 +1732,7 @@
   {
     "profile_pic": "images/Prodasineura_interrupta_budak.jpg",
     "description": "An uncommon species, restricted to Bukit Timah and Central Catchment Nature Reserves. The male has distinctive, incomplete blue stripes on the dorsal side of the thorax. The abdomen is dark, with blue markings on segments 9 and 10 and on the superior appendages. The female has paler stripes on the thorax.",
-    "family": "Protoneuridae",
+    "family": "Platycnemididae",
     "map": "",
     "general": "",
     "gallery_authors": [],
@@ -1765,7 +1765,7 @@
   {
     "profile_pic": "images/Prodasineura_notostigma_keith_wilson.jpg",
     "description": "Common in the Central Catchment and Bukit Timah Nature Reserves. The male has wider blue bands on the dorsal side of the thorax, whereas the female has narrower blue bands.",
-    "family": "Protoneuridae",
+    "family": "Platycnemididae",
     "map": "",
     "general": "",
     "gallery_authors": [],
@@ -2502,7 +2502,7 @@
   {
     "profile_pic": "images/Epophthalmia_vittigera_csc.jpg",
     "description": "The species is not rare in Singapore. The Pond Cruiser has bluish-green eyes and a dark body with some thin yellow markings on the thorax.",
-    "family": "Corduliidae",
+    "family": "Macromiidae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -2576,7 +2576,7 @@
   {
     "profile_pic": "images/Idionyx_yolanda_leonard_tan.jpg",
     "description": "The species is not rare in Singapore. The Shadowdancer has metallic green eyes and a dark metallic thorax. Males and females are similar. The wing bases are tinted with yellow.",
-    "family": "Corduliidae",
+    "family": "Synthemistidae",
     "map": "",
     "general": "",
     "gallery_authors": [],
@@ -2609,7 +2609,7 @@
   {
     "profile_pic": "images/Macromia_cincta_leonard_tan2.jpg",
     "description": "The species is rare in Singapore. The Stream Cruiser has metallic bluish-green eyes. The thorax is dark, with a white line across the dorsum and a white band on its side. Males and females are similar.",
-    "family": "Corduliidae",
+    "family": "Macromiidae",
     "map": "",
     "general": "",
     "gallery_authors": [
@@ -2648,7 +2648,7 @@
   {
     "profile_pic": "images/Macromia_cydippe_leonard_tan1_m.jpg",
     "description": "The species is rare and restricted in Singapore. The Lesser Stream Cruiser has brilliant green eyes. The thorax is dark. There is a distinctive yellow band on abdominal segment 7. Males and females are similar.",
-    "family": "Corduliidae",
+    "family": "Macromiidae",
     "map": "",
     "general": "",
     "gallery_authors": [
