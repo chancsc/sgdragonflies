@@ -748,6 +748,7 @@ body.loading {
   display: block;
   width: 100%;
   border-radius: 10px;
+  cursor: zoom-in;
 }
 .rf-anatomy-credit {
   margin-top: 8px;

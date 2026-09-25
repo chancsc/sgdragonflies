@@ -40,4 +40,35 @@
     event.preventDefault();
     activateDiffTab(target.getAttribute('data-diff-tab'));
   });
+
+  // Anatomy diagram: tap to open full screen (with pinch-zoom) in PhotoSwipe,
+  // the same viewer the species photos use.
+  var anatomyViewer = null;
+
+  document.addEventListener('click', function (event) {
+    var img = event.target.closest && event.target.closest('.rf-anatomy-card img');
+    if (!img || !window.Code || !window.Code.PhotoSwipe) {
+      return;
+    }
+    event.preventDefault();
+
+    if (!anatomyViewer) {
+      var credit = img.parentNode.querySelector('.rf-anatomy-credit');
+      anatomyViewer = window.Code.PhotoSwipe.attach(
+        [{ url: img.getAttribute('src'), caption: 'Dragonfly anatomy ' + (credit ? credit.textContent : '') }],
+        {
+          jQueryMobile: true,
+          preventSlideshow: true,
+          allowUserZoom: true,
+          loop: false,
+          captionAndToolbarAutoHideDelay: 0,
+          enableMouseWheel: true,
+          enableKeyboard: true,
+          getImageSource: function (obj) { return obj.url; },
+          getImageCaption: function (obj) { return obj.caption; }
+        }
+      );
+    }
+    anatomyViewer.show(0);
+  });
 })();
