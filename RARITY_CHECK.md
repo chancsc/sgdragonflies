@@ -154,3 +154,6 @@ Columns: `inat_sg_observations_raw` = all iNat SG observations, any quality grad
 - Species names/taxonomy reflect the current `data/species.json` (including subspecies-level entries such as *Argiocnemis rubescens rubeola*); iNat was queried against these exact scientific names.
 - `checklist_distribution_rarity` is the authoritative field already carried in `data/species.json` (from the 2021 national checklist); some species have no checklist entry yet.
 - No rarity threshold/bucket has been assigned in this file — use `inat_sg_observations_excl_bulk_user` alongside `checklist_distribution_rarity` to decide cutoffs.
+
+## Review and applied changes
+`data/rarity_check_inat_review.csv` is the reviewed version of this table. Its "Suggest change to" column records the distribution and rarity applied to the app for each species, or "(no change)". The rules use SG research-grade records: 0–10 very rare, 11–100 rare, 101–500 uncommon, >500 common. Nationally Extinct and the Restricted/Widespread part are kept.
