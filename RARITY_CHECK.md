@@ -2,7 +2,7 @@
 
 Cross-checked 138 species listed in the SG Dragonflies app against iNaturalist observation counts filtered to Singapore (place_id=6734), fetched 2026-09-23.
 
-**Observations by iNaturalist user `big-simonchan` are excluded from all counts below.** This single account accounts for the large majority of Singapore odonata records on iNat (~97.5k of the platform's SG observations across all taxa) and would otherwise dominate per-species counts and mask the broader community's sighting pattern. `inat_sg_observations_raw` is kept alongside for reference (includes everyone, unfiltered).
+**Observations by one high-volume iNaturalist contributor are excluded from all counts below.** This single account accounts for the large majority of Singapore odonata records on iNat (~97.5k of the platform's SG observations across all taxa) and would otherwise dominate per-species counts and mask the broader community's sighting pattern. `inat_sg_observations_raw` is kept alongside for reference (includes everyone, unfiltered).
 
 Columns: `inat_sg_observations_raw` = all iNat SG observations, any quality grade, including everyone. `inat_sg_observations_excl_bulk_user` = the same, minus observations by the excluded bulk-contributor account — **this is the primary column to sort/filter by**. `inat_sg_research_grade_excl_bulk_user` = the subset of that figure that are Research Grade (verified ID). `inat_global_observations_excl_bulk_user` = worldwide count (bulk account also excluded), for context. `checklist_distribution_rarity` = the official status from the 2021 Singapore Odonata national checklist (`data/reference/singapore-odonata-checklist-2021.csv`), already in `data/species.json`, shown here for comparison. **No new rarity threshold has been applied** — this is raw data to decide cutoffs from.
 
@@ -148,7 +148,7 @@ Columns: `inat_sg_observations_raw` = all iNat SG observations, any quality grad
 | 138 | *Neurothemis fluctuans* | Common Parasol | anisoptera | 6476 | 9387 | 6374 | 12259 | Widespread & Common |
 
 ## Caveats
-- Observations by iNaturalist user `big-simonchan` are excluded throughout (see note above); this changes rankings materially for species that account bulk-uploaded (e.g. *Neurothemis fluctuans* drops from 9,387 to well under half that once excluded).
+- Observations by the one high-volume contributor are excluded throughout (see note above); this changes rankings materially for species that account bulk-uploaded (e.g. *Neurothemis fluctuans* drops from 9,387 to well under half that once excluded).
 - iNaturalist observation counts (even excluding the bulk account) reflect what people happen to photograph and upload, not true population size. Genuinely common species can still be under-recorded if they're considered unremarkable (e.g. *Pseudagrion microcephalum*, checklist status "Widespread & Common" but very few SG records on iNat).
 - Species with 0 SG observations may be genuinely absent/extinct locally, misidentified under a different/older scientific name, or simply never uploaded to iNat — worth spot-checking before concluding rarity.
 - Species names/taxonomy reflect the current `data/species.json` (including subspecies-level entries such as *Argiocnemis rubescens rubeola*); iNat was queried against these exact scientific names.
