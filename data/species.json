@@ -2083,34 +2083,36 @@
     "distribution_rarity": "Restricted & Very Rare"
   },
   {
-    "profile_pic": "images/Oligoaeschna_foliacea_keith_wilson1.jpg",
+    "profile_pic": "images/Oligoaeschna_foliacea_2.jpg",
     "description": "A very rare and restricted species in Singapore. The male has a dark body with green markings. The male's appendages are leaf-shaped.",
     "family": "Aeshnidae",
     "map": "",
     "general": "",
     "gallery_authors": [
-      "Keith Wilson"
+      "Mettalady Yeo"
     ],
     "common_name": "Leaftail",
     "confusion_species": "",
-    "gallery_sex": [],
+    "gallery_sex": [
+      ""
+    ],
     "gallery": [
-      "images/Oligoaeschna_foliacea_keith_wilson2.jpg"
+      "images/Oligoaeschna_foliacea_1.jpg"
     ],
     "habitat": "Swampy forest",
-    "profile_pic_author": "Keith Wilson",
+    "profile_pic_author": "",
     "profile_pic_sex": "",
     "colour": {
       "blue": "",
-      "brown": "",
+      "brown": 1,
       "grey": "",
       "yellow": "",
-      "green": "",
+      "green": 1,
       "stripe": "",
       "orange": "",
       "white": "",
       "red": "",
-      "black": 1
+      "black": ""
     },
     "taxon": "Oligoaeschna foliacea",
     "id": 56,
